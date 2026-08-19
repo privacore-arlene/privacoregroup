@@ -180,7 +180,7 @@
           '<p class="hc-results-note"><strong>What a paid audit adds:</strong> the free check is self-reported and educational. An audit reviews evidence, workflows, and priorities in the context of your business.</p>' +
           '<div class="hc-results-actions">' +
             '<a class="hc-button hc-button-primary" href="/contact?interest=health-check-results" data-testid="hc-talk-results-link">Talk through my results — free</a>' +
-            '<button class="hc-button hc-button-secondary" type="button" data-hc-restart data-testid="hc-retake-button">← Retake the Health Check</button>' +
+            '<button class="hc-button hc-button-secondary" type="button" data-hc-restart data-testid="hc-retake-button">← Retake the Business Risk Check</button>' +
           '</div>' +
         '</section>' +
       '</div>';

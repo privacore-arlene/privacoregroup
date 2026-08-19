@@ -2,6 +2,13 @@
 (function () {
   'use strict';
 
+  // Single source of truth for the official PrivaCore Group BBB profile URL.
+  // Every [data-bbb-badge] link on the site (hero, About, footer) is populated from this constant.
+  var BBB_PROFILE_URL = 'https://www.bbb.org/ca/bc/vancouver/profile/threat-and-fraud-assessment/the-fraud-doctor-0037-2438602/#sealclick';
+  document.querySelectorAll('[data-bbb-badge]').forEach(function (el) {
+    el.setAttribute('href', BBB_PROFILE_URL);
+  });
+
   // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
@@ -67,12 +74,16 @@
   var interestSelect = document.getElementById('contact-interest');
   if (interestSelect) {
     var INTEREST_MAP = {
-      'health-check-results': 'Health Check results / not sure yet',
+      'risk-check-results': 'Business Risk Check results / not sure yet',
+      'health-check-results': 'Business Risk Check results / not sure yet',
       'cyber-essentials': 'Cyber Essentials Audit — $497 (1–9 people)',
       'business-shield': 'Business Shield Audit — $1,197 (10–25 people)',
       'full-protection': 'Full Protection Program — $2,497 (25–100 people)',
-      'implementation': 'Implementation and ongoing advisory',
-      'managed-security': 'Managed-security provider coordination'
+      'incident-assessment': 'Incident Assessment (suspected BEC / fraud / compromise)',
+      'fraud-protection': 'Email & Payment Fraud Protection',
+      'managed-protection': 'Managed Security & Ongoing Protection',
+      'implementation': 'Managed Security & Ongoing Protection',
+      'managed-security': 'Managed Security & Ongoing Protection'
     };
     var params = new URLSearchParams(window.location.search);
     var requested = params.get('interest');
