@@ -1,407 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrivaCore Group — Cybersecurity & Privacy Protection for Canadian Business</title>
-<meta name="description" content="PrivaCore Group helps Canadian small and medium businesses understand cybersecurity and privacy risk, strengthen practical safeguards, and prepare for incidents in plain language.">
+<title>Cybersecurity Audit for Canadian Small Businesses | PrivaCore Group</title>
+<meta name="description" content="Founder-led cybersecurity and privacy audits for Canadian small businesses. Get a plain-language risk review, practical priorities, and a clear next-step plan.">
 <meta name="theme-color" content="#0F2744">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://privacoregroup.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2744'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23E8813A' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="PrivaCore Group — Cybersecurity & Privacy Protection for Canadian Business">
-<meta property="og:description" content="Practical cybersecurity, privacy, and incident-preparedness guidance for Canadian small and medium businesses.">
+<meta property="og:title" content="Cybersecurity Audit for Canadian Small Businesses | PrivaCore Group">
+<meta property="og:description" content="Founder-led cybersecurity and privacy audits for Canadian small businesses. Get a plain-language risk review, practical priorities, and a clear next-step plan.">
 <meta property="og:url" content="https://privacoregroup.com/">
+<meta property="og:locale" content="en_CA">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"PrivaCore Group","legalName":"C-Success Corp","url":"https://privacoregroup.com/","email":"info@privacoregroup.com","telephone":"+1-604-341-1651","areaServed":"Canada","address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"description":"Founder-led cybersecurity, privacy, governance, and risk advisory for Canadian businesses."}
 </script>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-weight:400;background:#fff;color:#0F2744;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:17px;line-height:1.6}
-
-:root{
-  --navy:#0F2744;--navy2:#1A3A5C;--navy3:#243F63;
-  --amber:#E8813A;--amber2:#F5A050;--amber-pale:rgba(232,129,58,.10);
-  --teal:#2FB8AC;--teal-pale:rgba(47,184,172,.10);
-  --white:#fff;--off:#F7F8FA;--rule:#DDE3EC;
-  --ink:#0F2744;--ink2:#3D5166;--ink3:#6B7F96;
-  --green:#2E7D32;--orange:#E65100;--red:#C62828;
-}
-
-.skip-link{position:fixed;top:8px;left:8px;z-index:999;transform:translateY(-150%);background:#fff;color:var(--navy);padding:.65rem 1rem;border:2px solid var(--amber);border-radius:8px;font-weight:700}
-.skip-link:focus{transform:translateY(0)}
-:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
-.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
-
-/* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(255,255,255,.98);border-bottom:1px solid var(--rule);backdrop-filter:blur(12px)}
-.logo{font-family:Georgia,"Times New Roman",serif;font-size:1.35rem;font-weight:700;color:var(--navy);text-decoration:none;letter-spacing:-.01em}
-.logo span{color:var(--amber)}
-.nav-actions{display:flex;align-items:center;gap:10px}
-.btn-ghost-nav{padding:.55rem 1.1rem;border:2px solid var(--rule);color:var(--ink2);border-radius:8px;font-size:.9rem;font-weight:600;text-decoration:none;transition:all .2s}
-.btn-ghost-nav:hover{border-color:var(--amber);color:var(--amber)}
-.btn-solid-nav{padding:.55rem 1.25rem;background:var(--amber);color:#fff;border-radius:8px;font-size:.9rem;font-weight:700;text-decoration:none;transition:background .2s}
-.btn-solid-nav:hover{background:var(--amber2)}
-
-/* ── HERO ── */
-.hero{min-height:100svh;background:var(--navy);display:flex;align-items:center;padding:96px 28px 64px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 10% 60%,rgba(232,129,58,.09) 0%,transparent 55%),radial-gradient(ellipse at 90% 15%,rgba(47,184,172,.06) 0%,transparent 50%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--amber),var(--amber2),var(--teal))}
-.hero-in{max-width:620px;margin:0 auto;width:100%;position:relative;z-index:2}
-.hero-tag{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:100px;padding:.4rem 1.1rem;font-size:.82rem;font-weight:600;letter-spacing:.05em;color:rgba(255,255,255,.75);margin-bottom:28px}
-.hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.8rem,8vw,4.2rem);font-weight:700;line-height:1.07;letter-spacing:-.025em;color:#fff;margin-bottom:12px}
-h1 em{font-style:italic;color:var(--amber)}
-.hero-deck{font-size:1.15rem;line-height:1.7;color:rgba(255,255,255,.58);margin-bottom:36px;max-width:540px}
-.hero-bullets{list-style:none;margin-bottom:40px;display:flex;flex-direction:column;gap:16px}
-.hero-bullets li{display:flex;align-items:flex-start;gap:14px;font-size:1.05rem;line-height:1.55;color:rgba(255,255,255,.78)}
-.hb-icon{width:36px;height:36px;border-radius:9px;background:rgba(232,129,58,.13);border:1px solid rgba(232,129,58,.22);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;margin-top:1px}
-.hero-bullets strong{color:#fff;font-weight:700}
-.hero-ctas{display:flex;flex-direction:column;gap:12px}
-.cta-big{display:flex;align-items:center;justify-content:center;gap:8px;padding:1.1rem 1.75rem;background:var(--amber);color:#fff;font-size:1.05rem;font-weight:700;text-decoration:none;border-radius:12px;transition:background .2s;-webkit-tap-highlight-color:transparent}
-.cta-big:hover{background:var(--amber2)}
-.cta-outline{display:flex;align-items:center;justify-content:center;gap:8px;padding:1.1rem 1.75rem;border:2px solid rgba(255,255,255,.2);color:rgba(255,255,255,.82);font-size:1.05rem;font-weight:600;text-decoration:none;border-radius:12px;transition:all .2s}
-.cta-outline:hover{border-color:rgba(255,255,255,.5);color:#fff}
-.hero-note{text-align:center;font-size:.85rem;color:rgba(255,255,255,.32);margin-top:14px}
-
-/* ── STAT STRIP ── */
-.stat-strip{background:var(--navy2);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.stat-strip::-webkit-scrollbar{display:none}
-.ss-in{display:flex;min-width:max-content;padding:0 28px}
-.ss-item{padding:26px 32px;border-right:1px solid rgba(255,255,255,.07);min-width:200px;flex-shrink:0}
-.ss-item:last-child{border-right:none}
-.ss-num{font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;font-weight:700;color:var(--amber);line-height:1;margin-bottom:7px}
-.ss-desc{font-size:.92rem;line-height:1.5;color:rgba(255,255,255,.48)}
-.ss-src{font-size:.72rem;color:rgba(255,255,255,.24);margin-top:5px}
-.ss-link{color:rgba(255,255,255,.35);text-decoration:none;font-size:.7rem;display:block;margin-top:3px;transition:color .2s}
-.ss-link:hover{color:var(--amber)}
-
-/* ── SECTIONS ── */
-.sec{padding:80px 28px}
-.sec-in{max-width:620px;margin:0 auto}
-.stag{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:16px}
-.stag::before{content:'';display:block;width:18px;height:2.5px;background:var(--amber);flex-shrink:0}
-.stag.teal{color:var(--teal)}.stag.teal::before{background:var(--teal)}
-h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,5.5vw,2.8rem);font-weight:700;line-height:1.15;letter-spacing:-.015em;color:var(--navy);margin-bottom:16px}
-h2 em{font-style:italic;color:var(--amber)}
-.sec-lead{font-size:1.08rem;line-height:1.8;color:var(--ink2);margin-bottom:40px}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.reveal.vis{opacity:1;transform:translateY(0)}
-
-/* ── FOUNDER STRIP ── */
-.founder-strip{background:var(--amber);padding:28px}
-.founder-in{max-width:620px;margin:0 auto;display:flex;align-items:flex-start;gap:18px}
-.founder-quote-icon{font-size:2.4rem;line-height:1;flex-shrink:0;margin-top:-4px}
-.founder-text{font-size:1rem;line-height:1.75;color:#fff}
-.founder-text strong{font-weight:700;display:block;margin-bottom:6px;font-size:1.05rem}
-
-/* ── REAL THREATS ── */
-.threats-sec{background:var(--off);border-top:1px solid var(--rule)}
-.threats-intro{margin-bottom:36px}
-.threat-cards{display:flex;flex-direction:column;gap:20px}
-.tcard{background:#fff;border:1px solid var(--rule);border-radius:18px;overflow:hidden;transition:box-shadow .25s}
-.tcard:hover{box-shadow:0 6px 28px rgba(15,39,68,.09)}
-.tcard-top{background:var(--navy);padding:22px 24px 18px;position:relative}
-.tcard-num{font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;font-weight:700;color:rgba(255,255,255,.1);line-height:1;position:absolute;top:14px;right:20px}
-.tcard-icon{font-size:1.8rem;margin-bottom:10px}
-.tcard-threat-lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:5px}
-.tcard-title{font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;font-weight:700;color:#fff;line-height:1.3}
-.tcard-body{padding:22px 24px}
-.tcard-story{font-size:1rem;line-height:1.8;color:var(--ink2);margin-bottom:16px}
-.tcard-story strong{color:var(--ink);font-weight:600}
-.tcard-stat{display:inline-flex;align-items:center;gap:10px;background:var(--amber-pale);border:1px solid rgba(232,129,58,.18);border-radius:10px;padding:.65rem 1rem;font-size:.9rem;color:var(--navy);font-weight:600;margin-bottom:14px}
-.tcard-stat::before{content:'📊';font-size:.88rem}
-.tcard-tip{font-size:.9rem;color:var(--ink3);font-style:italic;display:flex;align-items:flex-start;gap:8px;line-height:1.65}
-.tcard-tip::before{content:'💡';font-size:.85rem;flex-shrink:0;margin-top:2px}
-.tcard-source{font-size:.75rem;color:var(--ink3);margin-top:10px}
-.tcard-source a{color:var(--amber);text-decoration:none}
-.tcard-source a:hover{text-decoration:underline}
-
-/* ── WHO WE HELP ── */
-.who-sec{background:#fff;border-top:1px solid var(--rule)}
-.who-grid{display:flex;flex-direction:column;gap:12px}
-.wcard{background:var(--off);border:1px solid var(--rule);border-radius:14px;padding:20px;display:flex;align-items:flex-start;gap:16px;transition:box-shadow .2s}
-.wcard:hover{box-shadow:0 4px 18px rgba(15,39,68,.07)}
-.wemoji{font-size:1.75rem;flex-shrink:0;margin-top:1px}
-.wname{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
-.wdesc{font-size:.93rem;line-height:1.65;color:var(--ink2)}
-.wrisk{display:inline-block;margin-top:9px;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:.22rem .75rem;border-radius:100px}
-.risk-hi{color:#C62828;background:rgba(198,40,40,.09)}
-.risk-md{color:#E65100;background:rgba(230,81,0,.09)}
-.risk-gr{color:#2E7D32;background:rgba(46,125,50,.09)}
-
-/* ── PRIVACY LAW ── */
-.law-sec{background:var(--navy);padding:80px 28px}
-.law-in{max-width:620px;margin:0 auto}
-.law-sec .stag{color:var(--teal)}
-.law-sec .stag::before{background:var(--teal)}
-.law-sec h2{color:#fff}
-.law-intro{font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.55);margin-bottom:32px}
-.law-cards{display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
-.law-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:22px}
-.law-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
-.law-card-name{font-size:1rem;font-weight:700;color:#fff}
-.law-card-scope{font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);background:rgba(47,184,172,.12);border:1px solid rgba(47,184,172,.2);border-radius:100px;padding:.2rem .7rem;white-space:nowrap;flex-shrink:0}
-.law-card-desc{font-size:.93rem;line-height:1.75;color:rgba(255,255,255,.52)}
-.law-card-fine{display:inline-flex;align-items:center;gap:8px;margin-top:12px;background:rgba(232,129,58,.12);border:1px solid rgba(232,129,58,.2);border-radius:8px;padding:.5rem .9rem;font-size:.88rem;font-weight:700;color:var(--amber)}
-.law-card-fine::before{content:'⚠'}
-.law-72hr{background:rgba(47,184,172,.07);border:1px solid rgba(47,184,172,.18);border-radius:14px;padding:22px;margin-bottom:28px}
-.law-72hr-title{font-size:1rem;font-weight:700;color:var(--teal);margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.law-72hr-text{font-size:.93rem;line-height:1.75;color:rgba(255,255,255,.55)}
-.law-obligations{margin-bottom:28px}
-.law-obligations-title{font-size:.8rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px}
-.law-oblig-list{list-style:none;display:flex;flex-direction:column;gap:10px}
-.law-oblig-list li{font-size:.95rem;color:rgba(255,255,255,.65);display:flex;align-items:flex-start;gap:10px;line-height:1.55}
-.law-oblig-list li::before{content:'→';color:var(--teal);font-weight:700;flex-shrink:0;margin-top:1px}
-.law-sources{display:flex;flex-direction:column;gap:8px}
-.law-source-title{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:6px}
-.law-source-link{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;color:var(--teal);text-decoration:none;transition:opacity .2s}
-.law-source-link:hover{opacity:.75}
-.law-source-link::before{content:'↗';font-size:.78rem}
-
-/* ── HEALTH CHECK ── */
-.quiz-sec{background:var(--off);padding:80px 28px}
-.quiz-in{max-width:620px;margin:0 auto}
-.quiz-hdr{margin-bottom:28px}
-.quiz-hdr h2{color:var(--navy);margin-bottom:10px}
-.quiz-hdr p{font-size:1.05rem;line-height:1.75;color:var(--ink2)}
-.quiz-card{background:#fff;border:1.5px solid var(--rule);border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(15,39,68,.08)}
-.q-prog{height:5px;background:var(--rule)}
-.q-prog-fill{height:100%;background:var(--amber);border-radius:0 3px 3px 0;transition:width .45s ease;width:10%}
-.q-meta{display:flex;justify-content:space-between;align-items:center;padding:20px 26px 0}
-.q-step{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
-.q-cat{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber)}
-.q-dyk{margin:16px 26px 0;background:rgba(47,184,172,.07);border:1px solid rgba(47,184,172,.18);border-radius:11px;padding:13px 16px;display:flex;gap:12px;align-items:flex-start}
-.q-dyk-icon{font-size:1rem;flex-shrink:0;margin-top:2px}
-.q-dyk-text{font-size:.9rem;line-height:1.65;color:var(--ink2)}
-.q-dyk-text strong{color:var(--navy);font-weight:600}
-.q-txt{font-family:Georgia,"Times New Roman",serif;font-size:1.2rem;font-weight:700;color:var(--navy);line-height:1.4;padding:18px 26px 20px}
-.q-opts{display:flex;flex-direction:column;gap:10px;padding:0 26px 20px}
-.q-opt{display:flex;align-items:center;gap:14px;padding:15px 17px;background:var(--off);border:2px solid var(--rule);border-radius:11px;cursor:pointer;font-size:1rem;color:var(--ink2);transition:all .2s;width:100%;text-align:left;font-family:inherit;-webkit-tap-highlight-color:transparent;line-height:1.45}
-.q-opt:hover{border-color:var(--amber);color:var(--navy);background:var(--amber-pale)}
-.q-opt.sel{border-color:var(--amber);background:var(--amber-pale);color:var(--navy);font-weight:600}
-.q-radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--rule);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
-.q-opt.sel .q-radio{background:var(--amber);border-color:var(--amber)}
-.q-opt.sel .q-radio::after{content:'';width:7px;height:7px;border-radius:50%;background:#fff}
-.q-grp{display:none}.q-grp.active{display:block}
-.q-live{display:none;padding:16px 26px;border-top:1px solid var(--rule);background:var(--off)}
-.q-live.show{display:block}
-.q-grade-row{display:flex;align-items:center;gap:16px;margin-bottom:14px}
-.q-grade-letter{font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;font-weight:700;line-height:1;width:58px;text-align:center}
-.q-grade-info{}
-.q-grade-label{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:2px}
-.q-grade-desc{font-size:.85rem;color:var(--ink3);line-height:1.5}
-.q-bars{display:flex;flex-direction:column;gap:8px}
-.q-bar-row{display:flex;flex-direction:column;gap:4px}
-.q-bar-meta{display:flex;justify-content:space-between;font-size:.78rem;color:var(--ink3);font-weight:500}
-.q-bar-track{height:5px;background:var(--rule);border-radius:3px;overflow:hidden}
-.q-bar-fill{height:100%;border-radius:3px;transition:width .7s ease;width:0%}
-.q-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 26px 24px;border-top:1px solid var(--rule)}
-.btn-qprev{padding:.68rem 1.25rem;background:var(--off);border:1.5px solid var(--rule);color:var(--ink3);border-radius:9px;font-family:inherit;font-size:.92rem;font-weight:600;cursor:pointer;transition:all .2s}
-.btn-qprev:hover{border-color:var(--amber);color:var(--amber)}
-.btn-qnext{padding:.72rem 1.5rem;background:var(--amber);color:#fff;border:none;border-radius:9px;font-family:inherit;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .2s}
-.btn-qnext:hover{background:var(--amber2)}
-.btn-qnext:disabled{background:var(--rule);color:var(--ink3);cursor:not-allowed}
-
-/* Results */
-.q-results{display:none;padding:28px 26px}
-.q-results.show{display:block}
-.res-grade-row{display:flex;align-items:center;gap:18px;margin-bottom:22px;padding:20px;background:var(--off);border-radius:14px}
-.res-grade-box{font-family:Georgia,"Times New Roman",serif;font-size:4.5rem;font-weight:700;line-height:1;width:80px;height:80px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.res-grade-title{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:5px}
-.res-grade-sub{font-size:.92rem;color:var(--ink2);line-height:1.6}
-.res-block{border-radius:12px;padding:18px;margin-bottom:14px}
-.res-block-lbl{font-size:.75rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin-bottom:10px}
-.res-strengths-block{background:rgba(46,125,50,.07);border:1px solid rgba(46,125,50,.18)}
-.res-strengths-block .res-block-lbl{color:#2E7D32}
-.res-gaps-block{background:var(--amber-pale);border:1px solid rgba(232,129,58,.2)}
-.res-gaps-block .res-block-lbl{color:var(--amber)}
-.res-item{font-size:.95rem;color:var(--ink2);display:flex;align-items:flex-start;gap:9px;line-height:1.55;margin-bottom:7px}
-.res-item:last-child{margin-bottom:0}
-.res-item.strength::before{content:'✓';color:#2E7D32;font-weight:700;flex-shrink:0}
-.res-item.gap::before{content:'→';color:var(--amber);font-weight:700;flex-shrink:0;font-size:.88rem;margin-top:2px}
-.res-next{background:var(--navy);border-radius:14px;padding:20px;margin-bottom:18px}
-.res-next-lbl{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:6px}
-.res-next-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px}
-.res-next-desc{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.6)}
-.res-ctas{display:flex;flex-direction:column;gap:10px}
-.btn-res-main{display:block;text-align:center;padding:.95rem;background:var(--amber);color:#fff;font-size:1rem;font-weight:700;text-decoration:none;border-radius:11px;transition:background .2s}
-.btn-res-main:hover{background:var(--amber2)}
-.btn-res-restart{display:block;text-align:center;padding:.78rem;background:var(--off);border:1.5px solid var(--rule);color:var(--ink3);font-size:.9rem;border-radius:11px;cursor:pointer;font-family:inherit;transition:all .2s}
-.btn-res-restart:hover{border-color:var(--amber);color:var(--amber)}
-
-/* ── PACKAGES ── */
-.pkg-sec{background:#fff;border-top:1px solid var(--rule)}
-.pkg-intro{margin-bottom:36px}
-.pkg-cards{display:flex;flex-direction:column;gap:20px}
-.pkg{background:#fff;border:2px solid var(--rule);border-radius:20px;overflow:hidden;transition:box-shadow .25s}
-.pkg:hover{box-shadow:0 8px 36px rgba(15,39,68,.10)}
-.pkg.featured{border-color:var(--amber)}
-.pkg-head{padding:24px 24px 0}
-.pkg-badge{display:inline-block;background:var(--amber);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:.25rem .85rem;border-radius:100px;margin-bottom:12px}
-.pkg-tier{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
-.pkg-name{font-family:Georgia,"Times New Roman",serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:4px}
-.pkg-who{font-size:.9rem;color:var(--ink3);margin-bottom:16px}
-.pkg-price-row{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
-.pkg-price{font-family:Georgia,"Times New Roman",serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1}
-.pkg-price sup{font-size:1.1rem;vertical-align:super}
-.pkg-price-note{font-size:.85rem;color:var(--ink3)}
-.pkg-delivery{font-size:.82rem;color:var(--ink3);margin-top:4px;margin-bottom:16px}
-.pkg-divider{height:1px;background:var(--rule)}
-.pkg-body{padding:20px 24px 24px}
-.pkg-sec-lbl{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px}
-.pkg-feats{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:16px}
-.pkg-feats li{font-size:.95rem;color:var(--ink2);display:flex;align-items:flex-start;gap:10px;line-height:1.55}
-.pkg-feats li::before{content:'✓';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;font-size:.95rem}
-.pkg-shield-box{background:var(--navy);border-radius:14px;padding:18px;margin-bottom:16px}
-.psb-lbl{font-size:.68rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
-.psb-name{font-size:.95rem;font-weight:700;color:#fff;margin-bottom:3px}
-.psb-price{font-size:.85rem;color:rgba(255,255,255,.45);margin-bottom:10px}
-.psb-items{list-style:none;display:flex;flex-direction:column;gap:5px}
-.psb-items li{font-size:.85rem;color:rgba(255,255,255,.52);display:flex;align-items:center;gap:8px}
-.psb-items li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0}
-.pkg-cta{display:block;text-align:center;padding:.9rem;background:var(--navy);color:#fff;font-size:.95rem;font-weight:700;text-decoration:none;border-radius:11px;transition:background .2s}
-.pkg.featured .pkg-cta{background:var(--amber)}
-.pkg-cta:hover{background:var(--navy2)}
-.pkg.featured .pkg-cta:hover{background:var(--amber2)}
-
-/* ── PRIVASHIELD ── */
-.shield-sec{background:var(--navy);padding:80px 28px}
-.shield-in{max-width:620px;margin:0 auto}
-.shield-sec .stag{color:var(--teal)}.shield-sec .stag::before{background:var(--teal)}
-.shield-sec h2{color:#fff}
-.shield-lead{font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.52);margin-bottom:30px}
-.shield-pillars{display:flex;flex-direction:column;gap:14px;margin-bottom:30px}
-.spill{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:20px;display:flex;gap:15px;align-items:flex-start}
-.spill-icon{font-size:1.5rem;flex-shrink:0;margin-top:2px}
-.spill-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:5px}
-.spill-desc{font-size:.9rem;line-height:1.65;color:rgba(255,255,255,.48)}
-.shield-plans{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
-.splan{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:13px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.splan.hl{border-color:rgba(47,184,172,.35);background:rgba(47,184,172,.06)}
-.splan-tier{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px}
-.splan-name{font-size:.98rem;font-weight:700;color:#fff;margin-bottom:3px}
-.splan-items{font-size:.82rem;color:rgba(255,255,255,.42);line-height:1.5}
-.splan-price{font-family:Georgia,"Times New Roman",serif;font-size:1.75rem;font-weight:700;color:var(--teal);line-height:1;text-align:right}
-.splan-cycle{font-size:.75rem;color:rgba(255,255,255,.28);text-align:right;margin-top:3px}
-.shield-note{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:18px;font-size:.92rem;line-height:1.75;color:rgba(255,255,255,.45)}
-.shield-note strong{color:rgba(255,255,255,.75);font-weight:600}
-.btn-teal{display:block;text-align:center;padding:.98rem;background:var(--teal);color:#fff;font-size:.98rem;font-weight:700;text-decoration:none;border-radius:12px;transition:background .2s;margin-top:20px}
-.btn-teal:hover{background:#27a89d}
-
-/* ── ABOUT ── */
-.about-sec{background:var(--off);border-top:1px solid var(--rule)}
-.trust-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin:22px 0 32px}
-.trust-list li{display:flex;align-items:flex-start;gap:12px;font-size:.98rem;color:var(--ink2);line-height:1.55}
-.trust-list li::before{content:'✓';width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.about-quote{background:var(--navy);border-radius:16px;padding:26px;margin-bottom:14px}
-.about-quote blockquote{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.15rem;font-weight:400;color:rgba(255,255,255,.88);line-height:1.6;margin-bottom:14px}
-.about-quote cite{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);font-style:normal;display:flex;align-items:center;gap:6px}
-.about-quote cite::before{content:'↗';font-size:.7rem}
-.fact-box{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:20px;display:flex;gap:14px;margin-bottom:12px}
-.fact-icon{font-size:1.5rem;flex-shrink:0;margin-top:1px}
-.fact-title{font-size:.98rem;font-weight:700;color:var(--navy);margin-bottom:4px}
-.fact-text{font-size:.92rem;line-height:1.7;color:var(--ink2)}
-.fact-text a{color:var(--amber);text-decoration:none;font-weight:600}
-.fact-text a:hover{text-decoration:underline}
-
-/* ── CONTACT ── */
-.contact-sec{background:var(--navy);padding:80px 28px}
-.contact-in{max-width:620px;margin:0 auto}
-.contact-in .stag{color:var(--amber)}.contact-in .stag::before{background:var(--amber)}
-.contact-in h2{color:#fff;margin-bottom:12px}
-.contact-in .sec-lead{color:rgba(255,255,255,.48);margin-bottom:28px}
-.cform{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:26px}
-.fgrp{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
-.flbl{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4)}
-.finp{width:100%;padding:.9rem 1.1rem;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.12);border-radius:10px;font-family:inherit;font-size:1rem;color:#fff;outline:none;transition:border-color .2s;-webkit-appearance:none}
-.finp::placeholder{color:rgba(255,255,255,.22)}
-.finp:focus{border-color:var(--amber)}
-select.finp{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(255,255,255,0.4)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1.1rem center;padding-right:2.75rem}
-select.finp option{background:#1A3A5C;color:#fff}
-textarea.finp{resize:vertical;min-height:96px;line-height:1.65}
-.form-foot{display:flex;flex-direction:column;gap:10px;margin-top:4px}
-.form-note{font-size:.82rem;color:rgba(255,255,255,.28);text-align:center}
-.contact-details{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
-.contact-detail{display:inline-flex;align-items:center;gap:10px;padding:.75rem 1.25rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;text-decoration:none;color:#fff;font-size:1rem;font-weight:600;transition:all .2s}
-.contact-detail:hover{background:rgba(232,129,58,.15);border-color:rgba(232,129,58,.4);color:var(--amber)}
-.cd-icon{font-size:1rem;flex-shrink:0}
-.cd-text{letter-spacing:.01em}
-.fsuc{display:none;text-align:center;padding:20px 0}
-.fsuc h3{font-family:Georgia,"Times New Roman",serif;font-size:1.7rem;color:#fff;margin-bottom:8px}
-.fsuc p{font-size:.95rem;color:rgba(255,255,255,.45)}
-.consent-row{display:flex;align-items:flex-start;gap:10px;margin:4px 0 16px;font-size:.88rem;line-height:1.55;color:rgba(255,255,255,.58);cursor:pointer}
-.consent-row input{width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--amber)}
-.consent-row a{color:var(--amber);font-weight:600}
-
-/* ── PRIVACY NOTICE ── */
-.privacy-sec{background:#fff;border-top:1px solid var(--rule)}
-.privacy-grid{display:grid;gap:14px;margin-top:28px}
-.privacy-card{background:var(--off);border:1px solid var(--rule);border-radius:14px;padding:20px}
-.privacy-card h3{font-size:1rem;color:var(--navy);margin-bottom:6px}
-.privacy-card p,.privacy-card li{font-size:.93rem;line-height:1.7;color:var(--ink2)}
-.privacy-card ul{padding-left:1.2rem}
-.privacy-card a{color:var(--amber);font-weight:600}
-.privacy-updated{font-size:.82rem;color:var(--ink3);margin-top:18px}
-
-/* ── FOOTER ── */
-footer{background:#071829;padding:28px}
-.foot-in{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
-.foot-logo{font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;font-weight:700;color:rgba(255,255,255,.45);text-decoration:none}
-.foot-logo span{color:var(--amber)}
-.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.25rem;list-style:none}
-.foot-links a{font-size:.85rem;color:rgba(255,255,255,.28);text-decoration:none;transition:color .2s}
-.foot-links a:hover{color:var(--amber)}
-.foot-copy{font-size:.75rem;color:rgba(255,255,255,.17)}
-.foot-sources{font-size:.72rem;color:rgba(255,255,255,.22);line-height:1.7;text-align:center;max-width:520px}
-.foot-sources a{color:rgba(255,255,255,.35);text-decoration:none}
-.foot-sources a:hover{color:var(--amber)}
-
-/* BTN FULL */
-.btn-full{display:block;width:100%;text-align:center;padding:1rem;background:var(--amber);color:#fff;font-size:1rem;font-weight:700;text-decoration:none;border-radius:12px;border:none;cursor:pointer;font-family:inherit;transition:background .2s;-webkit-tap-highlight-color:transparent}
-.btn-full:hover{background:var(--amber2)}
-
-/* ── RESPONSIVE ── */
-@media(min-width:720px){
-  nav{padding:0 40px}
-  .hero{padding:108px 40px 72px}
-  .hero-in,.sec-in,.quiz-in,.contact-in,.shield-in,.law-in,.foot-in{max-width:780px}
-  .ss-in{min-width:auto;padding:0 40px}
-  .ss-item{flex:1;min-width:0}
-  .sec{padding:96px 40px}
-  .founder-strip{padding:32px 40px}
-  .founder-in{max-width:780px;margin:0 auto}
-  .shield-sec,.quiz-sec,.contact-sec,.law-sec{padding:96px 40px}
-  .threat-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .pkg-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
-  .shield-pillars{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .shield-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .hero-ctas{flex-direction:row}
-  .cta-big,.cta-outline{flex:1}
-  .form-foot{flex-direction:row;align-items:center;justify-content:space-between}
-  .form-note{text-align:left}
-  .btn-full.form-submit{max-width:220px;padding:.9rem}
-  .privacy-grid{grid-template-columns:1fr 1fr}
-  .foot-in{flex-direction:row;justify-content:space-between;text-align:left;align-items:center}
-}
-@media(min-width:1100px){
-  .hero-in,.sec-in,.quiz-in,.contact-in,.shield-in,.law-in{max-width:920px}
-  h1{font-size:4.4rem}
-}
-@media(max-width:480px){
-  body{font-size:16px}
-  h1{font-size:2.5rem}
-  h2{font-size:1.85rem}
-  .pkg-cards,.threat-cards{grid-template-columns:1fr}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .reveal{opacity:1;transform:none;transition:none}
-}
-</style>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/health-check.css">
 </head>
 <body>
 
@@ -409,155 +27,281 @@ footer{background:#071829;padding:28px}
 
 <!-- NAV -->
 <nav aria-label="Primary navigation">
-  <a href="#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
+  <a href="/#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
+  <ul class="nav-links">
+    <li><a href="/#health-check">Health Check</a></li>
+    <li><a href="/#packages">Packages</a></li>
+    <li><a href="/#how-it-works">How It Works</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
   <div class="nav-actions">
-    <a href="#health-check" class="btn-ghost-nav">Free Health Check</a>
-    <a href="#contact" class="btn-solid-nav">Book Consultation</a>
+    <a href="/#health-check" class="btn-solid-nav" data-testid="nav-health-check-cta">Free Health Check</a>
+    <button type="button" class="nav-toggle" data-nav-toggle data-testid="nav-menu-toggle" aria-expanded="false" aria-controls="nav-drawer"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu</button>
   </div>
 </nav>
+<div class="nav-drawer" id="nav-drawer" hidden>
+  <ul>
+    <li><a href="/#health-check" data-testid="drawer-health-check">Health Check</a></li>
+    <li><a href="/#packages" data-testid="drawer-packages">Packages</a></li>
+    <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How It Works</a></li>
+    <li><a href="/#about" data-testid="drawer-about">About</a></li>
+    <li><a href="/contact" data-testid="drawer-contact">Contact</a></li>
+  </ul>
+</div>
+
+<main id="main-content">
 
 <!-- HERO -->
-<main id="main-content">
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero on-dark" aria-labelledby="hero-title">
   <div class="hero-in">
     <div class="hero-tag"><span class="dot"></span>Vancouver-based · Serving Canadian businesses</div>
     <h1 id="hero-title">Know your risks. Strengthen what <em>matters.</em></h1>
-    <p class="hero-deck">Ransomware, phishing, fraud, and privacy incidents can disrupt businesses of any size. We help Canadian organizations understand practical risks, close priority gaps, and prepare for incidents — in plain language and with a clearly defined scope.</p>
-    <ul class="hero-bullets">
-      <li><div class="hb-icon">🩺</div><span>Start with a <strong>free cybersecurity health check</strong> — know where you stand in 3 minutes, no email required</span></li>
-      <li><div class="hb-icon">🔍</div><span><strong>Clearly scoped audit packages</strong> — a plain-language report and prioritized action plan, not a technical document that collects dust</span></li>
-      <li><div class="hb-icon">🛡</div><span><strong>Implementation and ongoing support</strong> — remediation coordination, policy guidance, and managed-security options scoped after your assessment</span></li>
-    </ul>
+    <p class="hero-deck">PrivaCore helps Canadian small businesses check how their email, payments, client data, backups, devices, and vendors are protected—then turn the findings into a practical, prioritized plan. You get plain-language guidance and a clearly defined scope, not an unreadable technical report or fear-based sales pitch.</p>
     <div class="hero-ctas">
-      <a href="#health-check" class="cta-big">Take the Free Health Check →</a>
-      <a href="#packages" class="cta-outline">See Packages & Pricing</a>
+      <a href="/#health-check" class="cta-big" data-testid="hero-primary-cta">Check my basics — 3 minutes, no email</a>
+      <a href="/#packages" class="cta-outline" data-testid="hero-secondary-cta">See packages &amp; pricing</a>
     </div>
     <p class="hero-note">Plain-language guidance · Canadian context · No fear-based selling</p>
   </div>
 </section>
 
-<!-- STAT STRIP -->
-<div class="stat-strip">
-  <div class="ss-in">
-    <div class="ss-item"><div class="ss-num">72%</div><div class="ss-desc">of Canadian SMBs surveyed reported a cyberattack in the prior year</div><a href="https://21628522.fs1.hubspotusercontent-na1.net/hubfs/21628522/Content%20offers%20Gate/F12%20Cybersecurity%20Trends%20Report%202024.pdf" target="_blank" rel="noopener noreferrer" class="ss-link">F12 Cybersecurity Trends Report ↗</a></div>
-    <div class="ss-item"><div class="ss-num">16%</div><div class="ss-desc">of Canadian businesses were impacted by cyber incidents in 2023</div><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241021/dq241021a-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Statistics Canada CSCSC ↗</a></div>
-    <div class="ss-item"><div class="ss-num">$638M+</div><div class="ss-desc">in fraud losses reported to the CAFC in 2024</div><a href="https://antifraudcentre-centreantifraude.ca/features-vedette/2025/02/month-prevention-mois-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Canadian Anti-Fraud Centre ↗</a></div>
-    <div class="ss-item"><div class="ss-num">$1.2B</div><div class="ss-desc">spent recovering from cyber incidents by Canadian businesses in 2023</div><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241021/dq241021a-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Statistics Canada CSCSC ↗</a></div>
-  </div>
-</div>
-
-<!-- FOUNDER NOTE -->
-<div class="founder-strip">
-  <div class="founder-in">
-    <div class="founder-quote-icon">💬</div>
-    <div class="founder-text">
-      <strong>A note from our founder</strong>
-      "I've been a business owner. I know exactly how it feels to wonder whether your systems are protected — and not know where to start or who to trust. That's why PrivaCore exists: to translate enterprise privacy and cybersecurity experience into practical steps smaller organizations can actually use. My experience includes programs at RBC, BNP Paribas, Shaw Communications, and other regulated Canadian organizations. No fluff. No fear tactics. Just clear priorities and honest guidance."
-    </div>
-  </div>
-</div>
-
-<!-- REAL THREATS -->
-<section class="sec threats-sec" id="threats">
+<!-- START HERE -->
+<section class="sec steps-sec" id="start-here" aria-labelledby="start-title">
   <div class="sec-in">
-    <div class="threats-intro reveal">
-      <div class="stag">The Real Risks — No Exaggeration</div>
-      <h2>How ransomware actually gets into <em>small businesses</em></h2>
-      <p class="sec-lead">Forget the Hollywood version. Many incidents begin through ordinary business systems and processes. Here are four common entry points, backed by Canadian government guidance and current incident research.</p>
+    <div class="stag reveal">Start here</div>
+    <h2 id="start-title" class="reveal">How it works</h2>
+    <div class="steps-grid">
+      <div class="step-card reveal"><div class="step-num" aria-hidden="true">1</div><div><div class="step-title">Check your basics</div><div class="step-desc">Answer 10 plain-language questions.</div></div></div>
+      <div class="step-card reveal"><div class="step-num" aria-hidden="true">2</div><div><div class="step-title">See what to confirm</div><div class="step-desc">Receive a self-reported summary and three practical next steps.</div></div></div>
+      <div class="step-card reveal"><div class="step-num" aria-hidden="true">3</div><div><div class="step-title">Choose the right level of help</div><div class="step-desc">If desired, discuss a founder-led audit matched to your business size and priorities.</div></div></div>
     </div>
+  </div>
+</section>
+
+<!-- HEALTH CHECK -->
+<section class="sec pc-health-check" id="health-check" aria-labelledby="hc-title" style="background:var(--surface)">
+  <div class="sec-in">
+    <p class="hc-eyebrow reveal">Free cybersecurity health check</p>
+    <h2 id="hc-title" class="reveal">What does your business currently have in place?</h2>
+    <p class="sec-lead reveal">Answer these 10 questions based on what you know today. There are no perfect answers, and <strong>“Not sure” is useful</strong>—it simply shows what to check next. You will see practical next steps immediately.</p>
+    <p class="reveal" style="font-size:.9rem;line-height:1.6;color:var(--body);margin:-16px 0 26px">This educational self-check is not a technical test, certification, insurance evaluation, or legal opinion.</p>
+    <div class="reveal" data-health-check data-testid="health-check"></div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="sec pkg-sec" id="packages" aria-labelledby="packages-title">
+  <div class="sec-in">
+    <div class="pkg-intro">
+      <div class="stag reveal">Audit packages</div>
+      <h2 id="packages-title" class="reveal">Know exactly where you stand.</h2>
+      <p class="sec-lead reveal">Every engagement is founder-led, with specialist technical support added when the scope requires it. You receive a plain-language report, a prioritized action list, and a follow-up call to walk through the findings — not a technical document that sits in a drawer. All three are <strong>one-time audit prices</strong>.</p>
+    </div>
+    <div class="pkg-cards">
+
+      <div class="pkg reveal" data-testid="package-cyber-essentials">
+        <div class="pkg-head">
+          <div class="pkg-name">Cyber Essentials</div>
+          <div class="pkg-who">For 1–9 people with a simple technology setup or no recent review.</div>
+          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-delivery">5-business-day target after intake</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-body">
+          <div class="pkg-sec-lbl">What's included</div>
+          <ul class="pkg-feats">
+            <li>Cybersecurity health review covering email, passwords, backups, devices, and remote access</li>
+            <li>Credential-exposure scan through a vetted provider</li>
+            <li>Plain-language risk report: what you have, what to address, in what order</li>
+            <li>Privacy-practice checklist for your business</li>
+            <li>30-minute founder-led follow-up call</li>
+          </ul>
+          <a href="/contact?interest=cyber-essentials" class="pkg-cta" data-testid="choose-cyber-essentials">Choose Cyber Essentials — $497</a>
+        </div>
+      </div>
+
+      <div class="pkg featured reveal" data-testid="package-business-shield">
+        <div class="pkg-head">
+          <div class="pkg-badge">Most popular</div>
+          <div class="pkg-name">Business Shield</div>
+          <div class="pkg-who">For 10–25 people, businesses that send or receive payments, or organizations holding client files.</div>
+          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>1,197</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-delivery">10-business-day target after intake</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-body">
+          <div class="pkg-sec-lbl">Everything in Cyber Essentials, plus</div>
+          <ul class="pkg-feats">
+            <li>Business Email Compromise assessment — a scam where a criminal impersonates a trusted party, such as a supplier or executive, to redirect a payment or sensitive information</li>
+            <li>Custom incident response plan — a clear, written guide for the first critical hours and days</li>
+            <li>Live virtual staff phishing/scam training for up to 15 people</li>
+            <li>Review of up to 3 vendors accessing client data</li>
+            <li>CyberSecure Canada readiness gap assessment</li>
+            <li>Website privacy review — notices, consent, collection practices, and required disclosures</li>
+          </ul>
+          <a href="/contact?interest=business-shield" class="pkg-cta" data-testid="choose-business-shield">Choose Business Shield — $1,197</a>
+        </div>
+      </div>
+
+      <div class="pkg reveal" data-testid="package-full-protection">
+        <div class="pkg-head">
+          <div class="pkg-name">Full Protection Program</div>
+          <div class="pkg-who">For 25–100 people, multiple locations, leadership reporting needs, or a more mature vendor environment.</div>
+          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>2,497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-delivery">15-business-day target after intake</div>
+        </div>
+        <div class="pkg-divider"></div>
+        <div class="pkg-body">
+          <div class="pkg-sec-lbl">Everything in Business Shield, plus</div>
+          <ul class="pkg-feats">
+            <li>Domain exposure scan for staff email addresses</li>
+            <li>Staff training for up to 40 employees</li>
+            <li>CyberSecure Canada readiness roadmap</li>
+            <li>Vendor-risk review for up to 8 vendors</li>
+            <li>Executive risk briefing deck for your leadership team or board</li>
+            <li>Four quarterly review sessions during the following 12 months</li>
+          </ul>
+          <a href="/contact?interest=full-protection" class="pkg-cta" data-testid="choose-full-protection">Choose Full Protection Program — $2,497</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="scope-note reveal" data-testid="scope-note"><strong>Scope note:</strong> The audit price covers the listed deliverables. Any specialist technical work, remediation, or ongoing service is optional, separately scoped, and approved in writing before work begins.</div>
+  </div>
+</section>
+
+<!-- ABOUT / FOUNDER + PROCESS -->
+<section class="sec about-sec" id="about" aria-labelledby="about-title">
+  <div class="sec-in">
+    <div class="stag reveal">About PrivaCore Group</div>
+    <h2 id="about-title" class="reveal">Founder-led Canadian experience. Practical small-business guidance.</h2>
+    <p class="sec-lead reveal">PrivaCore Group is a Vancouver-based, founder-led privacy, cybersecurity governance, and risk advisory. Arlene Chamulak brings 15+ years of experience across privacy remediation, cybersecurity, audit, regulatory change, and organizational change, including work with RBC, BNP Paribas, Shaw Communications, and BC Financial Services Authority.</p>
+    <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--body);margin-bottom:8px">You work directly with the founder. Your audit produces a short business-risk discussion, evidence-based priorities, a plain-language report, and a walkthrough of what to do next—not an enterprise compliance project.</p>
+    <ul class="trust-list">
+      <li>PMP · PROSCI · CSPO — senior program delivery and organizational change credentials</li>
+      <li>15+ years across financial services, telecom, public sector, healthcare, airline, and retail environments</li>
+      <li>Based in Vancouver, BC — serving businesses from Victoria to Halifax</li>
+      <li>Specialist technical services identified transparently and scoped separately where required</li>
+      <li>Material statistics and legal claims link to source material for independent review</li>
+    </ul>
+
+    <div id="how-it-works">
+      <div class="stag reveal">The process</div>
+      <h2 class="reveal" style="font-size:clamp(1.6rem,4.5vw,2.1rem)">Four steps. No mystery.</h2>
+      <div class="process-grid">
+        <div class="process-card reveal"><div class="step-num" aria-hidden="true">1</div><div><div class="step-title">Brief intake</div><div class="step-desc">A short conversation about your business, your systems, and what prompted the review.</div></div></div>
+        <div class="process-card reveal"><div class="step-num" aria-hidden="true">2</div><div><div class="step-title">Founder-led evidence review</div><div class="step-desc">Arlene reviews your actual practices, documents, and workflows — not a generic checklist.</div></div></div>
+        <div class="process-card reveal"><div class="step-num" aria-hidden="true">3</div><div><div class="step-title">Plain-language report</div><div class="step-desc">What you have, what needs attention, and in what order — written for owners, not engineers.</div></div></div>
+        <div class="process-card reveal"><div class="step-num" aria-hidden="true">4</div><div><div class="step-title">Walkthrough and transparent support options</div><div class="step-desc">A call to walk through the findings, with optional follow-on help quoted to scope in writing.</div></div></div>
+      </div>
+    </div>
+
+    <div class="about-quote reveal">
+      <blockquote>In 2023, 16% of Canadian businesses reported being impacted by cybersecurity incidents, while recovery spending reached $1.2 billion.</blockquote>
+      <cite>Statistics Canada, Canadian Survey of Cyber Security and Cybercrime, released October 2024</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICAL RISKS (educational) -->
+<section class="sec risks-sec" id="risks" aria-labelledby="risks-title">
+  <div class="sec-in">
+    <div class="stag reveal">Practical business risks</div>
+    <h2 id="risks-title" class="reveal">Where problems usually start — in ordinary business processes</h2>
+    <p class="sec-lead reveal">Most incidents we see do not begin with sophisticated attacks. They begin with everyday moments: an invoice, a password, a forgotten update, a handy new tool. These four scenarios are educational starting points, drawn from Canadian government guidance and published incident research.</p>
+
+    <div class="stat-strip reveal" aria-label="Context statistics">
+      <div class="ss-in">
+        <div class="ss-item"><div class="ss-num">72%</div><div class="ss-desc">of Canadian SMBs surveyed reported a cyberattack in the prior year — an industry estimate reported by F12, not a government statistic</div><a href="https://21628522.fs1.hubspotusercontent-na1.net/hubfs/21628522/Content%20offers%20Gate/F12%20Cybersecurity%20Trends%20Report%202024.pdf" target="_blank" rel="noopener noreferrer" class="ss-link">F12 Cybersecurity Trends Report ↗</a></div>
+        <div class="ss-item"><div class="ss-num">16%</div><div class="ss-desc">of Canadian businesses were impacted by cyber incidents in 2023</div><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241021/dq241021a-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Statistics Canada CSCSC ↗</a></div>
+        <div class="ss-item"><div class="ss-num">$638M+</div><div class="ss-desc">in fraud losses reported to the Canadian Anti-Fraud Centre in 2024</div><a href="https://antifraudcentre-centreantifraude.ca/features-vedette/2025/02/month-prevention-mois-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Canadian Anti-Fraud Centre ↗</a></div>
+        <div class="ss-item"><div class="ss-num">$1.2B</div><div class="ss-desc">spent recovering from cyber incidents by Canadian businesses in 2023</div><a href="https://www150.statcan.gc.ca/n1/daily-quotidien/241021/dq241021a-eng.htm" target="_blank" rel="noopener noreferrer" class="ss-link">Statistics Canada CSCSC ↗</a></div>
+      </div>
+    </div>
+
     <div class="threat-cards">
 
       <div class="tcard reveal">
         <div class="tcard-top">
-          <div class="tcard-num">01</div>
-          <div class="tcard-icon">📧</div>
-          <div class="tcard-threat-lbl">Common entry point — phishing</div>
-          <div class="tcard-title">A convincing email with an attachment or link</div>
+          <div class="tcard-num" aria-hidden="true">01</div>
+          <div class="tcard-threat-lbl">Scenario — payment requests</div>
+          <div class="tcard-title">Unexpected invoices and urgent emails</div>
         </div>
         <div class="tcard-body">
-          <p class="tcard-story">A malicious message can look like an invoice, price list, shipping confirmation, job application, government notice, or shared document — something your business routinely receives. The attacker may also follow up by phone or text to make the request feel legitimate.</p>
-          <p class="tcard-story"><strong>The real weakness is usually not a careless employee; it is a process that lets one person approve an unusual request without verification.</strong> Training helps, but a simple verification rule is stronger than awareness alone.</p>
-          <div class="tcard-stat">Phishing was the most commonly reported incident in BDC's 2024 survey of 500 Canadian SMEs</div>
-          <div class="tcard-tip">Train your team to pause before opening attachments — even from known contacts. A quick phone call to verify an unusual request has stopped countless attacks. This is the single highest-value habit you can build.</div>
-          <div class="tcard-source">Sources: <a href="https://www.cyber.gc.ca/en/guidance/ransomware-playbook-itsm00099" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://www.bdc.ca/globalassets/digizuite/55236-cybersecurity-incidents-smes.pdf" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey 2024</a></div>
+          <p class="tcard-story">A message that looks like a supplier, a manager, or a client asks for a payment, a bank-account change, or a quick favour. It can follow a real conversation and arrive at a busy moment. The request itself is the attack.</p>
+          <p class="tcard-story"><strong>The weakness is usually not a careless employee; it is a process that lets one person approve an unusual request without verification.</strong></p>
+          <div class="tcard-tip">Verify unusual payment changes using a known contact — a phone number you already have on file, never the contact details supplied in the request itself.</div>
+          <div class="tcard-source">Sources: <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www.cyber.gc.ca/en/guidance/ransomware-playbook-itsm00099" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a></div>
         </div>
       </div>
 
       <div class="tcard reveal">
         <div class="tcard-top">
-          <div class="tcard-num">02</div>
-          <div class="tcard-icon">🔑</div>
-          <div class="tcard-threat-lbl">Common entry point — stolen credentials</div>
-          <div class="tcard-title">Weak or stolen passwords — especially for remote access</div>
+          <div class="tcard-num" aria-hidden="true">02</div>
+          <div class="tcard-threat-lbl">Scenario — account access</div>
+          <div class="tcard-title">Stolen or reused passwords</div>
         </div>
         <div class="tcard-body">
-          <p class="tcard-story">Reused, phished, or previously exposed passwords can give an attacker access to business email, cloud storage, accounting tools, or remote-access systems. Once inside an email account, an attacker may quietly monitor conversations before impersonating a supplier or executive.</p>
-          <p class="tcard-story"><strong>Email access is especially dangerous because it can be used to reset other passwords and make fraudulent payment instructions appear genuine.</strong></p>
+          <p class="tcard-story">A password reused across services, or exposed in an unrelated breach, can open business email, cloud storage, accounting tools, or banking. From inside an email account, an attacker can reset other passwords and make fraudulent requests look genuine.</p>
           <div class="tcard-stat">Credential abuse remains a leading route into business systems — Verizon DBIR 2025</div>
-          <div class="tcard-tip">Turn on multi-factor authentication for business email and critical systems, use unique passwords, and verify changes to payment instructions through a known phone number.</div>
-          <div class="tcard-source">Sources: <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon Data Breach Investigations Report 2025</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey 2024</a></div>
+          <div class="tcard-tip">Turn on a second sign-in step (multi-factor authentication) for business email, banking, and administrator accounts first — it makes a stolen password far less useful.</div>
+          <div class="tcard-source">Sources: <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon Data Breach Investigations Report 2025</a> · <a href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline Controls</a></div>
         </div>
       </div>
 
       <div class="tcard reveal">
         <div class="tcard-top">
-          <div class="tcard-num">03</div>
-          <div class="tcard-icon">⚠️</div>
-          <div class="tcard-threat-lbl">Common entry point — unpatched software</div>
-          <div class="tcard-title">Software your business hasn't updated</div>
+          <div class="tcard-num" aria-hidden="true">03</div>
+          <div class="tcard-threat-lbl">Scenario — maintenance</div>
+          <div class="tcard-title">Software nobody owns</div>
         </div>
         <div class="tcard-body">
-          <p class="tcard-story">Security updates repair known weaknesses in operating systems, browsers, accounting software, booking platforms, routers, and other tools. Once a weakness is public, attackers can scan broadly for organizations that have not applied the update.</p>
-          <p class="tcard-story"><strong>This is usually an operational problem, not an exotic technical failure:</strong> nobody owns the update schedule, an old device is forgotten, or specialized software is excluded from automatic updates.</p>
-          <div class="tcard-stat">Automatic patching is a baseline control recommended by the Canadian Centre for Cyber Security</div>
-          <div class="tcard-tip">Set all business software to update automatically wherever possible. For specialized software that requires manual updates, build a monthly 15-minute update check into your routine. The Canadian Centre for Cyber Security's free baseline guide walks through exactly this.</div>
+          <p class="tcard-story">Security updates repair known weaknesses in computers, phones, routers, browsers, and key business software. Once a weakness is public, attackers can scan broadly for organizations that have not applied the fix.</p>
+          <p class="tcard-story"><strong>This is usually an operational problem, not a technical one:</strong> nobody owns the update routine, an old device is forgotten, or specialized software is excluded from automatic updates.</p>
+          <div class="tcard-tip">Assign one person or provider responsibility for updates — including the router, phones, browsers, and any software that falls outside automatic updates.</div>
           <div class="tcard-source">Source: <a href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline Controls</a></div>
         </div>
       </div>
 
       <div class="tcard reveal">
         <div class="tcard-top">
-          <div class="tcard-num">04</div>
-          <div class="tcard-icon">🔗</div>
-          <div class="tcard-threat-lbl">Systemic risk — trusted third parties</div>
-          <div class="tcard-title">A vendor or software tool your business trusts</div>
+          <div class="tcard-num" aria-hidden="true">04</div>
+          <div class="tcard-threat-lbl">Scenario — outside tools</div>
+          <div class="tcard-title">Outside tools holding client information</div>
         </div>
         <div class="tcard-body">
-          <p class="tcard-story">Booking, accounting, payroll, client-management, communications, and IT-support vendors may hold your data or have privileged access to your systems. A failure at one provider can affect many customers at once.</p>
-          <p class="tcard-story"><strong>Your organization remains accountable for understanding where sensitive information goes and what safeguards your providers use.</strong> The practical starting point is an inventory of vendors, data, access, contracts, and exit plans.</p>
-          <div class="tcard-stat">Third-party and supply-chain exposure is a core business-continuity and privacy risk</div>
-          <div class="tcard-tip">Knowing which vendors have access to your client data — and reviewing their security practices — is a core part of a cybersecurity audit. You can't protect what you haven't mapped, and third-party access is frequently overlooked.</div>
-          <div class="tcard-source">Sources: <a href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://www.priv.gc.ca/en/privacy-topics/business-privacy/safeguards-and-breaches/safeguarding-personal-information/gd_sec_201201/" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>
+          <p class="tcard-story">Booking, accounting, payroll, client-management, and IT-support providers may hold your client information or have privileged access to your systems. A failure at one provider can affect many of its customers at once.</p>
+          <p class="tcard-story"><strong>Your business remains responsible for understanding where client information goes</strong> and what safeguards your providers use.</p>
+          <div class="tcard-tip">Keep a simple list: each provider, the information they hold, who has access, a contact for problems, and how offboarding works when the relationship ends.</div>
+          <div class="tcard-source">Source: <a href="https://www.priv.gc.ca/en/privacy-topics/business-privacy/safeguards-and-breaches/safeguarding-personal-information/gd_sec_201201/" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada — Safeguarding personal information</a></div>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- WHO WE HELP -->
-<section class="sec who-sec" id="who">
-  <div class="sec-in">
-    <div class="stag reveal">Who We Work With</div>
-    <h2 class="reveal">Built for businesses that run on <em>client trust.</em></h2>
-    <p class="sec-lead reveal">If your organization holds personal information about clients — names, appointments, health details, payment records, or email addresses — privacy and security obligations may apply based on your activities, province, industry, and where the information travels. PrivaCore works with Canadian organizations that need a practical starting point.</p>
-    <div class="who-grid">
-      <div class="wcard reveal"><div class="wemoji">⚖️</div><div><div class="wname">Professional Services</div><div class="wdesc">Lawyers, accountants, financial advisors, and consultants holding confidential client files — high-value targets with significant regulatory obligations.</div><span class="wrisk risk-hi">High Exposure</span></div></div>
-      <div class="wcard reveal"><div class="wemoji">🏥</div><div><div class="wname">Healthcare-Adjacent</div><div class="wdesc">Clinics, therapists, wellness practitioners, and med-spas — health data is among the most sensitive information and the most targeted.</div><span class="wrisk risk-hi">High Exposure</span></div></div>
-      <div class="wcard reveal"><div class="wemoji">🏨</div><div><div class="wname">Hotels & Hospitality</div><div class="wdesc">Guest payment data, booking systems, and seasonal staff create multiple entry points that need consistent, documented management.</div><span class="wrisk risk-md">Moderate–High</span></div></div>
-      <div class="wcard reveal"><div class="wemoji">🛒</div><div><div class="wname">E-Commerce & Retail</div><div class="wdesc">Online transactions, customer records, and public-facing websites — each carries its own set of risks and compliance requirements.</div><span class="wrisk risk-md">Moderate–High</span></div></div>
-      <div class="wcard reveal"><div class="wemoji">🚀</div><div><div class="wname">Tech Startups</div><div class="wdesc">Enterprise clients and investors now require demonstrated security and privacy practices before signing any contract. We help you get there.</div><span class="wrisk risk-gr">Growing Requirement</span></div></div>
-      <div class="wcard reveal"><div class="wemoji">🤝</div><div><div class="wname">Non-Profits & Social Services</div><div class="wdesc">Privacy-law coverage varies by province and activity, but organizations serving vulnerable populations still need safeguards proportionate to the sensitivity of the information they hold.</div><span class="wrisk risk-md">Sensitive Information</span></div></div>
+    <div style="margin-top:48px">
+      <div class="stag reveal">Who we work with</div>
+      <h2 class="reveal" style="font-size:clamp(1.6rem,4.5vw,2.1rem)">Built for businesses that run on client trust.</h2>
+      <p class="sec-lead reveal" style="margin-bottom:8px">Owners of Canadian small businesses — often 5–25 people, without dedicated IT staff — who hold client information and want a practical, calm starting point.</p>
+      <div class="who-grid">
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🦷</div><div><div class="wname">Clinics &amp; Wellness Practices</div><div class="wdesc">Dental clinics, therapists, and wellness businesses holding appointment, health, and payment details.</div></div></div>
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">⚖️</div><div><div class="wname">Small Law &amp; Professional Offices</div><div class="wdesc">Lawyers, accountants, and advisors holding confidential client files and handling trust or payment instructions.</div></div></div>
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🏗️</div><div><div class="wname">Construction &amp; Trades</div><div class="wdesc">Crews that run on email, estimates, and supplier payments — where a single fake invoice can hurt.</div></div></div>
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🛒</div><div><div class="wname">Retailers &amp; E-Commerce</div><div class="wdesc">Customer records, online transactions, and public-facing websites, each carrying its own obligations.</div></div></div>
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🚀</div><div><div class="wname">Tech Startups</div><div class="wdesc">Enterprise clients and investors increasingly ask about security and privacy practices before signing.</div></div></div>
+        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🤝</div><div><div class="wname">Non-Profits &amp; Social Services</div><div class="wdesc">Organizations serving vulnerable populations need safeguards proportionate to the sensitivity of the information they hold.</div></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CANADIAN PRIVACY LAW -->
-<section class="law-sec" id="privacy-law">
+<!-- PRIVACY RESPONSIBILITIES -->
+<section class="law-sec on-dark" id="privacy-responsibilities" aria-labelledby="privacy-law-title">
   <div class="law-in">
-    <div class="stag reveal">Canadian Privacy Law</div>
-    <h2 class="reveal" style="color:#fff">Yes, you can be fined.<br>Here's what <em>actually</em> applies.</h2>
-    <p class="law-intro reveal">Canadian privacy obligations depend on your commercial activities, province, industry, and whether personal information crosses provincial or national borders. Size does not create a blanket exemption. Here is a practical overview — not legal advice.</p>
+    <div class="stag teal reveal">Canadian privacy context</div>
+    <h2 id="privacy-law-title" class="reveal">Privacy responsibilities: a practical starting point</h2>
+    <p class="law-intro reveal">Privacy responsibilities depend on what your business does, where it operates, what personal information it handles, and where that information travels. This overview is practical information, not legal advice.</p>
 
     <div class="law-cards reveal">
       <div class="law-card">
@@ -575,12 +319,12 @@ footer{background:#071829;padding:28px}
           <div class="law-card-scope">Enterprises subject to Quebec law</div>
         </div>
         <div class="law-card-desc">Quebec's private-sector privacy law, modernized by Law 25, requires accountable privacy governance, clear public privacy information, safeguards, incident assessment and reporting where serious injury risk exists, and privacy impact assessments in specified circumstances. Applicability outside Quebec is fact-specific and should not be assumed solely because one Quebec resident visits a website.</div>
-        <div class="law-card-fine">Maximum administrative penalties: $10 million or 2% of worldwide turnover; penal fines can reach $25 million or 4%</div>
+        <div class="law-card-fine">The statute provides for administrative penalties up to $10 million or 2% of worldwide turnover, and penal fines up to $25 million or 4%</div>
       </div>
 
       <div class="law-card">
         <div class="law-card-header">
-          <div class="law-card-name">BC PIPA & Alberta PIPA</div>
+          <div class="law-card-name">BC PIPA &amp; Alberta PIPA</div>
           <div class="law-card-scope">BC and Alberta businesses</div>
         </div>
         <div class="law-card-desc">British Columbia and Alberta have substantially similar private-sector privacy laws that generally govern intra-provincial handling of personal information. Both address consent, accountability, safeguards, and access, but their incident-reporting requirements are not identical. PIPEDA can still apply when personal information crosses provincial or national borders in commercial activities.</div>
@@ -598,7 +342,7 @@ footer{background:#071829;padding:28px}
     </div>
 
     <div class="law-72hr reveal">
-      <div class="law-72hr-title">⏱ PIPEDA timing: “as soon as feasible” — not a fixed 72 hours</div>
+      <div class="law-72hr-title">PIPEDA timing: “as soon as feasible” — not a fixed 72 hours</div>
       <div class="law-72hr-text">When a breach of security safeguards creates a real risk of significant harm, an organization subject to PIPEDA must report it to the Office of the Privacy Commissioner of Canada and notify affected individuals as soon as feasible after making that determination. It must also keep records of every breach, including those that do not meet the reporting threshold. A documented response process helps the organization assess, contain, record, and escalate incidents without losing critical time.</div>
     </div>
 
@@ -629,389 +373,52 @@ footer{background:#071829;padding:28px}
   </div>
 </section>
 
-<!-- HEALTH CHECK -->
-<section class="quiz-sec" id="health-check">
-  <div class="quiz-in">
-    <div class="quiz-hdr reveal">
-      <div class="stag teal">Free Cybersecurity Health Check</div>
-      <h2>What does your business currently have in place?</h2>
-      <p>10 plain-language questions about your existing protections. We'll show you what's working, where the gaps are, and what we'd recommend — with no pressure and no alarm. Think of it like a routine checkup, not an audit.</p>
-      <p style="font-size:.86rem;color:var(--ink3);margin-top:12px">This educational self-check is not a technical security assessment, certification, insurance evaluation, or legal opinion.</p>
-    </div>
-    <div class="quiz-card reveal">
-      <div id="qmain">
-        <div class="q-prog"><div class="q-prog-fill" id="qpf"></div></div>
-        <div class="q-meta"><span class="q-step" id="qstep">Question 1 of 10</span><span class="q-cat" id="qcat">Data Backups</span></div>
-
-        <div class="q-grp active" data-q="0" data-cat="Data Backups">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Good practice:</strong> The Canadian Centre for Cyber Security recommends regular backups that are stored separately and tested. A backup helps only if it can be restored when systems are unavailable.</span></div>
-          <div class="q-txt">Does your business have backups of important files and client data?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,0,10)"><div class="q-radio"></div>Yes — automated daily backups stored separately from our main systems</button>
-            <button type="button" class="q-opt" onclick="pick(this,0,5)"><div class="q-radio"></div>Yes — we back up occasionally, but not on a regular schedule</button>
-            <button type="button" class="q-opt" onclick="pick(this,0,0)"><div class="q-radio"></div>Not yet — we don't have a formal backup process in place</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="1" data-cat="Account Security">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Why it matters:</strong> Multi-factor authentication (MFA) adds another verification step so that a stolen password alone is less likely to give an attacker access. Start with business email and administrator accounts.</span></div>
-          <div class="q-txt">Do you use multi-factor authentication on your business email and key accounts?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,1,10)"><div class="q-radio"></div>Yes — MFA is enabled on all critical business accounts</button>
-            <button type="button" class="q-opt" onclick="pick(this,1,5)"><div class="q-radio"></div>Partially — some accounts have it but not all</button>
-            <button type="button" class="q-opt" onclick="pick(this,1,0)"><div class="q-radio"></div>Not yet — we use usernames and passwords only</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="2" data-cat="Staff Awareness">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>People need a process:</strong> Training works best when employees know exactly how to verify an unusual attachment, urgent request, or change in payment instructions — and can pause without being blamed for slowing things down.</span></div>
-          <div class="q-txt">Has your team had any training on recognizing phishing emails, suspicious attachments, or scam calls?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,2,10)"><div class="q-radio"></div>Yes — formal training in the last 12 months</button>
-            <button type="button" class="q-opt" onclick="pick(this,2,5)"><div class="q-radio"></div>Informally — we've discussed it, but no structured training</button>
-            <button type="button" class="q-opt" onclick="pick(this,2,0)"><div class="q-radio"></div>Not yet — this is something we know we need to address</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="3" data-cat="Incident Response">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Why a plan matters:</strong> During an incident, uncertainty wastes time. A usable plan identifies decision-makers, technical contacts, insurers, legal and privacy escalation, communications, evidence preservation, and backup procedures.</span></div>
-          <div class="q-txt">Does your business have a written plan for what to do if you're attacked or experience a data breach?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,3,10)"><div class="q-radio"></div>Yes — a documented incident response plan our team can follow</button>
-            <button type="button" class="q-opt" onclick="pick(this,3,5)"><div class="q-radio"></div>Roughly — there's a general understanding but nothing written down</button>
-            <button type="button" class="q-opt" onclick="pick(this,3,0)"><div class="q-radio"></div>Not yet — we would figure it out if it happened</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="4" data-cat="Email Fraud Protection">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>The loss can be immediate:</strong> The Canadian Anti-Fraud Centre recorded more than $67 million in reported spear-phishing losses in 2024. Verify every change to payment instructions using a trusted contact method — never the phone number supplied in the change request.</span></div>
-          <div class="q-txt">Do you have a process to verify payment changes or unusual financial requests received by email?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,4,10)"><div class="q-radio"></div>Yes — we always verify payment changes by phone or in person, no exceptions</button>
-            <button type="button" class="q-opt" onclick="pick(this,4,5)"><div class="q-radio"></div>Sometimes — it depends on the amount or who's asking</button>
-            <button type="button" class="q-opt" onclick="pick(this,4,0)"><div class="q-radio"></div>Not formally — we generally trust emails from known contacts</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="5" data-cat="Dark Web Exposure">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Exposure can happen elsewhere:</strong> A breach at an unrelated service may expose a reused business password. Exposure monitoring can provide a warning, but it does not replace unique passwords, MFA, access reviews, and prompt offboarding.</span></div>
-          <div class="q-txt">Have you ever checked whether your business email addresses or staff credentials are circulating on the dark web?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,5,10)"><div class="q-radio"></div>Yes — we've checked within the last year</button>
-            <button type="button" class="q-opt" onclick="pick(this,5,5)"><div class="q-radio"></div>Once a while ago — not something we check regularly</button>
-            <button type="button" class="q-opt" onclick="pick(this,5,0)"><div class="q-radio"></div>Not yet — we've never checked this</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="6" data-cat="Device & Software Security">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Known weaknesses are routinely targeted:</strong> Assign responsibility for updating operating systems, browsers, routers, business applications, and devices that may fall outside automatic updates.</span></div>
-          <div class="q-txt">Do your business devices and software receive regular security updates?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,6,10)"><div class="q-radio"></div>Yes — all devices and software are updated on a regular schedule</button>
-            <button type="button" class="q-opt" onclick="pick(this,6,5)"><div class="q-radio"></div>Partially — we update when prompted, but not on a set schedule</button>
-            <button type="button" class="q-opt" onclick="pick(this,6,0)"><div class="q-radio"></div>Not consistently — we rely on what was installed by default</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="7" data-cat="Vendor & Supplier Risk">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Your vendors extend your risk surface:</strong> Know which providers hold sensitive information or can access your systems, what the contract requires, how incidents will be communicated, and how your data can be returned or destroyed when the relationship ends.</span></div>
-          <div class="q-txt">Do you know which software tools or vendors have access to your client data — and have you reviewed their security practices?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,7,10)"><div class="q-radio"></div>Yes — we've mapped our vendors and reviewed their privacy and security practices</button>
-            <button type="button" class="q-opt" onclick="pick(this,7,5)"><div class="q-radio"></div>Partially — we know the main ones but haven't formally reviewed their practices</button>
-            <button type="button" class="q-opt" onclick="pick(this,7,0)"><div class="q-radio"></div>Not yet — we use several tools and haven't tracked this</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="8" data-cat="Legal Compliance">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Privacy coverage is fact-specific:</strong> PIPEDA applies to personal information handled in commercial activities within its scope. Reportable breaches must be reported and affected individuals notified as soon as feasible; the federal law does not impose a fixed 72-hour deadline.</span></div>
-          <div class="q-txt">Does your business have a current privacy policy, and do you understand your obligations under Canadian privacy law?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,8,10)"><div class="q-radio"></div>Yes — we have an up-to-date policy and understand our legal obligations</button>
-            <button type="button" class="q-opt" onclick="pick(this,8,5)"><div class="q-radio"></div>We have something — but it hasn't been reviewed recently</button>
-            <button type="button" class="q-opt" onclick="pick(this,8,0)"><div class="q-radio"></div>Not yet — this is an area we know we need to address</button>
-          </div>
-        </div>
-
-        <div class="q-grp" data-q="9" data-cat="Professional Assessment">
-          <div class="q-dyk"><span class="q-dyk-icon">💡</span><span class="q-dyk-text"><strong>Think of it like a routine checkup:</strong> An assessment should confirm what is working, identify evidence-based gaps, and produce a prioritized plan. Its purpose is clarity and better decisions — not manufactured urgency.</span></div>
-          <div class="q-txt">Has your business had a professional cybersecurity or privacy assessment in the last two years?</div>
-          <div class="q-opts">
-            <button type="button" class="q-opt" onclick="pick(this,9,10)"><div class="q-radio"></div>Yes — a professional reviewed our systems within the last two years</button>
-            <button type="button" class="q-opt" onclick="pick(this,9,5)"><div class="q-radio"></div>A while ago, or only informally reviewed</button>
-            <button type="button" class="q-opt" onclick="pick(this,9,0)"><div class="q-radio"></div>Not yet — this would be our first assessment</button>
-          </div>
-        </div>
-
-        <!-- Live score -->
-        <div class="q-live" id="qlive">
-          <div class="q-grade-row">
-            <div class="q-grade-letter" id="qlive-letter">—</div>
-            <div class="q-grade-info">
-              <div class="q-grade-label" id="qlive-label">Answering questions…</div>
-              <div class="q-grade-desc" id="qlive-desc">Your grade will appear as you complete the check</div>
-            </div>
-          </div>
-          <div class="q-bars" id="qbars"></div>
-        </div>
-
-        <div class="q-nav">
-          <button type="button" class="btn-qprev" id="btn-prev" onclick="prevQ()" style="visibility:hidden">← Back</button>
-          <button type="button" class="btn-qnext" id="btn-next" onclick="nextQ()" disabled>Next →</button>
-        </div>
-      </div>
-
-      <!-- Results -->
-      <div class="q-results" id="qresults">
-        <div class="res-grade-row">
-          <div class="res-grade-box" id="res-grade-box"></div>
-          <div>
-            <div class="res-grade-title" id="res-grade-title"></div>
-            <div class="res-grade-sub" id="res-grade-sub"></div>
-          </div>
-        </div>
-        <div id="res-strengths" class="res-block res-strengths-block"></div>
-        <div id="res-gaps" class="res-block res-gaps-block"></div>
-        <div id="res-next" class="res-next"></div>
-        <div class="res-ctas">
-          <a href="#contact" class="btn-res-main">Book a Free Consultation →</a>
-          <button type="button" class="btn-res-restart" onclick="resetQ()">← Retake the health check</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section class="sec pkg-sec" id="packages">
-  <div class="sec-in">
-    <div class="pkg-intro reveal">
-      <div class="stag">Audit Packages</div>
-      <h2>Know exactly where you stand.</h2>
-      <p class="sec-lead">Every engagement is founder-led, with specialist technical support added when the scope requires it. You receive a plain-language report, a prioritized action list, and a follow-up call to walk through the findings — not a technical document that sits in a drawer.</p>
-    </div>
-    <div class="pkg-cards">
-
-      <div class="pkg reveal">
-        <div class="pkg-head">
-          <div class="pkg-tier">Tier 1 · Micro Business</div>
-          <div class="pkg-name">Cyber Essentials</div>
-          <div class="pkg-who">Under 10 employees · Solo operators</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>497</div><div class="pkg-price-note">starting, one-time</div></div>
-          <div class="pkg-delivery">Typical target: 5 business days after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">What's included</div>
-          <ul class="pkg-feats">
-            <li>Cybersecurity health review — email, passwords, backups, devices, and remote access</li>
-            <li>Credential-exposure scan through a vetted provider — are business addresses or credentials present in known breach data?</li>
-            <li>Plain-language risk report: what you have, what to address, in what order</li>
-            <li>Privacy-practice checklist for your business and website, mapped to applicable Canadian requirements</li>
-            <li>30-minute follow-up call to review findings and priorities</li>
-            <li>Technical remediation can be scoped separately with vetted providers when needed</li>
-          </ul>
-          <div class="pkg-shield-box">
-            <div class="psb-lbl">🛡 Optional Ongoing Support</div>
-            <div class="psb-name">Advisory & Remediation Support</div>
-            <div class="psb-price">Scoped after your audit</div>
-            <ul class="psb-items">
-              <li>Remediation planning and provider coordination</li>
-              <li>Exposure-monitoring options through vetted providers</li>
-              <li>Scheduled advisory check-ins</li>
-            </ul>
-          </div>
-          <a href="#contact" class="pkg-cta">Start My Audit</a>
-        </div>
-      </div>
-
-      <div class="pkg featured reveal">
-        <div class="pkg-head">
-          <div class="pkg-badge">Most Popular</div>
-          <div class="pkg-tier">Tier 2 · Small Business</div>
-          <div class="pkg-name">Business Shield</div>
-          <div class="pkg-who">10–25 employees · Established SMB</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>1,197</div><div class="pkg-price-note">starting, one-time</div></div>
-          <div class="pkg-delivery">Typical target: 10 business days after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">Everything in Cyber Essentials, plus</div>
-          <ul class="pkg-feats">
-            <li>Business Email Compromise (BEC) assessment — payment, email, and impersonation risk</li>
-            <li>Custom Incident Response Plan — a clear, written guide for the first critical hours and days</li>
-            <li>Staff phishing awareness training — live virtual session for up to 15 team members</li>
-            <li>Vendor and third-party risk review — up to 3 vendors that access your client data</li>
-            <li>CyberSecure Canada readiness gap assessment</li>
-            <li>Website privacy review — notices, consent, collection practices, and required disclosures</li>
-          </ul>
-          <div class="pkg-shield-box">
-            <div class="psb-lbl">🛡 Optional Ongoing Support</div>
-            <div class="psb-name">Implementation & Advisory</div>
-            <div class="psb-price">Scoped after your audit</div>
-            <ul class="psb-items">
-              <li>Remediation roadmap and implementation coordination</li>
-              <li>Endpoint-protection options through vetted providers</li>
-              <li>Exposure-monitoring options based on confirmed scope</li>
-              <li>Scheduled security and privacy reviews</li>
-              <li>Policy update notifications as Canadian law evolves</li>
-            </ul>
-          </div>
-          <a href="#contact" class="pkg-cta">Start My Audit</a>
-        </div>
-      </div>
-
-      <div class="pkg reveal">
-        <div class="pkg-head">
-          <div class="pkg-tier">Tier 3 · Medium Business</div>
-          <div class="pkg-name">Full Protection Program</div>
-          <div class="pkg-who">25–100 employees · Growing company</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>2,497</div><div class="pkg-price-note">starting, one-time</div></div>
-          <div class="pkg-delivery">Typical target: 15 business days after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">Everything in Business Shield, plus</div>
-          <ul class="pkg-feats">
-            <li>Domain exposure scan for staff email addresses through a vetted provider</li>
-            <li>Staff training for up to 40 employees — including sector-specific scenarios</li>
-            <li>CyberSecure Canada readiness gap assessment and roadmap</li>
-            <li>Vendor risk review for up to 8 vendors</li>
-            <li>Executive risk briefing deck for your leadership team or board</li>
-            <li>4 quarterly review sessions included for the following 12 months</li>
-          </ul>
-          <div class="pkg-shield-box">
-            <div class="psb-lbl">🛡 Optional Ongoing Support</div>
-            <div class="psb-name">Governance & Managed-Security Coordination</div>
-            <div class="psb-price">Custom written scope</div>
-            <ul class="psb-items">
-              <li>Governance cadence and remediation tracking</li>
-              <li>Partner-delivered endpoint and monitoring options</li>
-              <li>Incident-readiness exercises and escalation planning</li>
-              <li>Priority advisory support under agreed service terms</li>
-              <li>Quarterly executive security briefing</li>
-            </ul>
-          </div>
-          <a href="#contact" class="pkg-cta">Start My Audit</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <!-- ONGOING SUPPORT -->
-<section class="shield-sec" id="ongoing-support">
+<section class="shield-sec on-dark" id="ongoing-support" aria-labelledby="support-title">
   <div class="shield-in">
-    <div class="stag reveal">Implementation & Ongoing Support</div>
-    <h2 class="reveal" style="color:#fff">Turn findings into <em>finished work.</em></h2>
-    <p class="shield-lead reveal">An assessment tells you where you stand. The next step is closing the gaps. PrivaCore can support implementation, coordinate vetted technical providers, and establish a practical governance rhythm. Any monitoring, endpoint, or incident-response service is confirmed in a written scope that identifies the provider, coverage, service levels, device counts, and price.</p>
+    <div class="stag teal reveal">Implementation &amp; ongoing support</div>
+    <h2 id="support-title" class="reveal">Turn findings into finished work.</h2>
+    <p class="shield-lead reveal">An audit tells you where you stand. The next step is closing the gaps. PrivaCore offers readiness check-ins, remediation support, and partner-supported managed-protection coordination. Pricing is quoted to scope, and any monitoring, endpoint, or incident-response service is confirmed in a written scope that identifies the provider, coverage, service levels, device counts, and price.</p>
     <div class="shield-pillars reveal">
-      <div class="spill"><div class="spill-icon">🧭</div><div><div class="spill-title">Remediation Roadmap</div><div class="spill-desc">Convert findings into owners, priorities, dependencies, target dates, and evidence of completion.</div></div></div>
-      <div class="spill"><div class="spill-icon">💻</div><div><div class="spill-title">Technical Provider Coordination</div><div class="spill-desc">Define requirements, compare provider options, and coordinate endpoint, backup, identity, and monitoring work without pretending advisory and operations are the same service.</div></div></div>
-      <div class="spill"><div class="spill-icon">📋</div><div><div class="spill-title">Privacy & Security Governance</div><div class="spill-desc">Maintain policies, inventories, vendor reviews, incident records, training, and recurring oversight so improvements do not fade after the project ends.</div></div></div>
-      <div class="spill"><div class="spill-icon">📞</div><div><div class="spill-title">Incident Readiness</div><div class="spill-desc">Clarify contacts, decisions, notification assessment, communications, evidence preservation, insurer requirements, and recovery priorities before an incident occurs.</div></div></div>
+      <div class="spill"><div class="spill-icon" aria-hidden="true">🧭</div><div><div class="spill-title">Readiness check-ins</div><div class="spill-desc">Scheduled reviews that keep your action list moving: owners, priorities, target dates, and evidence of completion.</div></div></div>
+      <div class="spill"><div class="spill-icon" aria-hidden="true">🛠️</div><div><div class="spill-title">Remediation support</div><div class="spill-desc">Convert findings into a roadmap and coordinate the vetted technical providers who carry out the work.</div></div></div>
+      <div class="spill"><div class="spill-icon" aria-hidden="true">📋</div><div><div class="spill-title">Privacy &amp; security governance</div><div class="spill-desc">Maintain policies, inventories, vendor reviews, incident records, and training so improvements do not fade after the project ends.</div></div></div>
+      <div class="spill"><div class="spill-icon" aria-hidden="true">🤝</div><div><div class="spill-title">Managed-protection coordination</div><div class="spill-desc">Partner-supported endpoint, backup, identity, and monitoring options — defined in writing with the provider named and responsibilities made clear.</div></div></div>
     </div>
-    <div class="shield-plans reveal">
-      <div class="splan"><div><div class="splan-tier">Advisory</div><div class="splan-name">Readiness Check-ins</div><div class="splan-items">Action tracking · Policy guidance · Vendor questions · Scheduled reviews</div></div><div><div class="splan-price">Quote</div><div class="splan-cycle">to scope</div></div></div>
-      <div class="splan hl"><div><div class="splan-tier">Implementation</div><div class="splan-name">Remediation Support</div><div class="splan-items">Roadmap · Provider coordination · Evidence · Change support</div></div><div><div class="splan-price">Quote</div><div class="splan-cycle">to scope</div></div></div>
-      <div class="splan"><div><div class="splan-tier">Partner-Supported</div><div class="splan-name">Managed Protection Options</div><div class="splan-items">Endpoint · Backup · Identity · Monitoring options under written service terms</div></div><div><div class="splan-price">Quote</div><div class="splan-cycle">to scope</div></div></div>
-    </div>
-    <div class="shield-note reveal"><strong>How it works:</strong> We first confirm the gap, desired outcome, responsible provider, and evidence needed. You receive a written scope before any recurring or partner-delivered service begins. No claim of 24/7 coverage applies unless it is expressly included in that agreement.</div>
-    <a href="#contact" class="btn-teal reveal">Discuss Ongoing Support →</a>
+    <div class="shield-note reveal"><strong>How it works:</strong> We first confirm the gap, desired outcome, responsible provider, and evidence needed. Pricing is quoted to scope, and you receive a written scope before any recurring or partner-delivered service begins. No claim of 24/7 coverage applies unless it is expressly included in a written agreement.</div>
+    <a href="/contact?interest=implementation" class="btn-teal reveal" data-testid="ongoing-support-cta">Discuss ongoing support →</a>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="sec about-sec" id="about">
-  <div class="sec-in">
-    <div class="stag reveal">About PrivaCore Group</div>
-    <h2 class="reveal">Founder-led Canadian experience.<br><em>No fluff. No fear tactics.</em></h2>
-    <p class="sec-lead reveal">PrivaCore Group is a Vancouver-based, founder-led privacy, cybersecurity governance, and risk advisory. Founder Arlene Chamulak brings 15+ years of program leadership across privacy remediation, cybersecurity, audit, regulatory change, and organizational change in regulated environments — including work with RBC, BNP Paribas, Shaw Communications, and the BC Financial Services Authority.</p>
-    <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--ink2);margin-bottom:6px">That experience includes privacy impact and remediation programs, data protection controls, audit and governance work, vendor risk, incident-readiness planning, and translating technical obligations into operating processes that people can follow.</p>
-    <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--ink2);margin-bottom:28px">PrivaCore does not use fear to manufacture urgency. Recommendations are prioritized by evidence, business impact, legal context, and what is realistic for the organization. When specialist technical work is required, the provider and responsibility are made clear.</p>
-    <ul class="trust-list">
-      <li>PMP · PROSCI · CSPO — senior program delivery and organizational change credentials</li>
-      <li>15+ years across financial services, telecom, public sector, healthcare, airline, and retail environments</li>
-      <li>Experience spanning privacy, cybersecurity governance, audit remediation, data protection, and regulatory delivery</li>
-      <li>Based in Vancouver, BC — serving businesses from Victoria to Halifax</li>
-      <li>Specialist technical services identified transparently and scoped separately where required</li>
-      <li>Clearly scoped audits — starting prices, deliverables, assumptions, and exclusions confirmed before work begins</li>
-      <li>Material statistics and legal claims link to source material for independent review</li>
-    </ul>
-    <div class="about-quote reveal">
-      <blockquote>In 2023, 16% of Canadian businesses reported being impacted by cybersecurity incidents, while recovery spending reached $1.2 billion.</blockquote>
-      <cite>Statistics Canada, Canadian Survey of Cyber Security and Cybercrime, released October 2024</cite>
-    </div>
-    <div class="fact-box reveal"><div class="fact-icon">🇨🇦</div><div><div class="fact-title">Canadian law. Canadian experience. Canadian sources.</div><div class="fact-text">Our work addresses PIPEDA, Quebec's private-sector privacy law, BC PIPA, and Alberta PIPA in the context that applies to each organization. Statistics and legal claims link to their sources so you can check them directly.</div></div></div>
-    <div class="fact-box reveal"><div class="fact-icon">🩺</div><div><div class="fact-title">A health check, not a scare tactic</div><div class="fact-text">We identify what you have in place, what requires evidence, and what should be addressed first. The objective is a practical prioritized plan — no pressure, no manufactured urgency.</div></div></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact-sec" id="contact">
+<!-- CONTACT CTA -->
+<section class="contact-sec on-dark" id="contact" aria-labelledby="contact-title">
   <div class="contact-in">
-    <div class="stag">Get in Touch</div>
-    <h2>Let's talk about where you stand.</h2>
-    <p class="sec-lead">Tell us about your business and we'll respond within one business day. The first conversation is free — no pressure and no manufactured urgency. You'll speak directly with the founder about what makes sense for your organization.</p>
-    <div class="contact-details">
-      <a href="mailto:info@privacoregroup.com" class="contact-detail">
-        <span class="cd-icon">✉</span>
-        <span class="cd-text">info@privacoregroup.com</span>
-      </a>
-      <a href="tel:6043411651" class="contact-detail">
-        <span class="cd-icon">📞</span>
-        <span class="cd-text">604-341-1651</span>
-      </a>
-    </div>
-    <div class="cform">
-      <form id="cform" name="privacore-contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="privacore-contact">
-        <p class="sr-only"><label>Do not fill this out if you are human: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-        <div class="fgrp"><label class="flbl" for="contact-name">Your Name</label><input class="finp" id="contact-name" type="text" name="name" placeholder="Jane Smith" autocomplete="name" required></div>
-        <div class="fgrp"><label class="flbl" for="contact-email">Email Address</label><input class="finp" id="contact-email" type="email" name="email" placeholder="jane@yourbusiness.com" autocomplete="email" required></div>
-        <div class="fgrp"><label class="flbl" for="contact-business">Business Name & Number of Employees</label><input class="finp" id="contact-business" type="text" name="business" placeholder="Smith Law — 8 employees" autocomplete="organization"></div>
-        <div class="fgrp">
-          <label class="flbl" for="contact-service">What would you like to explore?</label>
-          <select class="finp" id="contact-service" name="service">
-            <option value="" disabled selected>Choose a starting point</option>
-            <optgroup label="Audit Packages">
-              <option>Cyber Essentials Audit — $497 (under 10 employees)</option>
-              <option>Business Shield Audit — $1,197 (10–25 employees)</option>
-              <option>Full Protection Program — $2,497 (25–100 employees)</option>
-            </optgroup>
-            <optgroup label="Implementation & Ongoing Support">
-              <option>Implementation and ongoing advisory — scope after assessment</option>
-              <option>Managed-security provider coordination — scope after assessment</option>
-            </optgroup>
-            <option>Not sure yet — I'd like to have a conversation first</option>
-          </select>
-        </div>
-        <div class="fgrp"><label class="flbl" for="contact-message">Tell us about your business</label><textarea class="finp" id="contact-message" name="message" placeholder="What does your business do, how many people are on your team, and is there anything specific on your mind? Please do not submit passwords, financial data, health information, or other sensitive personal information."></textarea></div>
-        <label class="consent-row" for="privacy-consent"><input id="privacy-consent" type="checkbox" name="privacy-consent" value="agreed" required><span>I agree that PrivaCore may use the information I submit to respond to this inquiry, as described in the <a href="#privacy">privacy notice</a>.</span></label>
-        <div class="form-foot">
-          <button type="submit" class="btn-full form-submit">Send Message →</button>
-          <div class="form-note">We respond within 1 business day.<br>First call is always free.</div>
-        </div>
-      </form>
-      <div class="fsuc" id="fsuc" role="status" aria-live="polite" tabindex="-1"><h3>Message received ✓</h3><p>We'll be in touch within one business day. If it's urgent, email us directly at info@privacoregroup.com</p></div>
+    <div class="stag reveal">Get in touch</div>
+    <h2 id="contact-title" class="reveal">Let's talk about where you stand.</h2>
+    <div class="contact-panel reveal">
+      <p>Tell us about your business and we'll respond within one business day. The first conversation is free — no pressure and no manufactured urgency. You'll speak directly with the founder about what makes sense for your organization.</p>
+      <a href="/contact" class="cta-big" data-testid="contact-page-cta">Go to the contact form →</a>
+      <div class="contact-details">
+        <a href="mailto:info@privacoregroup.com" class="contact-detail" data-testid="contact-email-link"><span class="cd-icon" aria-hidden="true">✉</span><span class="cd-text">info@privacoregroup.com</span></a>
+        <a href="tel:+16043411651" class="contact-detail" data-testid="contact-phone-link"><span class="cd-icon" aria-hidden="true">📞</span><span class="cd-text">604-341-1651</span></a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PRIVACY NOTICE -->
+<!-- WEBSITE PRIVACY NOTICE -->
 <section class="sec privacy-sec" id="privacy" aria-labelledby="privacy-title">
   <div class="sec-in">
-    <div class="stag">Website Privacy Notice</div>
-    <h2 id="privacy-title">How we handle your contact information.</h2>
-    <p class="sec-lead">C-Success Corp, operating as PrivaCore Group, uses the information you submit through this website only for the purposes described below. Please do not send passwords, financial information, health information, or other sensitive personal information through the form.</p>
+    <div class="stag reveal">Website privacy notice</div>
+    <h2 id="privacy-title" class="reveal">How we handle your contact information.</h2>
+    <p class="sec-lead reveal">C-Success Corp, operating as PrivaCore Group, uses the information you submit through this website only for the purposes described below. Please do not send passwords, financial information, health information, or other sensitive personal information through the form.</p>
     <div class="privacy-grid">
-      <div class="privacy-card"><h3>What we collect</h3><p>Your name, email address, business information, service interest, message, and your consent record when you use the contact form.</p></div>
-      <div class="privacy-card"><h3>Why we collect it</h3><p>To respond to your inquiry, discuss requested services, manage a prospective or existing business relationship, protect the site, and meet applicable legal obligations.</p></div>
-      <div class="privacy-card"><h3>Service providers and disclosure</h3><p>Netlify hosts this website and processes form submissions. Email and other service providers may process information when we respond. We do not sell contact-form information or use it for third-party advertising.</p></div>
-      <div class="privacy-card"><h3>Retention and your choices</h3><p>We retain inquiry information only as long as reasonably needed for the purposes above, security, and applicable legal requirements, then delete or anonymize it. To ask about, correct, or request deletion of your information, email <a href="mailto:info@privacoregroup.com">info@privacoregroup.com</a>.</p></div>
+      <div class="privacy-card reveal"><h3>What we collect</h3><p>Your name, email address, business information, service interest, message, and your consent record when you use the contact form.</p></div>
+      <div class="privacy-card reveal"><h3>Why we collect it</h3><p>To respond to your inquiry, discuss requested services, manage a prospective or existing business relationship, protect the site, and meet applicable legal obligations.</p></div>
+      <div class="privacy-card reveal"><h3>Service providers and disclosure</h3><p>Netlify hosts this website and processes form submissions. Email and other service providers may process information when we respond. We do not sell contact-form information or use it for third-party advertising.</p></div>
+      <div class="privacy-card reveal"><h3>Retention and your choices</h3><p>We retain inquiry information only as long as reasonably needed for the purposes above, security, and applicable legal requirements, then delete or anonymize it. To ask about, correct, or request deletion of your information, email <a href="mailto:info@privacoregroup.com">info@privacoregroup.com</a>.</p></div>
     </div>
-    <p class="privacy-updated">Last updated: August 18, 2026. This notice may be updated when the website, service providers, or legal requirements change.</p>
+    <p class="privacy-updated">Last updated: August 2026. This notice may be updated when the website, service providers, or legal requirements change.</p>
   </div>
 </section>
 
@@ -1020,152 +427,27 @@ footer{background:#071829;padding:28px}
 <!-- FOOTER -->
 <footer>
   <div class="foot-in">
-    <a href="#main-content" class="foot-logo">Priva<span>Core</span> Group</a>
-    <ul class="foot-links">
-      <li><a href="#threats">Real Threats</a></li>
-      <li><a href="#health-check">Health Check</a></li>
-      <li><a href="#packages">Packages</a></li>
-      <li><a href="#ongoing-support">Ongoing Support</a></li>
-      <li><a href="#privacy-law">Privacy Law</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#privacy">Privacy Notice</a></li>
-    </ul>
     <div>
-      <div class="foot-sources">Statistics sourced from: <a href="https://cyber.gc.ca" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www150.statcan.gc.ca" target="_blank" rel="noopener noreferrer">Statistics Canada CSCSC</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey</a> · <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon DBIR</a> · <a href="https://priv.gc.ca" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>
-      <div class="foot-copy" style="margin-top:8px">© 2026 PrivaCore Group (C-Success Corp) · Vancouver, BC · info@privacoregroup.com · 604-341-1651</div>
+      <a href="/#main-content" class="foot-logo">Priva<span>Core</span> Group</a>
+      <div class="foot-copy" style="margin-top:10px">© 2026 PrivaCore Group (C-Success Corp) · Vancouver, BC<br><a href="mailto:info@privacoregroup.com" style="color:rgba(255,255,255,.72)">info@privacoregroup.com</a> · <a href="tel:+16043411651" style="color:rgba(255,255,255,.72)">604-341-1651</a></div>
     </div>
+    <ul class="foot-links">
+      <li><a href="/#health-check">Health Check</a></li>
+      <li><a href="/#packages">Packages</a></li>
+      <li><a href="/#how-it-works">How It Works</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#risks">Practical Risks</a></li>
+      <li><a href="/#privacy-responsibilities">Privacy Responsibilities</a></li>
+      <li><a href="/#ongoing-support">Ongoing Support</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/exposure-check">Health Check Page</a></li>
+      <li><a href="/#privacy">Privacy Notice</a></li>
+    </ul>
+    <div class="foot-sources">Statistics sourced from: <a href="https://cyber.gc.ca" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www150.statcan.gc.ca" target="_blank" rel="noopener noreferrer">Statistics Canada CSCSC</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey</a> · <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon DBIR</a> · <a href="https://priv.gc.ca" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>
   </div>
 </footer>
 
-<script>
-// Scroll reveal
-const revealEls=document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window){
-  const revealObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');revealObserver.unobserve(e.target)}}),{threshold:.07});
-  revealEls.forEach(el=>revealObserver.observe(el));
-}else revealEls.forEach(el=>el.classList.add('vis'));
-
-// Quiz
-const qCats=['Data Backups','Account Security','Staff Awareness','Incident Response','Email Fraud Protection','Dark Web Exposure','Device & Software Security','Vendor & Supplier Risk','Legal Compliance','Professional Assessment'];
-function getGrade(pct){
-  if(pct>=85)return{letter:'A',color:'#2E7D32',bg:'rgba(46,125,50,.12)',label:'Grade A — Excellent',sub:'Your business has strong cybersecurity foundations in place. Let\'s confirm everything holds up under professional review.'};
-  if(pct>=70)return{letter:'B',color:'#558B2F',bg:'rgba(85,139,47,.12)',label:'Grade B — Good',sub:'Solid basics in place with a few areas to strengthen. A targeted audit will identify exactly where to focus.'};
-  if(pct>=55)return{letter:'C',color:'#F57F17',bg:'rgba(245,127,23,.12)',label:'Grade C — Fair',sub:'Some protections in place but meaningful gaps remain. The right audit will give you a clear, prioritized path forward.'};
-  if(pct>=35)return{letter:'D',color:'#E65100',bg:'rgba(230,81,0,.12)',label:'Grade D — Needs Attention',sub:'Several important protections are missing. The good news: these are fixable quickly with the right guidance.'};
-  return{letter:'F',color:'#C62828',bg:'rgba(198,40,40,.10)',label:'Grade F — At Risk',sub:'Significant gaps appear across multiple areas. A structured review can help you confirm priorities and build a practical improvement plan.'};
-}
-let cur=0,ans=new Array(10).fill(null);
-function pick(btn,qi,score){
-  btn.closest('.q-grp').querySelectorAll('.q-opt').forEach(b=>{b.classList.remove('sel');b.setAttribute('aria-pressed','false')});
-  btn.classList.add('sel');btn.setAttribute('aria-pressed','true');ans[qi]=score;
-  document.getElementById('btn-next').disabled=false;
-  updateLive();
-}
-function updateLive(){
-  const filled=ans.filter(a=>a!==null);
-  if(!filled.length)return;
-  const total=Math.round(filled.reduce((s,a)=>s+a,0)/filled.length*10);
-  const g=getGrade(total);
-  document.getElementById('qlive').classList.add('show');
-  const gl=document.getElementById('qlive-letter');
-  gl.textContent=g.letter;gl.style.color=g.color;
-  document.getElementById('qlive-label').textContent=g.label;
-  document.getElementById('qlive-desc').textContent=g.sub;
-  const bars=document.getElementById('qbars');
-  bars.innerHTML=qCats.map((cat,i)=>{
-    const v=ans[i];if(v===null)return'';
-    const col=v===10?'#2E7D32':v===5?'#E8813A':'#C62828';
-    const lbl=v===10?'✓ In place':v===5?'Partial':'Not yet';
-    return`<div class="q-bar-row"><div class="q-bar-meta"><span>${cat}</span><span style="color:${col};font-weight:600">${lbl}</span></div><div class="q-bar-track"><div class="q-bar-fill" style="width:${v*10}%;background:${col}"></div></div></div>`;
-  }).join('');
-}
-function nextQ(){
-  const gs=document.querySelectorAll('.q-grp');
-  if(cur<9){
-    gs[cur].classList.remove('active');cur++;gs[cur].classList.add('active');
-    document.getElementById('btn-prev').style.visibility='visible';
-    document.getElementById('btn-next').disabled=ans[cur]===null;
-    document.getElementById('btn-next').textContent=cur===9?'See My Results →':'Next →';
-    document.getElementById('qpf').style.width=((cur+1)/10*100)+'%';
-    document.getElementById('qstep').textContent='Question '+(cur+1)+' of 10';
-    document.getElementById('qcat').textContent=qCats[cur];
-  }else showResults();
-}
-function prevQ(){
-  if(cur>0){
-    document.querySelectorAll('.q-grp')[cur].classList.remove('active');cur--;
-    document.querySelectorAll('.q-grp')[cur].classList.add('active');
-    document.getElementById('btn-prev').style.visibility=cur===0?'hidden':'visible';
-    document.getElementById('btn-next').disabled=false;
-    document.getElementById('btn-next').textContent='Next →';
-    document.getElementById('qpf').style.width=((cur+1)/10*100)+'%';
-    document.getElementById('qstep').textContent='Question '+(cur+1)+' of 10';
-    document.getElementById('qcat').textContent=qCats[cur];
-  }
-}
-function showResults(){
-  const total=Math.round(ans.reduce((s,a)=>s+(a||0),0)/10);
-  document.getElementById('qmain').style.display='none';
-  document.getElementById('qresults').classList.add('show');
-  const g=getGrade(total);
-  const gb=document.getElementById('res-grade-box');
-  gb.textContent=g.letter;gb.style.color=g.color;gb.style.background=g.bg;
-  document.getElementById('res-grade-title').textContent=g.label;
-  document.getElementById('res-grade-sub').textContent=g.sub;
-  const strengths=qCats.filter((_,i)=>ans[i]===10);
-  const partials=qCats.filter((_,i)=>ans[i]===5);
-  const gaps=qCats.filter((_,i)=>ans[i]===0);
-  const strEl=document.getElementById('res-strengths');
-  if(strengths.length>0){
-    strEl.innerHTML='<div class="res-block-lbl">What you have in place ✓</div>'+strengths.map(s=>`<div class="res-item strength">${s}</div>`).join('');
-  }else{
-    strEl.innerHTML='<div class="res-block-lbl">What you have in place ✓</div><div class="res-item strength" style="opacity:.6;font-style:italic">No fully implemented protections identified yet — that\'s exactly what an audit is designed to address, systematically and without pressure.</div>';
-  }
-  const gapEl=document.getElementById('res-gaps');
-  const toAddr=[...gaps,...partials].slice(0,5);
-  if(toAddr.length>0){
-    gapEl.innerHTML='<div class="res-block-lbl">Areas to address →</div>'+toAddr.map(g2=>`<div class="res-item gap">${g2}${partials.includes(g2)?' — partially in place, worth formalizing':''}</div>`).join('');
-  }else{
-    gapEl.innerHTML='<div class="res-block-lbl">Areas to address →</div><div class="res-item gap" style="opacity:.7">No significant gaps identified. A professional audit will confirm your current posture and give you documentation to share with clients or partners.</div>';
-  }
-  const nxt=document.getElementById('res-next');
-  let nTitle,nDesc;
-  if(total>=85){nTitle='Recommended: Cyber Essentials Audit — $497';nDesc='Your foundations are strong. A professional audit confirms and documents your current posture — giving you something concrete to show clients, insurers, or partners who ask about your security practices.';}
-  else if(total>=70){nTitle='Recommended: Cyber Essentials Audit — $497';nDesc='You\'re in good shape overall. A targeted audit identifies the specific gaps in your current setup and gives you a clear, prioritized plan to close them — usually straightforward fixes once you know where to look.';}
-  else if(total>=55){nTitle='Recommended: Business Shield Audit — $1,197';nDesc='You have some protections in place but meaningful gaps remain. The Business Shield audit covers your full security posture plus a Business Email Compromise assessment, staff training, and a custom Incident Response Plan.';}
-  else if(total>=35){nTitle='Recommended: Business Shield Audit — $1,197';nDesc='Several important protections are missing. The Business Shield audit is built exactly for businesses at this stage — thorough, practical, and gives you a complete picture plus a clear roadmap, not just a list of problems.';}
-  else{nTitle='Let\'s start with a conversation — no charge';nDesc='There are meaningful gaps across multiple areas. The right starting point depends on your business size and priorities. Our first consultation is free, and we\'ll tell you honestly which package makes sense — and whether you can address anything yourself before spending a dollar.';}
-  nxt.innerHTML=`<div class="res-next-lbl">Your recommended next step</div><div class="res-next-title">${nTitle}</div><div class="res-next-desc">${nDesc}</div>`;
-}
-function resetQ(){
-  ans.fill(null);cur=0;
-  document.querySelectorAll('.q-grp').forEach((g,i)=>{g.classList.toggle('active',i===0);g.querySelectorAll('.q-opt').forEach(b=>{b.classList.remove('sel');b.setAttribute('aria-pressed','false')})});
-  document.getElementById('qmain').style.display='';
-  document.getElementById('qresults').classList.remove('show');
-  document.getElementById('btn-prev').style.visibility='hidden';
-  document.getElementById('btn-next').disabled=true;
-  document.getElementById('btn-next').textContent='Next →';
-  document.getElementById('qpf').style.width='10%';
-  document.getElementById('qstep').textContent='Question 1 of 10';
-  document.getElementById('qcat').textContent=qCats[0];
-  document.getElementById('qlive').classList.remove('show');
-  document.getElementById('qbars').innerHTML='';
-}
-// Form
-const cf=document.getElementById('cform');
-document.querySelectorAll('.q-opt').forEach(b=>b.setAttribute('aria-pressed','false'));
-if(cf)cf.addEventListener('submit',async e=>{
-  e.preventDefault();
-  const btn=cf.querySelector('button[type=submit]');
-  btn.textContent='Sending…';btn.disabled=true;
-  try{
-    const response=await fetch(cf.action||'/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(cf)).toString()});
-    if(!response.ok)throw new Error('Form submission failed');
-    cf.style.display='none';
-    const success=document.getElementById('fsuc');success.style.display='block';success.focus();
-  }catch{btn.textContent='Send Message →';btn.disabled=false;alert('Something went wrong — email info@privacoregroup.com');}
-});
-</script>
+<script src="/assets/site.js" defer></script>
+<script src="/assets/health-check.js" defer></script>
 </body>
 </html>
