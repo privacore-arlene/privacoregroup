@@ -384,6 +384,22 @@ footer{background:#071829;padding:32px 24px}
 .sig-role{font-size:.92rem;color:var(--body);margin-top:2px}
 .sig-creds{font-size:.82rem;font-weight:700;letter-spacing:.07em;color:var(--accent);margin-top:6px}
 
+/* ── ABOUT PHOTO + CREDENTIALS ── */
+.about-grid{display:flex;flex-direction:column;gap:26px}
+.about-photo{margin:0}
+.about-photo img{width:100%;max-width:340px;height:auto;border-radius:18px;border:1px solid var(--rule);box-shadow:0 10px 34px rgba(15,39,68,.12);display:block}
+.about-photo-cap{font-size:.82rem;font-weight:600;color:var(--muted);margin-top:10px;letter-spacing:.04em}
+.cred-strip{display:flex;flex-direction:column;gap:10px;margin:6px 0 20px}
+.cred-card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:3px 14px;align-items:baseline}
+.cred-sector{font-weight:700;color:var(--navy);font-size:.95rem}
+.cred-scope{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.cred-names{font-size:.95rem;font-weight:700;color:var(--accent)}
+@media(min-width:720px){
+  .about-grid{display:grid;grid-template-columns:300px 1fr;gap:42px;align-items:start}
+  .cred-strip{flex-direction:row}
+  .cred-card{flex:1;flex-direction:column;align-items:flex-start;gap:3px}
+}
+
 /* ── RESOURCES / LIGHT SOURCE LINKS ── */
 .src-list{display:flex;flex-direction:column;gap:10px}
 .src-link{display:inline-flex;align-items:center;gap:7px;font-size:.93rem;color:var(--accent);font-weight:600;text-decoration:underline;line-height:1.5}
