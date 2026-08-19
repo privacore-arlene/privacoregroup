@@ -41,7 +41,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;ali
 .nav-drawer a:last-child{border-bottom:none}
 .nav-drawer a::after{content:'→';color:var(--accent);font-weight:700}
 .nav-drawer a:hover{color:var(--accent)}
-@media(min-width:900px){
+@media(min-width:1024px){
   nav{padding:0 32px}
   .nav-links{display:flex}
   .nav-toggle{display:none}
@@ -320,3 +320,72 @@ footer{background:#071829;padding:32px 24px}
   html{scroll-behavior:auto}
   .reveal{opacity:1;transform:none;transition:none}
 }
+
+/* ── INDUSTRIES NAV DROPDOWN ── */
+.nav-dropdown{position:relative}
+.nav-drop-btn{display:inline-flex;align-items:center;gap:6px;padding:.5rem .8rem;font-size:.92rem;font-weight:600;color:var(--body);background:none;border:none;border-radius:8px;cursor:pointer;font-family:inherit}
+.nav-drop-btn:hover{color:var(--accent);background:var(--surface)}
+.nav-drop-btn .caret{font-size:.68rem;transition:transform .2s}
+.nav-drop-btn[aria-expanded="true"]{color:var(--accent)}
+.nav-drop-btn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.nav-drop-menu{position:absolute;top:calc(100% + 4px);left:0;min-width:300px;background:#fff;border:1px solid var(--rule);border-radius:12px;box-shadow:0 18px 44px rgba(15,39,68,.14);padding:8px;list-style:none;z-index:210}
+.nav-drop-menu a{display:block;padding:.55rem .75rem;font-size:.9rem;font-weight:600;color:var(--navy);text-decoration:none;border-radius:8px}
+.nav-drop-menu a:hover{background:var(--surface);color:var(--accent)}
+.drawer-group-lbl{display:block;padding:.8rem .5rem .25rem;font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.nav-drawer a.drawer-sub{padding-left:1.4rem;font-size:.93rem}
+
+/* ── INDUSTRY SELECTOR CARDS ── */
+.ind-grid{display:flex;flex-direction:column;gap:14px}
+.ind-card{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px;transition:box-shadow .2s,transform .2s}
+.ind-card:hover{box-shadow:0 8px 28px rgba(15,39,68,.09);transform:translateY(-2px)}
+.ind-card-kicker{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal-text)}
+.ind-card-title{font-family:Georgia,"Times New Roman",serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3}
+.ind-card-body{font-size:.93rem;line-height:1.6;color:var(--body);flex:1}
+.ind-card-cta{font-size:.9rem;font-weight:700;color:var(--accent);text-decoration:none;margin-top:6px}
+.ind-card-cta:hover{text-decoration:underline}
+@media(min-width:720px){.ind-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}}
+@media(min-width:1100px){.ind-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* ── SCENARIO CARDS (industry pages) ── */
+.scen-grid{display:flex;flex-direction:column;gap:14px}
+.scen-card{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:22px}
+.scen-q{font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.35}
+.scen-d{font-size:.95rem;color:var(--body);line-height:1.65}
+@media(min-width:1024px){.scen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}}
+
+/* ── CHECK LIST ── */
+.check-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.check-list li{display:flex;gap:10px;align-items:flex-start;font-size:.97rem;color:var(--body);line-height:1.6}
+.check-list li::before{content:'✓';color:var(--teal-text);font-weight:700;flex-shrink:0;margin-top:1px}
+
+/* ── MINI PLANS ── */
+.mini-plans{display:flex;flex-direction:column;gap:12px}
+.mini-plan{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:18px 20px}
+.mini-plan-top{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;align-items:baseline;margin-bottom:6px}
+.mini-plan-name{font-weight:700;color:var(--navy);font-size:1rem}
+.mini-plan-price{font-family:Georgia,"Times New Roman",serif;font-weight:700;color:var(--accent);font-size:1.1rem;white-space:nowrap}
+.mini-plan-fit{font-size:.92rem;color:var(--body);line-height:1.6;margin-bottom:8px}
+
+/* ── FAQ ── */
+.faq{border:1px solid var(--rule);border-radius:12px;background:#fff;margin-bottom:10px}
+.faq summary{padding:16px 18px;font-weight:700;color:var(--navy);cursor:pointer;font-size:.98rem;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';color:var(--accent);font-size:1.25rem;flex-shrink:0;font-weight:700}
+.faq[open] summary::after{content:'–'}
+.faq-body{padding:0 18px 16px;font-size:.93rem;line-height:1.7;color:var(--body)}
+
+/* ── SIGNATURE ── */
+.sig{margin-top:26px;padding-top:20px;border-top:1px solid var(--rule)}
+.sig-name{font-family:Georgia,"Times New Roman",serif;font-size:1.2rem;font-weight:700;color:var(--navy)}
+.sig-role{font-size:.92rem;color:var(--body);margin-top:2px}
+.sig-creds{font-size:.82rem;font-weight:700;letter-spacing:.07em;color:var(--accent);margin-top:6px}
+
+/* ── RESOURCES / LIGHT SOURCE LINKS ── */
+.src-list{display:flex;flex-direction:column;gap:10px}
+.src-link{display:inline-flex;align-items:center;gap:7px;font-size:.93rem;color:var(--accent);font-weight:600;text-decoration:underline;line-height:1.5}
+.src-link:hover{color:var(--accent-hover)}
+.guide-card{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:24px;margin-bottom:16px}
+.guide-card h3{font-family:Georgia,"Times New Roman",serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.guide-card ol,.guide-card ul{padding-left:1.3rem;color:var(--body);font-size:.95rem;line-height:1.7}
+.guide-card li+li{margin-top:6px}
+.guide-card p{font-size:.95rem;color:var(--body);line-height:1.7;margin-bottom:10px}

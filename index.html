@@ -30,9 +30,20 @@
   <a href="/#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
   <ul class="nav-links">
     <li><a href="/#health-check">Health Check</a></li>
-    <li><a href="/#packages">Packages</a></li>
+    <li><a href="/#packages">Audit Packages</a></li>
+    <li class="nav-dropdown">
+      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
+      <ul class="nav-drop-menu" id="industries-menu" hidden>
+        <li><a href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
+        <li><a href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
+        <li><a href="/industries/property-management">Property Management &amp; Strata</a></li>
+        <li><a href="/industries/professional-services">Professional Services</a></li>
+        <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
+      </ul>
+    </li>
     <li><a href="/#how-it-works">How It Works</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/#about">About Arlene</a></li>
+    <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
   <div class="nav-actions">
@@ -43,9 +54,16 @@
 <div class="nav-drawer" id="nav-drawer" hidden>
   <ul>
     <li><a href="/#health-check" data-testid="drawer-health-check">Health Check</a></li>
-    <li><a href="/#packages" data-testid="drawer-packages">Packages</a></li>
+    <li><a href="/#packages" data-testid="drawer-packages">Audit Packages</a></li>
+    <li><span class="drawer-group-lbl">Industries</span></li>
+    <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
+    <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
+    <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
+    <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
+    <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
     <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How It Works</a></li>
-    <li><a href="/#about" data-testid="drawer-about">About</a></li>
+    <li><a href="/#about" data-testid="drawer-about">About Arlene</a></li>
+    <li><a href="/resources">Resources</a></li>
     <li><a href="/contact" data-testid="drawer-contact">Contact</a></li>
   </ul>
 </div>
@@ -55,14 +73,33 @@
 <!-- HERO -->
 <section class="hero on-dark" aria-labelledby="hero-title">
   <div class="hero-in">
-    <div class="hero-tag"><span class="dot"></span>Vancouver-based · Serving Canadian businesses</div>
-    <h1 id="hero-title">Know your risks. Strengthen what <em>matters.</em></h1>
-    <p class="hero-deck">PrivaCore helps Canadian small businesses check how their email, payments, client data, backups, devices, and vendors are protected—then turn the findings into a practical, prioritized plan. You get plain-language guidance and a clearly defined scope, not an unreadable technical report or fear-based sales pitch.</p>
+    <div class="hero-tag"><span class="dot"></span>Cybersecurity and privacy for Canadian small businesses</div>
+    <h1 id="hero-title">Your business runs on <em>trust.</em> Let's make sure your systems support it.</h1>
+    <p class="hero-deck">You should not have to become a cybersecurity expert to run a secure business. PrivaCore helps you understand where everyday work can break down—payments, email, client information, backups, devices, and outside vendors—and gives you a practical plan for what to fix first.</p>
+    <p class="hero-deck" style="margin-top:-22px">You work directly with the founder. You get clear priorities, plain-language guidance, and a defined scope—not a fear-based sales pitch or an enterprise-sized project.</p>
     <div class="hero-ctas">
       <a href="/#health-check" class="cta-big" data-testid="hero-primary-cta">Check my basics — 3 minutes, no email</a>
-      <a href="/#packages" class="cta-outline" data-testid="hero-secondary-cta">See packages &amp; pricing</a>
+      <a href="/#packages" class="cta-outline" data-testid="hero-secondary-cta">See audit packages</a>
     </div>
     <p class="hero-note">Plain-language guidance · Canadian context · No fear-based selling</p>
+  </div>
+</section>
+
+<!-- INDUSTRY SELECTOR -->
+<section class="sec" id="industries" aria-labelledby="ind-title" style="background:#fff">
+  <div class="sec-in">
+    <div class="stag reveal">Built around the way your business works</div>
+    <h2 id="ind-title" class="reveal">Different businesses have different pressure points.</h2>
+    <p class="sec-lead reveal">A clinic has to protect patient trust. A contractor has to protect payment and project workflows. A property manager has to keep tenant, owner, and vendor information moving safely. The questions are different; the need for clear, workable controls is the same.</p>
+    <p class="reveal" style="font-weight:600;color:var(--navy);margin:-18px 0 26px">One practical cybersecurity and privacy approach, adapted to how your business actually runs.</p>
+    <div class="ind-grid">
+      <div class="ind-card reveal"><div class="ind-card-kicker">Construction</div><div class="ind-card-title">Construction, Developers &amp; Contractors</div><p class="ind-card-body">Protect supplier-payment changes, project files, mobile teams, and the systems that keep work moving.</p><a class="ind-card-cta" href="/industries/construction" data-testid="ind-card-construction">See construction guidance →</a></div>
+      <div class="ind-card reveal"><div class="ind-card-kicker">Healthcare</div><div class="ind-card-title">Health, Wellness &amp; Clinics</div><p class="ind-card-body">Protect patient information, booking and clinical systems, staff access, and the trust people place in your practice.</p><a class="ind-card-cta" href="/industries/healthcare" data-testid="ind-card-healthcare">See healthcare guidance →</a></div>
+      <div class="ind-card reveal"><div class="ind-card-kicker">Property</div><div class="ind-card-title">Property Management &amp; Strata</div><p class="ind-card-body">Protect tenant and owner information, rent and vendor payments, maintenance workflows, and property-management tools.</p><a class="ind-card-cta" href="/industries/property-management" data-testid="ind-card-property">See property-management guidance →</a></div>
+      <div class="ind-card reveal"><div class="ind-card-kicker">Professional</div><div class="ind-card-title">Professional Services</div><p class="ind-card-body">Protect confidential client information, shared files, payment instructions, and the reputation your firm has built.</p><a class="ind-card-cta" href="/industries/professional-services" data-testid="ind-card-professional">See professional-services guidance →</a></div>
+      <div class="ind-card reveal"><div class="ind-card-kicker">Customer payments</div><div class="ind-card-title">Retail, Hospitality &amp; Restaurants</div><p class="ind-card-body">Protect POS, e-commerce, booking, delivery, customer data, and the systems your team uses every day.</p><a class="ind-card-cta" href="/industries/retail-hospitality" data-testid="ind-card-retail">See retail and hospitality guidance →</a></div>
+    </div>
+    <p class="reveal" style="margin-top:22px;font-size:.95rem;color:var(--body)">Don't see your industry? Start with the <a href="/#health-check" style="color:var(--accent);font-weight:600">free Health Check</a> or <a href="/contact" style="color:var(--accent);font-weight:600">tell us how your business works</a>.</p>
   </div>
 </section>
 
@@ -174,17 +211,15 @@
 <!-- ABOUT / FOUNDER + PROCESS -->
 <section class="sec about-sec" id="about" aria-labelledby="about-title">
   <div class="sec-in">
-    <div class="stag reveal">About PrivaCore Group</div>
-    <h2 id="about-title" class="reveal">Founder-led Canadian experience. Practical small-business guidance.</h2>
-    <p class="sec-lead reveal">PrivaCore Group is a Vancouver-based, founder-led privacy, cybersecurity governance, and risk advisory. Arlene Chamulak brings 15+ years of experience across privacy remediation, cybersecurity, audit, regulatory change, and organizational change, including work with RBC, BNP Paribas, Shaw Communications, and BC Financial Services Authority.</p>
-    <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--body);margin-bottom:8px">You work directly with the founder. Your audit produces a short business-risk discussion, evidence-based priorities, a plain-language report, and a walkthrough of what to do next—not an enterprise compliance project.</p>
-    <ul class="trust-list">
-      <li>PMP · PROSCI · CSPO — senior program delivery and organizational change credentials</li>
-      <li>15+ years across financial services, telecom, public sector, healthcare, airline, and retail environments</li>
-      <li>Based in Vancouver, BC — serving businesses from Victoria to Halifax</li>
-      <li>Specialist technical services identified transparently and scoped separately where required</li>
-      <li>Material statistics and legal claims link to source material for independent review</li>
-    </ul>
+    <div class="stag reveal">About Arlene</div>
+    <h2 id="about-title" class="reveal">Clear priorities. Straight answers. Practical next steps.</h2>
+    <p class="sec-lead reveal">Small businesses do not need more cybersecurity noise. They need to know what matters in their own business, what to do first, and where to get help when a gap needs technical attention.</p>
+    <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--body)">I bring more than 15 years of experience in privacy, cybersecurity governance, audit remediation, and regulatory change—including work with RBC, BNP Paribas, Shaw Communications, and BC Financial Services Authority—to founder-led reviews for Canadian businesses. You get a clear plan, a plain-language report, and a direct conversation about what is realistic—not a generic checklist or an enterprise compliance project.</p>
+    <div class="sig reveal">
+      <div class="sig-name">Arlene Chamulak</div>
+      <div class="sig-role">Founder, PrivaCore Group</div>
+      <div class="sig-creds">PMP · PROSCI · CSPO</div>
+    </div>
 
     <div id="how-it-works">
       <div class="stag reveal">The process</div>
@@ -278,20 +313,6 @@
         </div>
       </div>
 
-    </div>
-
-    <div style="margin-top:48px">
-      <div class="stag reveal">Who we work with</div>
-      <h2 class="reveal" style="font-size:clamp(1.6rem,4.5vw,2.1rem)">Built for businesses that run on client trust.</h2>
-      <p class="sec-lead reveal" style="margin-bottom:8px">Owners of Canadian small businesses — often 5–25 people, without dedicated IT staff — who hold client information and want a practical, calm starting point.</p>
-      <div class="who-grid">
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🦷</div><div><div class="wname">Clinics &amp; Wellness Practices</div><div class="wdesc">Dental clinics, therapists, and wellness businesses holding appointment, health, and payment details.</div></div></div>
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">⚖️</div><div><div class="wname">Small Law &amp; Professional Offices</div><div class="wdesc">Lawyers, accountants, and advisors holding confidential client files and handling trust or payment instructions.</div></div></div>
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🏗️</div><div><div class="wname">Construction &amp; Trades</div><div class="wdesc">Crews that run on email, estimates, and supplier payments — where a single fake invoice can hurt.</div></div></div>
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🛒</div><div><div class="wname">Retailers &amp; E-Commerce</div><div class="wdesc">Customer records, online transactions, and public-facing websites, each carrying its own obligations.</div></div></div>
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🚀</div><div><div class="wname">Tech Startups</div><div class="wdesc">Enterprise clients and investors increasingly ask about security and privacy practices before signing.</div></div></div>
-        <div class="wcard reveal"><div class="wemoji" aria-hidden="true">🤝</div><div><div class="wname">Non-Profits &amp; Social Services</div><div class="wdesc">Organizations serving vulnerable populations need safeguards proportionate to the sensitivity of the information they hold.</div></div></div>
-      </div>
     </div>
   </div>
 </section>
@@ -433,14 +454,19 @@
     </div>
     <ul class="foot-links">
       <li><a href="/#health-check">Health Check</a></li>
-      <li><a href="/#packages">Packages</a></li>
+      <li><a href="/#packages">Audit Packages</a></li>
+      <li><a href="/industries/construction">Construction</a></li>
+      <li><a href="/industries/healthcare">Health &amp; Wellness</a></li>
+      <li><a href="/industries/property-management">Property Management</a></li>
+      <li><a href="/industries/professional-services">Professional Services</a></li>
+      <li><a href="/industries/retail-hospitality">Retail &amp; Hospitality</a></li>
       <li><a href="/#how-it-works">How It Works</a></li>
-      <li><a href="/#about">About</a></li>
+      <li><a href="/#about">About Arlene</a></li>
       <li><a href="/#risks">Practical Risks</a></li>
       <li><a href="/#privacy-responsibilities">Privacy Responsibilities</a></li>
       <li><a href="/#ongoing-support">Ongoing Support</a></li>
+      <li><a href="/resources">Resources</a></li>
       <li><a href="/contact">Contact</a></li>
-      <li><a href="/exposure-check">Health Check Page</a></li>
       <li><a href="/#privacy">Privacy Notice</a></li>
     </ul>
     <div class="foot-sources">Statistics sourced from: <a href="https://cyber.gc.ca" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www150.statcan.gc.ca" target="_blank" rel="noopener noreferrer">Statistics Canada CSCSC</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey</a> · <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon DBIR</a> · <a href="https://priv.gc.ca" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>

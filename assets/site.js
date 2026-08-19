@@ -36,9 +36,32 @@
       if (event.target.closest('a')) setDrawer(false);
     });
     window.addEventListener('resize', function () {
-      if (window.innerWidth >= 900) setDrawer(false);
+      if (window.innerWidth >= 1024) setDrawer(false);
     });
   }
+
+  // Desktop "Industries" dropdown
+  document.querySelectorAll('[data-dropdown-btn]').forEach(function (btn) {
+    var menu = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!menu) return;
+    var setMenu = function (open) {
+      btn.setAttribute('aria-expanded', String(open));
+      menu.hidden = !open;
+    };
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      setMenu(btn.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) setMenu(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        btn.focus();
+      }
+    });
+  });
 
   // Contact form: preselect interest from ?interest= query parameter
   var interestSelect = document.getElementById('contact-interest');
@@ -55,6 +78,23 @@
     var requested = params.get('interest');
     if (requested && INTEREST_MAP[requested]) {
       interestSelect.value = INTEREST_MAP[requested];
+    }
+  }
+
+  // Contact form: preselect industry from ?industry= query parameter
+  var industrySelect = document.getElementById('contact-industry');
+  if (industrySelect) {
+    var INDUSTRY_MAP = {
+      'construction': 'Construction / Developers / Contractors',
+      'healthcare': 'Health / Wellness / Clinic',
+      'property-management': 'Property Management / Strata',
+      'professional-services': 'Professional Services (law, accounting, consulting)',
+      'retail-hospitality': 'Retail / Hospitality / Restaurant',
+      'other': 'Other'
+    };
+    var requestedIndustry = new URLSearchParams(window.location.search).get('industry');
+    if (requestedIndustry && INDUSTRY_MAP[requestedIndustry]) {
+      industrySelect.value = INDUSTRY_MAP[requestedIndustry];
     }
   }
 

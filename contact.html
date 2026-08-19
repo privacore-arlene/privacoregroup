@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact PrivaCore Group | Cybersecurity Audit for Canadian Small Businesses</title>
-<meta name="description" content="Contact PrivaCore Group about a founder-led cybersecurity and privacy audit for your Canadian small business. First conversation is free.">
+<meta name="description" content="Tell us how your business works — industry, team size, and what has your attention — and we'll start the first conversation with the right questions.">
 <meta name="theme-color" content="#0F2744">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://privacoregroup.com/contact">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230F2744'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23E8813A' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact PrivaCore Group">
-<meta property="og:description" content="Contact PrivaCore Group about a founder-led cybersecurity and privacy audit for your Canadian small business.">
+<meta property="og:description" content="Tell us how your business works and we'll start with the right questions.">
 <meta property="og:url" content="https://privacoregroup.com/contact">
 <meta property="og:locale" content="en_CA">
 <link rel="stylesheet" href="/assets/site.css">
@@ -24,9 +24,20 @@
   <a href="/#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
   <ul class="nav-links">
     <li><a href="/#health-check">Health Check</a></li>
-    <li><a href="/#packages">Packages</a></li>
+    <li><a href="/#packages">Audit Packages</a></li>
+    <li class="nav-dropdown">
+      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
+      <ul class="nav-drop-menu" id="industries-menu" hidden>
+        <li><a href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
+        <li><a href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
+        <li><a href="/industries/property-management">Property Management &amp; Strata</a></li>
+        <li><a href="/industries/professional-services">Professional Services</a></li>
+        <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
+      </ul>
+    </li>
     <li><a href="/#how-it-works">How It Works</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/#about">About Arlene</a></li>
+    <li><a href="/resources">Resources</a></li>
     <li><a href="/contact" aria-current="page">Contact</a></li>
   </ul>
   <div class="nav-actions">
@@ -37,9 +48,16 @@
 <div class="nav-drawer" id="nav-drawer" hidden>
   <ul>
     <li><a href="/#health-check">Health Check</a></li>
-    <li><a href="/#packages">Packages</a></li>
+    <li><a href="/#packages">Audit Packages</a></li>
+    <li><span class="drawer-group-lbl">Industries</span></li>
+    <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
+    <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
+    <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
+    <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
+    <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
     <li><a href="/#how-it-works">How It Works</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/#about">About Arlene</a></li>
+    <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
 </div>
@@ -48,8 +66,8 @@
 
 <header class="page-hero on-dark">
   <div class="page-hero-in">
-    <h1>Let's talk about where you stand.</h1>
-    <p>Tell us about your business and we'll respond within one business day. The first conversation is free — no pressure and no manufactured urgency. You'll speak directly with the founder.</p>
+    <h1>Tell us how your business works. We'll start with the right questions.</h1>
+    <p>You do not need to describe a technical problem perfectly. Tell us your industry, team size, and what has your attention. We will use that context to make the first conversation practical. Please do not send passwords, banking details, patient records, client files, or other sensitive information.</p>
   </div>
 </header>
 
@@ -67,7 +85,51 @@
 
         <div class="fgrp"><label class="flbl" for="contact-name">Your name</label><input class="finp" id="contact-name" type="text" name="name" placeholder="Jane Smith" autocomplete="name" required data-testid="contact-name-input"></div>
         <div class="fgrp"><label class="flbl" for="contact-email">Email address</label><input class="finp" id="contact-email" type="email" name="email" placeholder="jane@yourbusiness.com" autocomplete="email" required data-testid="contact-email-input"></div>
-        <div class="fgrp"><label class="flbl" for="contact-business">Business name &amp; number of employees</label><input class="finp" id="contact-business" type="text" name="business" placeholder="Smith Law — 8 employees" autocomplete="organization" data-testid="contact-business-input"></div>
+        <div class="fgrp"><label class="flbl" for="contact-business">Business name</label><input class="finp" id="contact-business" type="text" name="business" placeholder="Smith Contracting Ltd." autocomplete="organization" data-testid="contact-business-input"></div>
+
+        <p class="flbl" style="margin:22px 0 4px;color:var(--accent)">Business context — about one minute, and it makes the first conversation more useful</p>
+
+        <div class="fgrp">
+          <label class="flbl" for="contact-industry">Industry</label>
+          <select class="finp" id="contact-industry" name="industry" required data-testid="contact-industry-select">
+            <option value="Construction / Developers / Contractors">Construction / Developers / Contractors</option>
+            <option value="Health / Wellness / Clinic">Health / Wellness / Clinic</option>
+            <option value="Property Management / Strata">Property Management / Strata</option>
+            <option value="Professional Services (law, accounting, consulting)">Professional Services (law, accounting, consulting)</option>
+            <option value="Retail / Hospitality / Restaurant">Retail / Hospitality / Restaurant</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="fgrp">
+          <label class="flbl" for="contact-team-size">Team size</label>
+          <select class="finp" id="contact-team-size" name="team-size" required data-testid="contact-team-size-select">
+            <option value="1–9">1–9</option>
+            <option value="10–25">10–25</option>
+            <option value="26–50">26–50</option>
+            <option value="51–100">51–100</option>
+            <option value="100+">100+</option>
+          </select>
+        </div>
+        <div class="fgrp">
+          <label class="flbl" for="contact-starting-point">What best describes your starting point?</label>
+          <select class="finp" id="contact-starting-point" name="starting-point" required data-testid="contact-starting-point-select">
+            <option value="I want a baseline review">I want a baseline review</option>
+            <option value="A recent event or close call">A recent event or close call</option>
+            <option value="A payment or vendor concern">A payment or vendor concern</option>
+            <option value="Client/customer data and privacy">Client/customer data and privacy</option>
+            <option value="A customer, insurer, or partner request">A customer, insurer, or partner request</option>
+            <option value="Ongoing support">Ongoing support</option>
+          </select>
+        </div>
+        <div class="fgrp">
+          <label class="flbl" for="contact-tech-support">Current technology support</label>
+          <select class="finp" id="contact-tech-support" name="tech-support" required data-testid="contact-tech-support-select">
+            <option value="We have an internal IT person">We have an internal IT person</option>
+            <option value="We use an outside IT provider">We use an outside IT provider</option>
+            <option value="We rely on several vendors">We rely on several vendors</option>
+            <option value="I am not sure who owns this">I am not sure who owns this</option>
+          </select>
+        </div>
         <div class="fgrp">
           <label class="flbl" for="contact-interest">What would you like to explore?</label>
           <select class="finp" id="contact-interest" name="interest" data-testid="contact-interest-select">
@@ -80,10 +142,10 @@
           </select>
         </div>
         <div class="fgrp">
-          <label class="flbl" for="contact-message">Tell us about your business</label>
-          <textarea class="finp" id="contact-message" name="message" placeholder="What does your business do, how many people are on your team, and is there anything specific on your mind?" data-testid="contact-message-input"></textarea>
+          <label class="flbl" for="contact-clarity">What would you like to feel clearer about after a first conversation? <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+          <textarea class="finp" id="contact-clarity" name="clarity" placeholder="For example: “How we verify supplier payment changes,” “whether our clinic’s booking system is handled appropriately,” or “what to do first after a suspicious email.” Do not include confidential or sensitive details." data-testid="contact-clarity-input"></textarea>
         </div>
-        <p class="form-warning"><strong>Please do not submit</strong> passwords, banking information, health information, or other sensitive personal information through this form.</p>
+        <p class="form-warning"><strong>Please do not submit</strong> passwords, banking details, patient records, client files, or other sensitive information through this form.</p>
         <label class="consent-row" for="privacy-consent"><input id="privacy-consent" type="checkbox" name="privacy-consent" value="agreed" required data-testid="contact-consent-checkbox"><span>I agree that PrivaCore may use the information I submit to respond to this inquiry, as described in the <a href="/#privacy">privacy notice</a>.</span></label>
         <div class="form-foot">
           <button type="submit" class="btn-full form-submit" data-testid="contact-submit-button">Send Message →</button>
@@ -105,9 +167,13 @@
     </div>
     <ul class="foot-links">
       <li><a href="/#health-check">Health Check</a></li>
-      <li><a href="/#packages">Packages</a></li>
-      <li><a href="/#how-it-works">How It Works</a></li>
-      <li><a href="/#about">About</a></li>
+      <li><a href="/#packages">Audit Packages</a></li>
+      <li><a href="/industries/construction">Construction</a></li>
+      <li><a href="/industries/healthcare">Health &amp; Wellness</a></li>
+      <li><a href="/industries/property-management">Property Management</a></li>
+      <li><a href="/industries/professional-services">Professional Services</a></li>
+      <li><a href="/industries/retail-hospitality">Retail &amp; Hospitality</a></li>
+      <li><a href="/resources">Resources</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/#privacy">Privacy Notice</a></li>
     </ul>
