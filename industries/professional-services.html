@@ -27,6 +27,7 @@
 <nav aria-label="Primary navigation">
   <a href="/#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
   <ul class="nav-links">
+    <li><a href="/" data-testid="nav-home-link">Home</a></li>
     <li class="nav-dropdown">
       <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-services-toggle" aria-expanded="false" aria-controls="services-menu">Services <span class="caret" aria-hidden="true">▾</span></button>
       <ul class="nav-drop-menu" id="services-menu" hidden>
@@ -37,6 +38,7 @@
         <li><a href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
       </ul>
     </li>
+    <li><a href="/#how-it-works">How We Work</a></li>
     <li class="nav-dropdown">
       <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
       <ul class="nav-drop-menu" id="industries-menu" hidden>
@@ -47,8 +49,7 @@
         <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
       </ul>
     </li>
-    <li><a href="/#how-it-works">How We Work</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
@@ -59,20 +60,21 @@
 </nav>
 <div class="nav-drawer" id="nav-drawer" hidden>
   <ul>
+    <li><a href="/" data-testid="drawer-home-link">Home</a></li>
     <li><span class="drawer-group-lbl">Services</span></li>
     <li><a class="drawer-sub" href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
     <li><a class="drawer-sub" href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
     <li><a class="drawer-sub" href="/#svc-privacy">Privacy &amp; Governance</a></li>
     <li><a class="drawer-sub" href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
     <li><a class="drawer-sub" href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
+    <li><a href="/#how-it-works">How We Work</a></li>
     <li><span class="drawer-group-lbl">Industries</span></li>
     <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
     <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
     <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
     <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
     <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-    <li><a href="/#how-it-works">How We Work</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
@@ -183,6 +185,7 @@
   <div class="sec-in">
     <div class="stag reveal">Common questions</div>
     <h2 id="faq-title" class="reveal" style="font-size:clamp(1.6rem,4.5vw,2.1rem)">Professional-services FAQs</h2>
+    <details class="faq reveal"><summary>We already have an IT provider. Where does PrivaCore fit?</summary><div class="faq-body">PrivaCore does not replace your IT provider. The audit reviews business workflows — access, file-sharing, and vendor onboarding — and anything technical is coordinated with the providers you already use.</div></details>
     <details class="faq reveal"><summary>Will you need access to confidential client files?</summary><div class="faq-body">No. The audit reviews practices and controls — how access, sharing, verification, and retention work — not the content of client files.</div></details>
     <details class="faq reveal"><summary>Does this replace guidance from our professional body?</summary><div class="faq-body">No — it complements it. Bodies such as the Law Society of Ontario publish dedicated material on fraud, social engineering, phishing, ransomware, and incident reporting; the audit turns that kind of guidance into a working plan for your firm. It is not legal advice or a compliance certification.</div></details>
     <details class="faq reveal"><summary>Can this help with client or insurer security questionnaires?</summary><div class="faq-body">An evidence-based, plain-language report gives you a clearer basis for those conversations. The audit is not a certification, and we will never describe it as one.</div></details>
@@ -231,7 +234,7 @@
         <div class="foot-col">
           <div class="foot-col-title">Company</div>
           <ul>
-            <li><a href="/#about">About</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="/#how-it-works">How We Work</a></li>
             <li><a href="/#packages">Audit Packages</a></li>
             <li><a href="/#health-check">Business Risk Check</a></li>
@@ -242,12 +245,16 @@
           <div class="foot-col-title">Resources</div>
           <ul>
             <li><a href="/resources">Resources</a></li>
-            <li><a href="/#privacy">Privacy Notice</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a></li>
           </ul>
         </div>
       </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="foot-dualbrand">Arlene is also the founder of <a href="https://thefrauddoctor.ca/" target="_blank" rel="noopener noreferrer">The Fraud Doctor</a> — practical fraud protection for Canadian households and older adults.</p>
     </div>
   </div>
 </footer>

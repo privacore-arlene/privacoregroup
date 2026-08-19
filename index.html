@@ -34,6 +34,7 @@
 <nav aria-label="Primary navigation">
   <a href="/#main-content" class="logo" aria-label="PrivaCore Group home">Priva<span>Core</span> Group</a>
   <ul class="nav-links">
+    <li><a href="/" data-testid="nav-home-link">Home</a></li>
     <li class="nav-dropdown">
       <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-services-toggle" aria-expanded="false" aria-controls="services-menu">Services <span class="caret" aria-hidden="true">▾</span></button>
       <ul class="nav-drop-menu" id="services-menu" hidden>
@@ -44,6 +45,7 @@
         <li><a href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
       </ul>
     </li>
+    <li><a href="/#how-it-works">How We Work</a></li>
     <li class="nav-dropdown">
       <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
       <ul class="nav-drop-menu" id="industries-menu" hidden>
@@ -54,8 +56,7 @@
         <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
       </ul>
     </li>
-    <li><a href="/#how-it-works">How We Work</a></li>
-    <li><a href="/#about">About</a></li>
+    <li><a href="/about">About</a></li>
     <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
@@ -66,20 +67,21 @@
 </nav>
 <div class="nav-drawer" id="nav-drawer" hidden>
   <ul>
+    <li><a href="/" data-testid="drawer-home-link">Home</a></li>
     <li><span class="drawer-group-lbl">Services</span></li>
     <li><a class="drawer-sub" href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
     <li><a class="drawer-sub" href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
     <li><a class="drawer-sub" href="/#svc-privacy">Privacy &amp; Governance</a></li>
     <li><a class="drawer-sub" href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
     <li><a class="drawer-sub" href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
+    <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How We Work</a></li>
     <li><span class="drawer-group-lbl">Industries</span></li>
     <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
     <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
     <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
     <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
     <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-    <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How We Work</a></li>
-    <li><a href="/#about" data-testid="drawer-about">About</a></li>
+    <li><a href="/about" data-testid="drawer-about">About</a></li>
     <li><a href="/resources">Resources</a></li>
     <li><a href="/contact" data-testid="drawer-contact">Contact</a></li>
   </ul>
@@ -156,6 +158,11 @@
       <div class="spill"><div class="spill-icon" aria-hidden="true">🧭</div><div><div class="spill-title">Managed detection and response through specialist security partners where required</div></div></div>
     </div>
     <div class="shield-statement reveal">We work with your existing technology wherever practical and recommend additional services only where they address an identified risk.</div>
+
+    <div class="shield-note reveal" data-testid="after-the-audit-note"><strong>After the audit:</strong> an audit tells you where you stand — remediation and managed protection are what close the gaps. Both are scoped and quoted separately, and can include Microsoft 365 hardening, email protection, awareness-training refreshers, and regular check-ins. The Full Protection Program already includes four quarterly review sessions in the year after your audit; the same ongoing-review relationship is available on its own for any business that wants a standing check-in rather than a one-time engagement.</div>
+
+    <div class="shield-note reveal" data-testid="it-provider-note"><strong>Working with your existing IT provider:</strong> PrivaCore does not replace your IT provider. We review business workflows and controls, and coordinate any technical work with the providers you already use — you don't need to switch anything to work with us.</div>
+
     <div class="shield-note reveal"><strong>Scope and transparency:</strong> PrivaCore does not operate its own security operations centre and does not claim 24/7 monitoring unless a service is specifically contracted. Where SOC or managed detection and response capability is referenced, it is delivered through specialist security partners under the applicable client service agreement.</div>
     <a href="/contact?interest=managed-protection" class="btn-teal reveal" data-testid="managed-security-cta">Discuss Managed Protection →</a>
     <p class="reveal" style="margin-top:16px;font-size:.88rem;color:var(--on-dark-dim);text-align:center">Need vendor-payment verification on its own? <a href="/contact?interest=vendor-payment-toolkit" style="color:var(--gold)" data-testid="vendor-payment-toolkit-link">Get the Vendor Payment Verification Toolkit — $349 CAD →</a></p>
@@ -331,6 +338,20 @@
   </div>
 </section>
 
+<!-- CLIENT FEEDBACK (placeholder structure — real quotes to be added as engagements complete) -->
+<section class="sec" id="feedback" aria-labelledby="feedback-title" style="background:#fff">
+  <div class="sec-in">
+    <div class="stag reveal">Client feedback</div>
+    <h2 id="feedback-title" class="reveal">What clients say — as engagements complete.</h2>
+    <p class="sec-lead reveal">PrivaCore is a founder-led practice, and this section will fill in with real client feedback as engagements wrap up. We don't publish quotes we haven't received.</p>
+    <div class="feedback-grid reveal" data-testid="feedback-placeholder">
+      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
+      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
+      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- QUICK CHECKS (subordinate to the audit packages above — a narrow diagnostic, not a cheaper tier) -->
 <section class="sec quickcheck-sec" id="quick-checks" aria-labelledby="qc-title">
   <div class="sec-in">
@@ -409,8 +430,7 @@
         <figcaption class="about-photo-cap">Arlene Chamulak · PrivaCore Group</figcaption>
       </figure>
       <div>
-        <p class="sec-lead reveal">Arlene Chamulak founded PrivaCore Group to make the risk practices used by large organizations practical and accessible for smaller businesses.</p>
-        <p class="reveal" style="font-size:1rem;line-height:1.8;color:var(--body);margin-bottom:22px">Her career spans cybersecurity, privacy, governance, regulatory remediation and complex technology programs across major Canadian and international organizations.</p>
+        <p class="sec-lead reveal">Arlene Chamulak has spent 15+ years leading privacy, cybersecurity governance and regulatory remediation programs inside regulated Canadian organizations — before founding PrivaCore Group to make those same practices practical and accessible for smaller businesses.</p>
         <p class="reveal" style="font-size:.95rem;color:var(--body);margin:0 0 10px">Prior experience includes:</p>
         <div class="cred-strip reveal" data-testid="about-cred-strip">
           <div class="cred-card"><span class="cred-sector">Banking</span><span class="cred-scope">Major Canadian Banks</span><span class="cred-names">RBC · BNP Paribas</span></div>
@@ -420,9 +440,11 @@
         <div class="sig reveal">
           <div class="sig-name">Arlene Chamulak</div>
           <div class="sig-role">Founder, PrivaCore Group</div>
-          <div class="sig-creds">PMP · PROSCI · CSPO</div>
-          <div style="margin-top:14px">
+          <div class="sig-creds">PMP · PROSCI · CSPO · CDPSE · CIPP/C</div>
+          <p style="font-size:.88rem;color:var(--muted);margin-top:6px">Member, Canadian Association of Certified Fraud Examiners</p>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
             <a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-about">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a>
+            <a href="/about" style="font-size:.9rem;font-weight:700;color:var(--gold-text)" data-testid="about-full-bio-link">Read the full bio →</a>
           </div>
         </div>
       </div>
@@ -459,7 +481,7 @@
       <div class="privacy-card reveal"><h3>Service providers and disclosure</h3><p>Netlify hosts this website and processes form submissions. Email and other service providers may process information when we respond. We do not sell contact-form information or use it for third-party advertising.</p></div>
       <div class="privacy-card reveal"><h3>Retention and your choices</h3><p>We retain inquiry information only as long as reasonably needed for the purposes above, security, and applicable legal requirements, then delete or anonymize it. To ask about, correct, or request deletion of your information, email <a href="mailto:info@privacoregroup.com">info@privacoregroup.com</a>.</p></div>
     </div>
-    <p class="privacy-updated">Last updated: August 2026. This notice may be updated when the website, service providers, or legal requirements change. For a detailed overview of Canadian privacy-law obligations, see our <a href="/resources#privacy-law" style="color:var(--gold-text);font-weight:600">Resources page</a>.</p>
+    <p class="privacy-updated">Last updated: August 2026. This notice may be updated when the website, service providers, or legal requirements change. Read the full <a href="/privacy" style="color:var(--gold-text);font-weight:600">Privacy Policy</a> and <a href="/terms" style="color:var(--gold-text);font-weight:600">Terms of Service</a>, or see our <a href="/resources#privacy-law" style="color:var(--gold-text);font-weight:600">Resources page</a> for a detailed overview of Canadian privacy-law obligations.</p>
   </div>
 </section>
 
@@ -497,7 +519,7 @@
         <div class="foot-col">
           <div class="foot-col-title">Company</div>
           <ul>
-            <li><a href="/#about">About</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="/#how-it-works">How We Work</a></li>
             <li><a href="/#packages">Audit Packages</a></li>
             <li><a href="/#health-check">Business Risk Check</a></li>
@@ -508,7 +530,8 @@
           <div class="foot-col-title">Resources</div>
           <ul>
             <li><a href="/resources">Resources</a></li>
-            <li><a href="/#privacy">Privacy Notice</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-footer">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a></li>
           </ul>
@@ -516,6 +539,7 @@
       </div>
     </div>
     <div class="foot-bottom">
+      <p class="foot-dualbrand">Arlene is also the founder of <a href="https://thefrauddoctor.ca/" target="_blank" rel="noopener noreferrer">The Fraud Doctor</a> — practical fraud protection for Canadian households and older adults.</p>
       <div class="foot-sources">Statistics sourced from: <a href="https://cyber.gc.ca" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www150.statcan.gc.ca" target="_blank" rel="noopener noreferrer">Statistics Canada CSCSC</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey</a> · <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon DBIR</a> · <a href="https://priv.gc.ca" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>
     </div>
   </div>

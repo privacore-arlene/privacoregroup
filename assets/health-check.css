@@ -39,6 +39,14 @@
 .hc-summary h4,.hc-next-steps h4{color:#0B1F33;font-size:1.05rem;margin:0 0 10px}
 .hc-summary ul,.hc-next-steps ol{color:#1C3A57;font-size:.95rem;line-height:1.55;margin:0;padding-left:1.3rem}
 .hc-summary li+li,.hc-next-steps li+li{margin-top:8px}
+.hc-email-capture{background:#F8F7F4;border:1px solid #E1E4E8;border-radius:12px;padding:18px;margin:18px 0 4px}
+.hc-email-label{font-size:.9rem;font-weight:700;color:#0B1F33;margin:0 0 12px}
+.hc-email-label span{font-weight:400;color:#5B6B7E}
+.hc-email-form{display:flex;flex-direction:column;gap:10px}
+.hc-email-form .finp{margin:0}
+.hc-email-form button{white-space:nowrap}
+.hc-email-success{font-size:.92rem;font-weight:600;color:#0B1F33;margin:0}
+@media(min-width:560px){.hc-email-form{flex-direction:row}.hc-email-form .finp{flex:1}}
 .hc-results-actions{padding:4px 0 0}
 @media (max-width:560px){
   .hc-progress-row,.hc-fieldset,.hc-navigation,.hc-results{padding-left:18px;padding-right:18px}

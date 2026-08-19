@@ -178,6 +178,16 @@
             '<ol data-hc-priority-list></ol>' +
           '</section>' +
           '<p class="hc-results-note"><strong>What a paid audit adds:</strong> the free check is self-reported and educational. An audit reviews evidence, workflows, and priorities in the context of your business.</p>' +
+          '<div class="hc-email-capture" data-testid="hc-email-capture">' +
+            '<p class="hc-email-label">Want the prioritized checklist emailed to you? <span>(optional — your results above are already complete without it)</span></p>' +
+            '<form class="hc-email-form" name="privacore-risk-check-email" method="POST" data-netlify="true" data-hc-email-form data-testid="hc-email-form">' +
+              '<input type="hidden" name="form-name" value="privacore-risk-check-email">' +
+              '<label class="sr-only" for="hc-email-input">Email address</label>' +
+              '<input class="finp" type="email" id="hc-email-input" name="email" placeholder="you@yourbusiness.com" required data-testid="hc-email-input">' +
+              '<button class="hc-button hc-button-primary" type="submit" data-testid="hc-email-submit">Email me the checklist</button>' +
+            '</form>' +
+            '<p class="hc-email-success" data-hc-email-success hidden data-testid="hc-email-success">Thanks — we\'ll send that over shortly.</p>' +
+          '</div>' +
           '<div class="hc-results-actions">' +
             '<a class="hc-button hc-button-primary" href="/contact?interest=health-check-results" data-testid="hc-talk-results-link">Talk through my results — free</a>' +
             '<button class="hc-button hc-button-secondary" type="button" data-hc-restart data-testid="hc-retake-button">← Retake the Business Risk Check</button>' +
@@ -194,6 +204,27 @@
     var announcer = root.querySelector('[data-hc-announcer]');
     var back = root.querySelector('[data-hc-back]');
     var next = root.querySelector('[data-hc-next]');
+    var emailForm = root.querySelector('[data-hc-email-form]');
+    if (emailForm) {
+      emailForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var submitBtn = emailForm.querySelector('button[type=submit]');
+        submitBtn.disabled = true;
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(emailForm)).toString()
+        }).then(function (response) {
+          if (!response.ok) throw new Error('Email checklist submission failed');
+          emailForm.hidden = true;
+          var success = root.querySelector('[data-hc-email-success]');
+          success.hidden = false;
+        }).catch(function () {
+          submitBtn.disabled = false;
+          alert('Something went wrong — please email info@privacoregroup.com and we will send the checklist directly.');
+        });
+      });
+    }
 
     function renderQuestion(moveFocus) {
       var question = QUESTIONS[state.current];

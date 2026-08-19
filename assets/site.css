@@ -327,6 +327,9 @@ footer{background:#071829;padding:40px 24px 32px}
 .foot-sources a{color:rgba(255,255,255,.78);text-decoration:underline}
 .foot-sources a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;flex-direction:column;gap:14px}
+.foot-dualbrand{font-size:.8rem;color:rgba(255,255,255,.6);line-height:1.7}
+.foot-dualbrand a{color:var(--gold);text-decoration:underline;font-weight:600}
+.foot-dualbrand a:hover{color:#fff}
 @media(min-width:720px){
   .foot-top{flex-direction:row;justify-content:space-between;gap:32px}
   .foot-brand{max-width:280px}
@@ -444,6 +447,16 @@ footer{background:#071829;padding:40px 24px 32px}
 .qc-redirect p{font-size:.95rem;line-height:1.65;color:var(--ink);font-weight:600;margin-bottom:14px}
 .qc-call-link{display:block;text-align:center;margin-top:10px;font-size:.88rem;color:var(--body);text-decoration:underline}
 .qc-call-link:hover{color:var(--ink)}
+
+/* ── CLIENT FEEDBACK (placeholder-ready, no layout change needed once real quotes land) ── */
+.feedback-grid{display:flex;flex-direction:column;gap:14px}
+.feedback-card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:22px}
+.feedback-card p{font-size:.95rem;line-height:1.7;color:var(--body)}
+.feedback-mark{font-family:Inter,Manrope,sans-serif;font-size:2.2rem;font-weight:800;color:var(--gold-line);line-height:.6;margin-bottom:6px}
+.feedback-placeholder{border-style:dashed}
+.feedback-placeholder p{color:var(--muted);font-style:italic}
+.feedback-cite{margin-top:12px;font-size:.85rem;font-weight:700;color:var(--navy)}
+@media(min-width:720px){.feedback-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}}
 
 /* ── FAQ ── */
 .faq{border:1px solid var(--rule);border-radius:12px;background:#fff;margin-bottom:10px}
