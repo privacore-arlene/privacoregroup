@@ -1,0 +1,335 @@
+From 58200afcbc660e6070d95052fb161076da86787c Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Wed, 19 Aug 2026 05:45:30 +0000
+Subject: [PATCH] Add sourced evidence modules to industry pages, fix imprecise
+ source links, dedupe homepage stat, add contact intake field
+
+Implements the priority items from the reconciled website audit (original + external review):
+
+- Add "What has been reported" evidence sections to all five industry pages,
+  distinguishing verified reported cases (amber label) from labelled
+  hypothetical scenarios (teal label), each with a source + date + why-it's-here line:
+  - Healthcare: Ontario IPC medical imaging clinic ransomware case study (2024)
+  - Professional Services: CAFC-recovered $2.3M law firm BEC case (2025) +
+    document-verification scenario
+  - Retail & Hospitality: Canada Computers & Electronics breach (2025-2026) +
+    QR-menu integrity scenario
+  - Construction: documented Competition Bureau fraud pattern + unexpected-
+    document scenario (no off-industry case implied as construction-specific)
+  - Property Management: scenario-only, no incident citation until a
+    genuinely on-point Canadian source is found
+- Fix source links that pointed to organization homepages instead of the
+  specific relevant pages (IPC handbook + case study, Law Society of Ontario
+  cybersecurity/fraud page, Retail Council's Retail CyberSecure program)
+- Remove the homepage's duplicated cyber-incident statistic (kept the fuller,
+  better-sourced four-stat strip; removed the standalone repeat)
+- Add a multi-select "which parts of your business" contact-form field as a
+  more precise alternative to any generic privacy question
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01M6rgfCRoJqp3MGgw2zonvp
+---
+ assets/site.css                       |  4 +++
+ contact.html                          | 12 +++++++++
+ index.html                            |  4 ---
+ industries/construction.html          | 22 ++++++++++++++++
+ industries/healthcare.html            | 25 ++++++++++++++++++-
+ industries/professional-services.html | 36 ++++++++++++++++++++++++++-
+ industries/property-management.html   | 22 ++++++++++++++++
+ industries/retail-hospitality.html    | 36 ++++++++++++++++++++++++++-
+ 8 files changed, 154 insertions(+), 7 deletions(-)
+
+diff --git a/assets/site.css b/assets/site.css
+index e4c66e9..43d3da8 100644
+--- a/assets/site.css
++++ b/assets/site.css
+@@ -154,6 +154,7 @@ h2 em{font-style:italic;color:var(--accent)}
+ .tcard-top{background:var(--navy);padding:22px 24px 18px;position:relative}
+ .tcard-num{font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;font-weight:700;color:rgba(255,255,255,.14);line-height:1;position:absolute;top:14px;right:20px}
+ .tcard-threat-lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-dec);margin-bottom:5px}
++.tcard-threat-lbl.scn{color:var(--teal-text)}
+ .tcard-title{font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;font-weight:700;color:#fff;line-height:1.3}
+ .tcard-body{padding:22px 24px}
+ .tcard-story{font-size:1rem;line-height:1.8;color:var(--body);margin-bottom:14px}
+@@ -249,6 +250,9 @@ textarea.finp{resize:vertical;min-height:110px;line-height:1.65}
+ .consent-row{display:flex;align-items:flex-start;gap:10px;margin:4px 0 16px;font-size:.9rem;line-height:1.6;color:var(--body);cursor:pointer}
+ .consent-row input{width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
+ .consent-row a{color:var(--accent);font-weight:600}
++.chk-list{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
++.chk-item{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;line-height:1.55;color:var(--body);cursor:pointer}
++.chk-item input{width:16px;height:16px;margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
+ .btn-full{display:block;width:100%;text-align:center;padding:1rem;background:var(--accent);color:#fff;font-size:1rem;font-weight:700;text-decoration:none;border-radius:12px;border:none;cursor:pointer;font-family:inherit;transition:background .2s;-webkit-tap-highlight-color:transparent}
+ .btn-full:hover{background:var(--accent-hover)}
+ 
+diff --git a/contact.html b/contact.html
+index 9d22a40..ebbefe2 100644
+--- a/contact.html
++++ b/contact.html
+@@ -141,6 +141,18 @@
+             <option value="Managed-security provider coordination">Managed-security provider coordination</option>
+           </select>
+         </div>
++        <div class="fgrp">
++          <p class="flbl" style="margin-bottom:8px">Which parts of your business do you most want to understand or protect? <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional, select any that apply)</span></p>
++          <div class="chk-list">
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="Customer, patient, tenant, owner, or client information" data-testid="focus-areas-info"><span>Customer, patient, tenant, owner, or client information</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="Payments, invoices, supplier or vendor changes" data-testid="focus-areas-payments"><span>Payments, invoices, supplier or vendor changes</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="Project files, documents, drawings, or shared cloud folders" data-testid="focus-areas-files"><span>Project files, documents, drawings, or shared cloud folders</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="Booking, POS, ordering, delivery, or property-management systems" data-testid="focus-areas-systems"><span>Booking, POS, ordering, delivery, or property-management systems</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="Staff accounts, devices, access, or turnover" data-testid="focus-areas-staff"><span>Staff accounts, devices, access, or turnover</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="A recent suspicious message, request, or close call" data-testid="focus-areas-incident"><span>A recent suspicious message, request, or close call</span></label>
++            <label class="chk-item"><input type="checkbox" name="focus-areas" value="I am not sure yet" data-testid="focus-areas-unsure"><span>I am not sure yet</span></label>
++          </div>
++        </div>
+         <div class="fgrp">
+           <label class="flbl" for="contact-clarity">What would you like to feel clearer about after a first conversation? <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+           <textarea class="finp" id="contact-clarity" name="clarity" placeholder="For example: “How we verify supplier payment changes,” “whether our clinic’s booking system is handled appropriately,” or “what to do first after a suspicious email.” Do not include confidential or sensitive details." data-testid="contact-clarity-input"></textarea>
+diff --git a/index.html b/index.html
+index 08f729e..c548752 100644
+--- a/index.html
++++ b/index.html
+@@ -232,10 +232,6 @@
+       </div>
+     </div>
+ 
+-    <div class="about-quote reveal">
+-      <blockquote>In 2023, 16% of Canadian businesses reported being impacted by cybersecurity incidents, while recovery spending reached $1.2 billion.</blockquote>
+-      <cite>Statistics Canada, Canadian Survey of Cyber Security and Cybercrime, released October 2024</cite>
+-    </div>
+   </div>
+ </section>
+ 
+diff --git a/industries/construction.html b/industries/construction.html
+index 655a471..c40a741 100644
+--- a/industries/construction.html
++++ b/industries/construction.html
+@@ -89,6 +89,27 @@
+   </div>
+ </section>
+ 
++<section class="sec" aria-labelledby="evidence-title">
++  <div class="sec-in">
++    <div class="stag reveal">What has been reported</div>
++    <h2 id="evidence-title" class="reveal">A documented pattern, applied to how construction pays</h2>
++    <div class="threat-cards">
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">01</div>
++          <div class="tcard-threat-lbl scn">Scenario to test</div>
++          <div class="tcard-title">An unexpected document arrives</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">A quote, invoice, drawing package, permit document, or shared-file link arrives and looks like it belongs to the project. Payment-change impersonation and false-invoice fraud are documented Canadian business-fraud patterns — the Competition Bureau specifically warns businesses about supplier-impersonation and CEO-impersonation scams, and construction's frequent supplier payments and draw requests make that pattern worth applying directly.</p>
++          <div class="tcard-tip">Does your team know how to verify the sender through a known contact — a phone number already on file, not one supplied in the message — before opening it or signing in?</div>
++          <div class="tcard-source">Sources: Competition Bureau of Canada, "Protect your business from fraud" · Canadian Centre for Cyber Security guidance on malicious attachments and links. This describes a documented fraud pattern, not a reported construction-sector incident.</div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
++
+ <section class="sec" style="background:var(--surface)" aria-labelledby="review-title">
+   <div class="sec-in">
+     <div class="stag teal reveal">Sector-specific audit focus</div>
+@@ -144,6 +165,7 @@
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline controls for small and medium organizations</a>
+         <a class="src-link" href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a>
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/ransomware-playbook-itsm00099" target="_blank" rel="noopener noreferrer">Cyber Centre — Ransomware playbook</a>
++        <a class="src-link" href="https://ised-isde.canada.ca/site/competition-bureau-canada/en/fraud-and-scams/tips-and-advice/protect-your-business-fraud-common-scams-targeting-canadian-businesses" target="_blank" rel="noopener noreferrer">Competition Bureau of Canada — Protect your business from fraud</a>
+       </div>
+     </div>
+   </div>
+diff --git a/industries/healthcare.html b/industries/healthcare.html
+index 7a3624b..c41d618 100644
+--- a/industries/healthcare.html
++++ b/industries/healthcare.html
+@@ -89,6 +89,28 @@
+   </div>
+ </section>
+ 
++<section class="sec" aria-labelledby="evidence-title">
++  <div class="sec-in">
++    <div class="stag reveal">What has been reported</div>
++    <h2 id="evidence-title" class="reveal">An Ontario case study, not a prediction about every practice</h2>
++    <div class="threat-cards">
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">01</div>
++          <div class="tcard-threat-lbl">Reported case — Ontario, 2024</div>
++          <div class="tcard-title">A medical imaging clinic's ransomware recovery</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">In a case study published July 2024, Ontario's Information and Privacy Commissioner described a medical imaging clinic that detected a ransomware attack in December 2022. A dormant account with broad administrative access was the likely entry point. The attacker deleted the clinic's backups, and up to 550,000 patient records and 1.6 million case files were potentially compromised. The clinic closed temporarily during recovery.</p>
++          <div class="tcard-stat">Up to 550,000 patient records and 1.6 million case files potentially compromised</div>
++          <div class="tcard-tip">The IPC's own safeguards from this case: limit administrative access to a small number of accounts, remove dormant accounts, require multi-factor authentication, keep patches current, and maintain at least one backup copy that stays offline and unaffected by an attack.</div>
++          <div class="tcard-source">Source: Information and Privacy Commissioner of Ontario, "Ransomware reality: Case study in health care cybersecurity and recovery," published July 18, 2024. This is one Ontario case study, not a prediction about small clinics generally. <a href="https://www.ipc.on.ca/en/cases-of-note/ransomware-reality-case-study-health-care-cybersecurity-and-recovery-0" target="_blank" rel="noopener noreferrer">Read the case study ↗</a></div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
++
+ <section class="sec" style="background:var(--surface)" aria-labelledby="review-title">
+   <div class="sec-in">
+     <div class="stag teal reveal">Sector-specific audit focus</div>
+@@ -141,7 +163,8 @@
+     <div style="margin-top:28px">
+       <div class="law-obligations-title" style="color:var(--muted)">Sources and further reading</div>
+       <div class="src-list">
+-        <a class="src-link" href="https://www.ipc.on.ca/" target="_blank" rel="noopener noreferrer">Information and Privacy Commissioner of Ontario — health privacy resources and privacy-management handbook</a>
++        <a class="src-link" href="https://www.ipc.on.ca/en/resources/privacy-management-handbook-for-small-health-care-organizations" target="_blank" rel="noopener noreferrer">Information and Privacy Commissioner of Ontario — Privacy Management Handbook for Small Health Care Organizations</a>
++        <a class="src-link" href="https://www.ipc.on.ca/en/cases-of-note/ransomware-reality-case-study-health-care-cybersecurity-and-recovery-0" target="_blank" rel="noopener noreferrer">Information and Privacy Commissioner of Ontario — Ransomware reality case study (2024)</a>
+         <a class="src-link" href="https://www.priv.gc.ca/en/privacy-topics/business-privacy/safeguards-and-breaches/safeguarding-personal-information/gd_sec_201201/" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada — Safeguarding personal information</a>
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline controls for small and medium organizations</a>
+       </div>
+diff --git a/industries/professional-services.html b/industries/professional-services.html
+index 0c1690c..5dbbc49 100644
+--- a/industries/professional-services.html
++++ b/industries/professional-services.html
+@@ -89,6 +89,39 @@
+   </div>
+ </section>
+ 
++<section class="sec" aria-labelledby="evidence-title">
++  <div class="sec-in">
++    <div class="stag reveal">What has been reported</div>
++    <h2 id="evidence-title" class="reveal">A recovered case, and the pattern behind it</h2>
++    <div class="threat-cards">
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">01</div>
++          <div class="tcard-threat-lbl">Reported case — July 2025</div>
++          <div class="tcard-title">A law firm's $2.3 million payment, redirected and recovered</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">In July 2025, the Canadian Anti-Fraud Centre helped a Vancouver-area law firm recover a full $2.3 million payment after fraudsters used a spear-phishing attack to impersonate a trusted contact and redirect funds to a Hong Kong bank account. The transfer was intercepted through cross-border cooperation between the CAFC and Hong Kong police before the loss became permanent.</p>
++          <div class="tcard-tip">Recovery here depended on the transfer being flagged and reported fast. The better outcome is not needing recovery at all — verify any payment-instruction change through a known, independent contact before funds move.</div>
++          <div class="tcard-source">Source: Canadian Anti-Fraud Centre bulletin, published July 24, 2025. <a href="https://antifraudcentre-centreantifraude.ca/news-nouvelles/2025/2025-07-24-eng.htm" target="_blank" rel="noopener noreferrer">Read the bulletin ↗</a></div>
++        </div>
++      </div>
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">02</div>
++          <div class="tcard-threat-lbl scn">Scenario to test</div>
++          <div class="tcard-title">A client document requests a quick response</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">A file-sharing notice, a signed form, or a payment instruction looks familiar — it references a real matter, a real client, a real deadline. Does the team have a known way to verify the request before opening a file or changing an instruction?</p>
++          <div class="tcard-tip">Give every staff member one clear rule: confirm any document-driven request through a contact method you already have on file, not one supplied in the message itself.</div>
++          <div class="tcard-source">Sources: Competition Bureau of Canada, "Protect your business from fraud" · Canadian Centre for Cyber Security guidance on malicious attachments and links</div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
++
+ <section class="sec" style="background:var(--surface)" aria-labelledby="review-title">
+   <div class="sec-in">
+     <div class="stag teal reveal">Sector-specific audit focus</div>
+@@ -140,7 +173,8 @@
+     <div style="margin-top:28px">
+       <div class="law-obligations-title" style="color:var(--muted)">Sources and further reading</div>
+       <div class="src-list">
+-        <a class="src-link" href="https://lso.ca/" target="_blank" rel="noopener noreferrer">Law Society of Ontario — practice resources on fraud, social engineering, phishing, and cyber risk</a>
++        <a class="src-link" href="https://lso.ca/lawyers/technology-resource-centre/practice-resources-and-supports/cybersecurity-and-fraud" target="_blank" rel="noopener noreferrer">Law Society of Ontario — Cybersecurity and fraud practice resources</a>
++        <a class="src-link" href="https://ised-isde.canada.ca/site/competition-bureau-canada/en/fraud-and-scams/tips-and-advice/protect-your-business-fraud-common-scams-targeting-canadian-businesses" target="_blank" rel="noopener noreferrer">Competition Bureau of Canada — Protect your business from fraud</a>
+         <a class="src-link" href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a>
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline controls for small and medium organizations</a>
+       </div>
+diff --git a/industries/property-management.html b/industries/property-management.html
+index 51afb7d..070f689 100644
+--- a/industries/property-management.html
++++ b/industries/property-management.html
+@@ -89,6 +89,27 @@
+   </div>
+ </section>
+ 
++<section class="sec" aria-labelledby="evidence-title">
++  <div class="sec-in">
++    <div class="stag reveal">What has been reported</div>
++    <h2 id="evidence-title" class="reveal">A scenario worth testing, not a headline to react to</h2>
++    <div class="threat-cards">
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">01</div>
++          <div class="tcard-threat-lbl scn">Scenario to test</div>
++          <div class="tcard-title">A document looks routine — until it isn't</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">A maintenance invoice, an owner or board document, a lease attachment, or a contractor form arrives at a busy moment from an address that looks close enough to real. Payment-change impersonation and false-invoice fraud are documented Canadian business-fraud patterns that apply directly to the volume of vendor and owner correspondence a property-management business handles.</p>
++          <div class="tcard-tip">Can your team verify the sender and use the right system before opening or forwarding it — rather than acting on the message as it arrived?</div>
++          <div class="tcard-source">Sources: Competition Bureau of Canada, "Protect your business from fraud" · Canadian Centre for Cyber Security guidance on malicious attachments and links. We haven't found a Canadian property-management-specific incident with a strong enough primary source to cite yet — this is a documented pattern applied to the sector, not a reported local case.</div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
++
+ <section class="sec" style="background:var(--surface)" aria-labelledby="review-title">
+   <div class="sec-in">
+     <div class="stag teal reveal">Sector-specific audit focus</div>
+@@ -143,6 +164,7 @@
+         <a class="src-link" href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a>
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline controls for small and medium organizations</a>
+         <a class="src-link" href="https://www.priv.gc.ca/en/privacy-topics/business-privacy/safeguards-and-breaches/safeguarding-personal-information/gd_sec_201201/" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada — Safeguarding personal information</a>
++        <a class="src-link" href="https://ised-isde.canada.ca/site/competition-bureau-canada/en/fraud-and-scams/tips-and-advice/protect-your-business-fraud-common-scams-targeting-canadian-businesses" target="_blank" rel="noopener noreferrer">Competition Bureau of Canada — Protect your business from fraud</a>
+       </div>
+     </div>
+   </div>
+diff --git a/industries/retail-hospitality.html b/industries/retail-hospitality.html
+index 8546bfd..439d6aa 100644
+--- a/industries/retail-hospitality.html
++++ b/industries/retail-hospitality.html
+@@ -89,6 +89,39 @@
+   </div>
+ </section>
+ 
++<section class="sec" aria-labelledby="evidence-title">
++  <div class="sec-in">
++    <div class="stag reveal">What has been reported</div>
++    <h2 id="evidence-title" class="reveal">One reported breach, and one thing to check today</h2>
++    <div class="threat-cards">
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">01</div>
++          <div class="tcard-threat-lbl">Reported case — Dec 2025 to Jan 2026</div>
++          <div class="tcard-title">A Canadian retailer's guest-checkout breach</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">Between late December 2025 and January 2026, Canadian retailer Canada Computers &amp; Electronics suffered a web-skimming attack on its guest-checkout payment form. Malicious code captured card numbers and contact details as customers typed them in; the company says logged-in member accounts were not affected. The retailer is offering credit monitoring and the incident is under investigation.</p>
++          <div class="tcard-tip">The exposure here was in guest checkout specifically — a reminder that payment security review has to cover every path a customer can pay through, not just the primary one.</div>
++          <div class="tcard-source">Source: company breach notice, widely reported January 2026.</div>
++        </div>
++      </div>
++      <div class="tcard reveal">
++        <div class="tcard-top">
++          <div class="tcard-num" aria-hidden="true">02</div>
++          <div class="tcard-threat-lbl scn">Scenario to test</div>
++          <div class="tcard-title">Is your menu QR code still taking guests where you intend?</div>
++        </div>
++        <div class="tcard-body">
++          <p class="tcard-story">A QR code is a link, not just a printed square. The Canadian Centre for Cyber Security specifically uses a restaurant menu as its example of everyday QR code use, and warns that a cloned or altered code can redirect a scan to a malicious site, a phishing page, or a malware download.</p>
++          <div class="tcard-tip">Keep a simple inventory of every customer-facing QR code, confirm what each one actually opens, and give staff a clear way to report a code that looks covered, altered, or unexpected.</div>
++          <div class="tcard-source">Source: Canadian Centre for Cyber Security, ITSAP.00.141, "Security considerations for QR codes." <a href="https://www.cyber.gc.ca/en/guidance/security-considerations-qr-codes-itsap00141" target="_blank" rel="noopener noreferrer">Read the guidance ↗</a></div>
++        </div>
++      </div>
++    </div>
++  </div>
++</section>
++
+ <section class="sec" style="background:var(--surface)" aria-labelledby="review-title">
+   <div class="sec-in">
+     <div class="stag teal reveal">Sector-specific audit focus</div>
+@@ -140,7 +173,8 @@
+     <div style="margin-top:28px">
+       <div class="law-obligations-title" style="color:var(--muted)">Sources and further reading</div>
+       <div class="src-list">
+-        <a class="src-link" href="https://www.retailcouncil.org/" target="_blank" rel="noopener noreferrer">Retail Council of Canada — sector program covering data security, remote access points of sale, and incident response</a>
++        <a class="src-link" href="https://www.retailcouncil.org/topics/loss-prevention/retail-cybersecure-program/" target="_blank" rel="noopener noreferrer">Retail Council of Canada — Retail CyberSecure program</a>
++        <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/security-considerations-qr-codes-itsap00141" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Security considerations for QR codes</a>
+         <a class="src-link" href="https://www.cyber.gc.ca/en/guidance/baseline-cyber-security-controls-small-and-medium-organizations" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security — Baseline controls for small and medium organizations</a>
+         <a class="src-link" href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a>
+       </div>
+-- 
+2.43.0
+

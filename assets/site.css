@@ -154,6 +154,7 @@ h2 em{font-style:italic;color:var(--accent)}
 .tcard-top{background:var(--navy);padding:22px 24px 18px;position:relative}
 .tcard-num{font-family:Georgia,"Times New Roman",serif;font-size:3.2rem;font-weight:700;color:rgba(255,255,255,.14);line-height:1;position:absolute;top:14px;right:20px}
 .tcard-threat-lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-dec);margin-bottom:5px}
+.tcard-threat-lbl.scn{color:var(--teal-text)}
 .tcard-title{font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;font-weight:700;color:#fff;line-height:1.3}
 .tcard-body{padding:22px 24px}
 .tcard-story{font-size:1rem;line-height:1.8;color:var(--body);margin-bottom:14px}
@@ -249,6 +250,9 @@ textarea.finp{resize:vertical;min-height:110px;line-height:1.65}
 .consent-row{display:flex;align-items:flex-start;gap:10px;margin:4px 0 16px;font-size:.9rem;line-height:1.6;color:var(--body);cursor:pointer}
 .consent-row input{width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
 .consent-row a{color:var(--accent);font-weight:600}
+.chk-list{display:flex;flex-direction:column;gap:9px;margin:6px 0 4px}
+.chk-item{display:flex;align-items:flex-start;gap:10px;font-size:.9rem;line-height:1.55;color:var(--body);cursor:pointer}
+.chk-item input{width:16px;height:16px;margin-top:3px;flex-shrink:0;accent-color:var(--accent)}
 .btn-full{display:block;width:100%;text-align:center;padding:1rem;background:var(--accent);color:#fff;font-size:1rem;font-weight:700;text-decoration:none;border-radius:12px;border:none;cursor:pointer;font-family:inherit;transition:background .2s;-webkit-tap-highlight-color:transparent}
 .btn-full:hover{background:var(--accent-hover)}
 
