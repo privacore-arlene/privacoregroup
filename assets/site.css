@@ -537,6 +537,17 @@ footer .bbb-badge-text:hover{border-color:var(--gold);background:rgba(181,138,69
   .journey-desc{max-width:none}
 }
 
+/* ── VENTURE CARD (dual-brand cross-link) ── */
+.venture-card{display:flex;align-items:center;gap:28px;background:#fff;border:1px solid var(--rule);border-radius:18px;padding:22px 26px;box-shadow:0 4px 18px rgba(15,39,68,.05);margin-top:8px}
+.venture-logo-link{display:block;flex-shrink:0;border-radius:10px}
+.venture-logo{height:84px;width:auto;display:block;transition:transform .2s}
+.venture-logo-link:hover .venture-logo{transform:scale(1.03)}
+.venture-text{font-size:.95rem;line-height:1.7;color:var(--body);margin:0}
+.venture-inline-link{color:var(--accent);font-weight:600}
+.venture-cta{display:inline-block;margin-top:6px;color:var(--accent);font-weight:700;text-decoration:none}
+.venture-cta:hover{text-decoration:underline}
+@media(max-width:600px){.venture-card{flex-direction:column;align-items:flex-start;gap:16px}.venture-logo{height:62px}}
+
 /* ── ORGANIZATION LOGO WALL (About page) ── */
 .org-logos{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;margin:10px 0 14px}
 .org-logo{height:30px;width:auto;max-width:132px;transition:transform .2s}
