@@ -539,9 +539,10 @@ footer .bbb-badge-text:hover{border-color:var(--gold);background:rgba(181,138,69
 
 /* ── ORGANIZATION LOGO WALL (About page) ── */
 .org-logos{display:flex;flex-wrap:wrap;align-items:center;gap:20px 30px;margin:10px 0 14px}
-.org-logo{height:30px;width:auto;max-width:132px;filter:grayscale(1);opacity:.6;transition:filter .25s,opacity .25s}
-.org-logo:hover{filter:none;opacity:1}
-@media(max-width:480px){.org-logo{height:25px;max-width:108px}.org-logos{gap:16px 22px}}
+.org-logo{height:30px;width:auto;max-width:132px;transition:transform .2s}
+.org-logo:hover{transform:translateY(-2px)}
+.org-logo-tall{height:42px}
+@media(max-width:480px){.org-logo{height:25px;max-width:108px}.org-logo-tall{height:34px}.org-logos{gap:16px 22px}}
 
 /* ── PROFESSIONAL BACKGROUND (About page — sectors + representative organizations) ── */
 .sector-tags{display:flex;flex-wrap:wrap;gap:8px}
