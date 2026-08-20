@@ -517,6 +517,36 @@ footer .bbb-badge-text:hover{border-color:var(--gold);background:rgba(181,138,69
 .trust-line{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 6px;font-size:.88rem;color:var(--on-dark-dim);margin-top:18px;text-align:center}
 .trust-line .sep{opacity:.5}
 
+/* ── CAREER JOURNEY TIMELINE (About page) ── */
+.journey-timeline{display:flex;flex-direction:column}
+.journey-step{display:flex;gap:18px;position:relative;padding-bottom:30px}
+.journey-step:last-child{padding-bottom:0}
+.journey-step:not(:last-child)::before{content:'';position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--rule)}
+.journey-marker{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Inter,Manrope,sans-serif;font-weight:800;font-size:1.05rem;position:relative;z-index:2}
+.journey-step:last-child .journey-marker{background:var(--gold);color:var(--navy)}
+.journey-content{padding-top:6px}
+.journey-title{font-family:Inter,Manrope,sans-serif;font-weight:800;font-size:1.05rem;color:var(--navy);margin-bottom:5px}
+.journey-desc{font-size:.93rem;line-height:1.65;color:var(--body);max-width:420px}
+@media(min-width:860px){
+  .journey-timeline{flex-direction:row}
+  .journey-step{flex-direction:column;gap:0;padding-bottom:0;padding-right:24px;flex:1}
+  .journey-step:not(:last-child)::before{left:40px;top:19px;right:0;bottom:auto;width:auto;height:2px}
+  .journey-marker{margin-bottom:16px}
+  .journey-content{padding-top:0}
+  .journey-desc{max-width:none}
+}
+
+/* ── PROFESSIONAL BACKGROUND (About page — sectors + representative organizations) ── */
+.sector-tags{display:flex;flex-wrap:wrap;gap:8px}
+.sector-tag{display:inline-flex;padding:.42rem .95rem;background:var(--gold-pale);border:1px solid var(--gold-line);border-radius:100px;font-size:.85rem;font-weight:700;color:var(--navy)}
+.org-list{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 10px}
+.org-name{font-family:Inter,Manrope,sans-serif;font-weight:800;color:var(--navy);font-size:1.05rem}
+.org-sep{color:var(--rule);font-weight:400}
+.org-disclaimer{font-size:.8rem;color:var(--muted);line-height:1.6;margin-top:12px}
+.network-callout{background:var(--soft-blue);border:1px solid var(--soft-blue-line);border-radius:12px;padding:20px 22px;font-size:.97rem;line-height:1.7;color:var(--ink)}
+.network-callout strong{color:var(--navy)}
+.about-block-lbl{font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+
 /* ── PAGE-HERO SUBHEAD (bold second line under a page-hero h1) ── */
 .page-hero-subhead{font-size:1.05rem;font-weight:700;color:var(--gold);margin:-6px 0 14px}
 
