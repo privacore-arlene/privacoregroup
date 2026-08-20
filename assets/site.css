@@ -30,8 +30,10 @@ body{font-family:Inter,Manrope,ui-sans-serif,-apple-system,BlinkMacSystemFont,"S
 
 /* ── NAV ── */
 nav{position:fixed;top:40px;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 16px;background:rgba(255,255,255,.98);border-bottom:1px solid var(--rule);backdrop-filter:blur(12px)}
-.logo{font-family:Inter,Manrope,sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
+.logo{display:inline-flex;align-items:center;font-family:Inter,Manrope,sans-serif;font-size:1.2rem;font-weight:800;color:var(--navy);text-decoration:none;letter-spacing:-.01em;white-space:nowrap}
 .logo span{color:var(--gold-text)}
+.logo-img{display:block;height:34px;width:auto}
+@media(min-width:1024px){.logo-img{height:38px}}
 .nav-links{display:none;align-items:center;gap:4px;list-style:none}
 .nav-links a{display:inline-block;padding:.5rem .8rem;font-size:.92rem;font-weight:600;color:var(--body);text-decoration:none;border-radius:8px;transition:color .2s,background .2s}
 .nav-links a:hover{color:var(--gold-text);background:var(--surface)}
@@ -312,7 +314,8 @@ footer{background:#071829;padding:40px 24px 32px}
 .foot-in{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
 .foot-top{display:flex;flex-direction:column;gap:26px}
 .foot-brand{display:flex;flex-direction:column;gap:10px}
-.foot-logo{font-family:Inter,Manrope,sans-serif;font-size:1.1rem;font-weight:800;color:rgba(255,255,255,.9);text-decoration:none}
+.foot-logo{display:inline-flex;align-items:center;font-family:Inter,Manrope,sans-serif;font-size:1.1rem;font-weight:800;color:rgba(255,255,255,.9);text-decoration:none}
+.foot-logo-img{display:block;height:28px;width:auto}
 .foot-logo span{color:var(--gold)}
 .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px}
 .foot-col-title{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px}
