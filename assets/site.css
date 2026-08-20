@@ -519,19 +519,20 @@ footer .bbb-badge-text:hover{border-color:var(--gold);background:rgba(181,138,69
 
 /* ── CAREER JOURNEY TIMELINE (About page) ── */
 .journey-timeline{display:flex;flex-direction:column}
-.journey-step{display:flex;gap:18px;position:relative;padding-bottom:30px}
+.journey-step{display:flex;gap:18px;position:relative;padding-bottom:34px}
 .journey-step:last-child{padding-bottom:0}
-.journey-step:not(:last-child)::before{content:'';position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--rule)}
-.journey-marker{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Inter,Manrope,sans-serif;font-weight:800;font-size:1.05rem;position:relative;z-index:2}
-.journey-step:last-child .journey-marker{background:var(--gold);color:var(--navy)}
-.journey-content{padding-top:6px}
+.journey-step:not(:last-child)::before{content:'';position:absolute;left:7px;top:22px;bottom:0;width:2px;background:var(--rule)}
+.journey-marker{flex-shrink:0;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--navy);margin-top:3px;position:relative;z-index:2}
+.journey-step:last-child .journey-marker{background:var(--gold);border-color:var(--gold)}
+.journey-era{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-text,#9C4C16);margin-bottom:4px}
+.journey-content{padding-top:0}
 .journey-title{font-family:Inter,Manrope,sans-serif;font-weight:800;font-size:1.05rem;color:var(--navy);margin-bottom:5px}
 .journey-desc{font-size:.93rem;line-height:1.65;color:var(--body);max-width:420px}
 @media(min-width:860px){
   .journey-timeline{flex-direction:row}
   .journey-step{flex-direction:column;gap:0;padding-bottom:0;padding-right:24px;flex:1}
-  .journey-step:not(:last-child)::before{left:40px;top:19px;right:0;bottom:auto;width:auto;height:2px}
-  .journey-marker{margin-bottom:16px}
+  .journey-step:not(:last-child)::before{left:24px;top:7px;right:0;bottom:auto;width:auto;height:2px}
+  .journey-marker{margin-bottom:16px;margin-top:0}
   .journey-content{padding-top:0}
   .journey-desc{max-width:none}
 }
