@@ -1,4 +1,4 @@
-/readiness-review /#packages 301
-/builder-system /#packages 301
-/builders /#packages 301
-/services /#packages 301
+/readiness-review /packages 301
+/builder-system /packages 301
+/builders /packages 301
+/services /packages 301
