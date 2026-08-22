@@ -83,6 +83,7 @@
       'incident-response': 'BEC Incident Response & Payment Fraud Assessment — starting at $1,250',
       'm365-check': 'Microsoft 365 Fraud & Security Check — $349',
       'vendor-payment-toolkit': 'Vendor Payment Verification Toolkit — $349',
+      'm365-continuous-monitoring': 'Continuous M365 Fraud & Identity Monitoring (coming soon — notify me)',
       'fraud-protection': 'Email & Payment Fraud Protection',
       'managed-protection': 'Managed Security & Ongoing Protection',
       'implementation': 'Managed Security & Ongoing Protection',
