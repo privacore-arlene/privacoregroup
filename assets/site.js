@@ -76,18 +76,17 @@
     var INTEREST_MAP = {
       'risk-check-results': 'Business Risk Check results / not sure yet',
       'health-check-results': 'Business Risk Check results / not sure yet',
-      'cyber-essentials': 'Cyber Essentials Audit — $497 (1–9 people)',
-      'business-shield': 'Business Shield Audit — $1,197 (10–25 people)',
-      'full-protection': 'Full Protection Program — $2,497 (25–100 people)',
+      'fraud-cyber-risk-assessment': 'Fraud & Cyber Risk Assessment — $750 one-time',
+      'business-protection': 'PrivaCore Business Protection — Starting at $299/month',
+      'managed-protection': 'Managed Protection — Custom quote',
       'incident-assessment': 'Incident Assessment (suspected BEC / fraud / compromise)',
       'incident-response': 'BEC Incident Response & Payment Fraud Assessment — starting at $1,250',
       'm365-check': 'Microsoft 365 Fraud & Security Check — $349',
       'vendor-payment-toolkit': 'Vendor Payment Verification Toolkit — $349',
       'm365-continuous-monitoring': 'Continuous M365 Fraud & Identity Monitoring',
       'fraud-protection': 'Email & Payment Fraud Protection',
-      'managed-protection': 'Managed Security & Ongoing Protection',
-      'implementation': 'Managed Security & Ongoing Protection',
-      'managed-security': 'Managed Security & Ongoing Protection'
+      'implementation': 'Managed Protection — Custom quote',
+      'managed-security': 'Managed Protection — Custom quote'
     };
     var params = new URLSearchParams(window.location.search);
     var requested = params.get('interest');

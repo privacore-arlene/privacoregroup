@@ -33,30 +33,10 @@
 <nav aria-label="Primary navigation">
   <a href="/#main-content" class="logo" aria-label="PrivaCore Group home"><img src="/assets/logo.svg" alt="PrivaCore Group" class="logo-img" width="1370" height="327"></a>
   <ul class="nav-links">
-    <li><a href="/" data-testid="nav-home-link">Home</a></li>
-    <li class="nav-dropdown">
-      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-services-toggle" aria-expanded="false" aria-controls="services-menu">Services <span class="caret" aria-hidden="true">▾</span></button>
-      <ul class="nav-drop-menu" id="services-menu" hidden>
-        <li><a href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
-        <li><a href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
-        <li><a href="/#svc-privacy">Privacy &amp; Governance</a></li>
-        <li><a href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-        <li><a href="/packages#managed-security">Managed Security &amp; Ongoing Protection</a></li>
-      </ul>
-    </li>
-    <li><a href="/#how-it-works">How We Work</a></li>
-    <li class="nav-dropdown">
-      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
-      <ul class="nav-drop-menu" id="industries-menu" hidden>
-        <li><a href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
-        <li><a href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
-        <li><a href="/industries/property-management">Property Management &amp; Strata</a></li>
-        <li><a href="/industries/professional-services">Professional Services</a></li>
-        <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-      </ul>
-    </li>
+    <li><a href="/" aria-current="page" data-testid="nav-home-link">Home</a></li>
+    <li><a href="/packages">Services</a></li>
+    <li><a href="/industries/construction">Construction</a></li>
     <li><a href="/about">About</a></li>
-    <li><a href="/resources">Resources</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
   <div class="nav-actions">
@@ -67,22 +47,10 @@
 <div class="nav-drawer" id="nav-drawer" hidden>
   <ul>
     <li><a href="/" data-testid="drawer-home-link">Home</a></li>
-    <li><span class="drawer-group-lbl">Services</span></li>
-    <li><a class="drawer-sub" href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
-    <li><a class="drawer-sub" href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
-    <li><a class="drawer-sub" href="/#svc-privacy">Privacy &amp; Governance</a></li>
-    <li><a class="drawer-sub" href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-    <li><a class="drawer-sub" href="/packages#managed-security">Managed Security &amp; Ongoing Protection</a></li>
-    <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How We Work</a></li>
-    <li><span class="drawer-group-lbl">Industries</span></li>
-    <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
-    <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
-    <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
-    <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
-    <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-    <li><a href="/about" data-testid="drawer-about">About</a></li>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/contact" data-testid="drawer-contact">Contact</a></li>
+    <li><a href="/packages">Services</a></li>
+    <li><a href="/industries/construction">Construction</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
   </ul>
 </div>
 
@@ -91,17 +59,58 @@
 <!-- HERO -->
 <section class="hero on-dark" aria-labelledby="hero-title">
   <div class="hero-in">
-    <div class="hero-tag"><span class="dot"></span>Cybersecurity · Fraud · Privacy</div>
-    <h1 id="hero-title">Protect the systems, payments and information your business depends on.</h1>
-    <p class="hero-deck">PrivaCore helps Canadian businesses identify cybersecurity, fraud and privacy risks, fix practical gaps, and put appropriate protection in place — without unnecessary complexity or enterprise-sized projects.</p>
+    <div class="hero-tag"><span class="dot"></span>Fraud Prevention · Cyber Resilience · Business Protection</div>
+    <h1 id="hero-title">Protect Your Business From Fraud and Digital Risk</h1>
+    <p class="hero-deck">A complete, founder-led plan to protect your business — payment fraud, email scams, and cyber risk — in plain language, with a clear plan and no jargon.</p>
     <div class="hero-ctas">
       <a href="/#health-check" class="cta-big" data-testid="hero-primary-cta">Take the Free Business Risk Check</a>
-      <a href="/#packages" class="cta-outline" data-testid="hero-secondary-cta">See Packages</a>
+      <a href="/#packages" class="cta-outline" data-testid="hero-secondary-cta">See Services</a>
     </div>
     <div class="trust-line reveal">
       <span>Founder-led</span><span class="sep" aria-hidden="true">·</span><span>Canadian context</span><span class="sep" aria-hidden="true">·</span><span>Practical recommendations</span><span class="sep" aria-hidden="true">·</span>
       <a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-hero">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a>
     </div>
+  </div>
+</section>
+
+<!-- WHAT CONTRACTORS ACTUALLY FACE -->
+<section class="sec" id="contractor-risks" aria-labelledby="contractor-risks-title" style="background:#fff">
+  <div class="sec-in">
+    <div class="stag reveal">What contractors actually face</div>
+    <h2 id="contractor-risks-title" class="reveal">Six ways fraud and cyber risk hit construction businesses.</h2>
+    <div class="svc-grid">
+      <div class="svc-card reveal" data-testid="risk-payment-fraud">
+        <div class="svc-icon" aria-hidden="true">🏦</div>
+        <div class="svc-title">Payment &amp; banking-change fraud</div>
+        <p class="svc-body">A supplier or sub "updates" their banking details by email, and the next payment goes straight to a criminal. The Canadian Anti-Fraud Centre reports fraud losses at a record high — payment and banking-change scams are a major driver.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="risk-bec">
+        <div class="svc-icon" aria-hidden="true">✉️</div>
+        <div class="svc-title">Email compromise (BEC)</div>
+        <p class="svc-body">Someone gets into a real email account — yours, a supplier's, or a client's — and uses it to redirect payments or pull information, from an address you already trust.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="risk-invoices">
+        <div class="svc-icon" aria-hidden="true">🧾</div>
+        <div class="svc-title">Fake or altered invoices</div>
+        <p class="svc-body">A convincing invoice arrives for work that was never done, or a real invoice gets intercepted and the account number is quietly changed before it reaches you.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="risk-phishing">
+        <div class="svc-icon" aria-hidden="true">🎣</div>
+        <div class="svc-title">Phishing &amp; credential theft</div>
+        <p class="svc-body">A text or email made to look like your bank, Microsoft 365, or a supplier tricks someone on your team into typing in a password — that's all it takes to get in.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="risk-impersonation">
+        <div class="svc-icon" aria-hidden="true">👷</div>
+        <div class="svc-title">Vendor &amp; subcontractor impersonation</div>
+        <p class="svc-body">Someone poses as a trade you already work with to request an urgent payment, a password, or access to a shared project folder.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="risk-ransomware">
+        <div class="svc-icon" aria-hidden="true">🔒</div>
+        <div class="svc-title">Ransomware</div>
+        <p class="svc-body">Your files, drawings, and project data get locked up and held for payment — one infected laptop on a job site can be enough to spread it.</p>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:18px;font-size:.85rem;color:var(--muted)">Sources: <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www.rcmp-grc.gc.ca/en" target="_blank" rel="noopener noreferrer">Royal Canadian Mounted Police</a></p>
   </div>
 </section>
 
@@ -169,70 +178,91 @@
 <section class="sec pkg-sec" id="packages" aria-labelledby="packages-title" style="background:var(--surface)">
   <div class="sec-in">
     <div class="pkg-intro">
-      <div class="stag reveal">Audit packages</div>
+      <div class="stag reveal">Three ways to work with us</div>
       <h2 id="packages-title" class="reveal">Know exactly where you stand.</h2>
-      <p class="sec-lead reveal">Three one-time audit prices. A plain-language report, a prioritized action list, and a follow-up call — every time.</p>
+      <p class="sec-lead reveal">A plain-language report, a prioritized action list, and a follow-up call — every time.</p>
     </div>
     <div class="pkg-cards">
 
-      <div class="pkg reveal" data-testid="package-cyber-essentials">
+      <div class="pkg reveal" data-testid="package-fraud-cyber-risk-assessment">
         <div class="pkg-head">
-          <div class="pkg-name">Cyber Essentials</div>
-          <div class="pkg-who">For 1–9 people with a simple technology setup or no recent review.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-name">Fraud &amp; Cyber Risk Assessment</div>
+          <div class="pkg-who">A one-time review that shows you exactly where the risk is and what to fix first.</div>
+          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>750</div><div class="pkg-price-note">CAD · one-time</div></div>
         </div>
         <div class="pkg-divider"></div>
         <div class="pkg-body">
           <div class="pkg-sec-lbl">Highlights</div>
           <ul class="pkg-feats">
-            <li>Cybersecurity health review</li>
-            <li>Credential-exposure scan</li>
-            <li>Plain-language risk report</li>
+            <li>Email &amp; payment fraud (BEC) review</li>
+            <li>Vendor &amp; banking-change verification check</li>
+            <li>Prioritized findings report</li>
           </ul>
-          <a href="/contact?interest=cyber-essentials" class="pkg-cta" data-testid="choose-cyber-essentials">Choose Cyber Essentials — $497</a>
+          <a href="/contact?interest=fraud-cyber-risk-assessment" class="pkg-cta" data-testid="choose-fraud-cyber-risk-assessment">Choose the Risk Assessment — $750</a>
         </div>
       </div>
 
-      <div class="pkg featured reveal" data-testid="package-business-shield">
+      <div class="pkg featured reveal" data-testid="package-business-protection">
         <div class="pkg-head">
           <div class="pkg-badge">Most popular</div>
-          <div class="pkg-name">Business Shield</div>
-          <div class="pkg-who">For 10–25 people, businesses that send or receive payments, or organizations holding client files.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>1,197</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-name">PrivaCore Business Protection</div>
+          <div class="pkg-who">Ongoing protection for businesses that want risk monitored, not just reviewed once.</div>
+          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>299</div><div class="pkg-price-note">CAD/month · starting at</div></div>
         </div>
         <div class="pkg-divider"></div>
         <div class="pkg-body">
           <div class="pkg-sec-lbl">Highlights</div>
           <ul class="pkg-feats">
-            <li>Everything in Cyber Essentials</li>
-            <li>BEC Prevention Check</li>
-            <li>Custom incident response plan</li>
+            <li>Ongoing fraud intelligence</li>
+            <li>Payment &amp; banking-change verification procedures</li>
+            <li>Email monitoring, powered by IRONSCALES</li>
           </ul>
-          <a href="/contact?interest=business-shield" class="pkg-cta" data-testid="choose-business-shield">Choose Business Shield — $1,197</a>
+          <a href="/contact?interest=business-protection" class="pkg-cta" data-testid="choose-business-protection">Choose Business Protection — Starting at $299/mo</a>
         </div>
       </div>
 
-      <div class="pkg reveal" data-testid="package-full-protection">
+      <div class="pkg reveal" data-testid="package-managed-protection">
         <div class="pkg-head">
-          <div class="pkg-name">Full Protection Program</div>
-          <div class="pkg-who">For 25–100 people, multiple locations, or leadership reporting needs.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>2,497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
+          <div class="pkg-name">Managed Protection</div>
+          <div class="pkg-who">Full hands-on protection for businesses that want PrivaCore managing it day to day.</div>
+          <div class="pkg-price-row"><div class="pkg-price">Custom</div><div class="pkg-price-note">quote — scoped to your business</div></div>
         </div>
         <div class="pkg-divider"></div>
         <div class="pkg-body">
           <div class="pkg-sec-lbl">Highlights</div>
           <ul class="pkg-feats">
-            <li>Everything in Business Shield</li>
-            <li>Staff training for up to 40 employees</li>
-            <li>Four quarterly reviews in the following year</li>
+            <li>Managed detection &amp; response (MDR)</li>
+            <li>Backup &amp; endpoint protection (EDR)</li>
+            <li>24/7 monitoring via specialist partners</li>
           </ul>
-          <a href="/contact?interest=full-protection" class="pkg-cta" data-testid="choose-full-protection">Choose Full Protection Program — $2,497</a>
+          <a href="/contact?interest=managed-protection" class="pkg-cta" data-testid="choose-managed-protection">Get a Custom Quote</a>
         </div>
       </div>
 
     </div>
-    <p class="reveal" style="margin-top:22px;font-size:.92rem;color:var(--body);text-align:center">Full inclusions and scope details are on the Packages page. Any remediation or ongoing services are scoped separately. <a href="/packages" style="color:var(--gold-text);font-weight:700">View full package details →</a></p>
+    <p class="reveal" style="margin-top:22px;font-size:.92rem;color:var(--body);text-align:center">Full inclusions and scope details are on the Services page. Any remediation or ongoing services are scoped separately. <a href="/packages" style="color:var(--gold-text);font-weight:700">View full service details →</a></p>
     <p class="reveal" style="margin-top:10px;font-size:.88rem;color:var(--muted);text-align:center">Need help with a suspected incident instead? <a href="/incident-response" style="color:var(--gold-text);font-weight:600">Get Incident Response Help →</a></p>
+  </div>
+</section>
+
+<!-- TRUSTED PARTNERS -->
+<section class="sec" id="partners" aria-labelledby="partners-title" style="background:#fff">
+  <div class="sec-in">
+    <div class="stag reveal">Trusted partners</div>
+    <h2 id="partners-title" class="reveal">Real protection, backed by specialist technology.</h2>
+    <div class="svc-grid" style="grid-template-columns:repeat(2,1fr)">
+      <div class="svc-card reveal" data-testid="partner-ironscales">
+        <div class="svc-icon" aria-hidden="true">✉️</div>
+        <div class="svc-title">Email &amp; BEC monitoring — Powered by IRONSCALES</div>
+        <p class="svc-body">Every mailbox continuously monitored for phishing, business email compromise, and account takeover — included with PrivaCore Business Protection and Managed Protection.</p>
+      </div>
+      <div class="svc-card reveal" data-testid="partner-malwarebytes">
+        <div class="svc-icon" aria-hidden="true">🔑</div>
+        <div class="svc-title">Credential monitoring — Malwarebytes</div>
+        <p class="svc-body">Watches for stolen logins and exposed credentials tied to your business, so a leaked password doesn't turn into an open door.</p>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:18px;font-size:.85rem;color:var(--muted)">PrivaCore may receive a referral fee or commission from some partners listed here. Partners are selected based on fit for small-business needs, not payment — and inclusion here never changes our findings or recommendations.</p>
   </div>
 </section>
 
@@ -261,7 +291,7 @@
     <div class="about-teaser-row reveal">
       <img src="/assets/arlene.jpg" alt="Arlene Chamulak, founder of PrivaCore Group" class="about-teaser-photo" width="200" height="200" loading="lazy" data-testid="about-teaser-photo">
       <div>
-        <p class="about-teaser-text">Arlene Chamulak spent 15+ years leading privacy and cybersecurity programs inside regulated Canadian organizations before founding PrivaCore Group. You work directly with her — a clear plan, a plain-language report, no generic checklist.</p>
+        <p class="about-teaser-text">Nearly three decades in IT — the last 15+ years leading cybersecurity and fraud-prevention programs at RBC, WestJet, and BC Lotteries — before Arlene founded PrivaCore Group. You work directly with her: a clear plan, a plain-language report, no generic checklist.</p>
         <a href="/about" class="svc-cta" data-testid="about-teaser-link">About PrivaCore →</a>
       </div>
     </div>
@@ -297,8 +327,8 @@
             <li><a href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
             <li><a href="/#svc-privacy">Privacy &amp; Governance</a></li>
             <li><a href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-            <li><a href="/packages#managed-security">Managed Security &amp; Ongoing Protection</a></li>
-            <li><a href="/packages#m365-monitoring">Continuous M365 Monitoring</a></li>
+            <li><a href="/packages#managed-security">Managed Protection</a></li>
+            <li><a href="/packages#m365-monitoring">Ongoing Monitoring</a></li>
           </ul>
         </div>
         <div class="foot-col">
@@ -316,7 +346,7 @@
           <ul>
             <li><a href="/about">About</a></li>
             <li><a href="/#how-it-works">How We Work</a></li>
-            <li><a href="/packages">Audit Packages</a></li>
+            <li><a href="/packages">Services &amp; Pricing</a></li>
             <li><a href="/#health-check">Business Risk Check</a></li>
             <li><a href="/incident-response">Incident Response</a></li>
           </ul>
