@@ -4,9 +4,10 @@ Positioning: Cybersecurity · Fraud · Privacy — "Protect the systems, payment
 information your business depends on."
 
 Contents
-  index.html            Homepage (hero, core services, managed security, email &
-                        payment fraud (BEC), industries, how we work, Business Risk
-                        Check, audit packages, about, final CTA, website privacy notice)
+  index.html            Homepage (hero, what contractors actually face, core services,
+                        managed security, email & payment fraud (BEC), industries, how
+                        we work, Business Risk Check, three-tier service ladder, trusted
+                        partners, about, final CTA, website privacy notice)
   contact.html          Contact page with Netlify form and ?interest=/?industry= preselection
   exposure-check.html   Standalone Free Business Risk Check (non-graded, no scores)
   resources.html        Practical guides, extended risk scenarios, and Canadian privacy-law
@@ -28,10 +29,10 @@ Deploy to Netlify
      and the repository root as the publish directory.
   3. Open the temporary netlify.app address and test:
        - the ten-question Business Risk Check on desktop and mobile (no scores or grades shown)
-       - all navigation links and the Services/Industries dropdowns, including from /contact
-         and /exposure-check
+       - all navigation links (Home / Services / Construction / About / Contact), including
+         from /contact and /exposure-check
        - the contact form and the resulting entry under Forms ("privacore-contact")
-       - ?interest= / ?industry= preselection, e.g. /contact?interest=business-shield
+       - ?interest= / ?industry= preselection, e.g. /contact?interest=business-protection
        - the BBB Accredited Business link in the hero, About section and footer
        - the privacy notice and consent checkbox
   4. In Domain management, add privacoregroup.com and follow the exact DNS
