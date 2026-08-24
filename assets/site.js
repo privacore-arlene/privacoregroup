@@ -74,8 +74,8 @@
   var interestSelect = document.getElementById('contact-interest');
   if (interestSelect) {
     var INTEREST_MAP = {
-      'risk-check-results': 'Business Risk Check results / not sure yet',
-      'health-check-results': 'Business Risk Check results / not sure yet',
+      'risk-check-results': 'Business Fraud Check results / not sure yet',
+      'health-check-results': 'Business Fraud Check results / not sure yet',
       'fraud-cyber-risk-assessment': 'Fraud & Cyber Risk Assessment — $750 one-time',
       'business-protection': 'PrivaCore Business Protection — Starting at $299/month',
       'managed-protection': 'Managed Protection — Custom quote',

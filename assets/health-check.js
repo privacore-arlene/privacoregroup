@@ -177,7 +177,8 @@
             '<h4 id="hc-next-steps-title">Three practical next steps</h4>' +
             '<ol data-hc-priority-list></ol>' +
           '</section>' +
-          '<p class="hc-results-note"><strong>What a paid audit adds:</strong> the free check is self-reported and educational. An audit reviews evidence, workflows, and priorities in the context of your business.</p>' +
+          '<p class="hc-results-note"><strong>What a Fraud &amp; Cyber Risk Assessment adds:</strong> this free check is self-reported and educational. An assessment reviews evidence, workflows, and priorities in the context of your business.</p>' +
+          '<p class="hc-results-note" data-testid="hc-assessment-nudge"><strong>Concerned about what this could mean for your business?</strong> <a href="/contact?interest=fraud-cyber-risk-assessment">Request a Fraud &amp; Cyber Risk Assessment →</a></p>' +
           '<div class="hc-email-capture" data-testid="hc-email-capture">' +
             '<p class="hc-email-label">Want the prioritized checklist emailed to you? <span>(optional — your results above are already complete without it)</span></p>' +
             '<form class="hc-email-form" name="privacore-risk-check-email" method="POST" data-netlify="true" data-hc-email-form data-testid="hc-email-form">' +
@@ -189,8 +190,9 @@
             '<p class="hc-email-success" data-hc-email-success hidden data-testid="hc-email-success">Thanks — we\'ll send that over shortly.</p>' +
           '</div>' +
           '<div class="hc-results-actions">' +
-            '<a class="hc-button hc-button-primary" href="/contact?interest=health-check-results" data-testid="hc-talk-results-link">Talk through my results — free</a>' +
-            '<button class="hc-button hc-button-secondary" type="button" data-hc-restart data-testid="hc-retake-button">← Retake the Business Risk Check</button>' +
+            '<a class="hc-button hc-button-primary" href="/contact?interest=fraud-cyber-risk-assessment" data-testid="hc-assessment-link">Request a Fraud &amp; Cyber Risk Assessment</a>' +
+            '<a class="hc-button hc-button-secondary" href="/contact?interest=health-check-results" data-testid="hc-talk-results-link">Talk through my results — free</a>' +
+            '<button class="hc-button hc-button-secondary" type="button" data-hc-restart data-testid="hc-retake-button">← Retake the Business Fraud Check</button>' +
           '</div>' +
         '</section>' +
       '</div>';
