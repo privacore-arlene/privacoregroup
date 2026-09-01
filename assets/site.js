@@ -2,13 +2,6 @@
 (function () {
   'use strict';
 
-  // Single source of truth for the official PrivaCore Group BBB profile URL.
-  // Every [data-bbb-badge] link on the site (hero, About, footer) is populated from this constant.
-  var BBB_PROFILE_URL = 'https://www.bbb.org/ca/bc/vancouver/profile/threat-and-fraud-assessment/the-fraud-doctor-0037-2438602/#sealclick';
-  document.querySelectorAll('[data-bbb-badge]').forEach(function (el) {
-    el.setAttribute('href', BBB_PROFILE_URL);
-  });
-
   // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
