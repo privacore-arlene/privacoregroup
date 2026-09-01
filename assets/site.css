@@ -392,6 +392,46 @@ footer{background:#071829;padding:40px 24px 32px}
   .reveal{opacity:1;transform:none;transition:none}
 }
 
+/* ── VISUAL REFINEMENT PASS (hero art, stat grid balance, pricing polish) ── */
+/* Hero: geometric brand motif filling the dead right side (desktop only) */
+.hero-art{display:none}
+@media(min-width:1024px){
+  .hero-in{max-width:1120px}
+  .hero h1{max-width:660px}
+  .hero-art{
+    display:block;position:absolute;right:0;top:50%;transform:translateY(-50%);
+    width:400px;height:400px;z-index:1;pointer-events:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cg stroke='%23C9A227' stroke-opacity='0.10'%3E%3Cpath d='M40 0V400M120 0V400M200 0V400M280 0V400M360 0V400M0 40H400M0 120H400M0 200H400M0 280H400M0 360H400'/%3E%3C/g%3E%3Cpath d='M200 44 L318 92 V198 C318 276 262 336 200 360 C138 336 82 276 82 198 V92 Z' fill='none' stroke='%23C9A227' stroke-opacity='0.55' stroke-width='2'/%3E%3Cpath d='M200 88 L286 122 V196 C286 252 246 296 200 316 C154 296 114 252 114 196 V122 Z' fill='none' stroke='%23C9A227' stroke-opacity='0.28' stroke-width='1.5' stroke-dasharray='6 6'/%3E%3Cpath d='M184 200 l16 16 l32 -34' fill='none' stroke='%23E3B64E' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='200' cy='44' r='4' fill='%23E3B64E'/%3E%3Ccircle cx='318' cy='92' r='4' fill='%23E3B64E'/%3E%3Ccircle cx='82' cy='92' r='4' fill='%23E3B64E'/%3E%3Ccircle cx='200' cy='360' r='4' fill='%23E3B64E'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
+  .hero-art::before{
+    content:'';position:absolute;inset:-60px;border-radius:50%;
+    background:radial-gradient(circle,rgba(201,162,39,.14) 0%,transparent 62%);
+  }
+}
+@media(min-width:1280px){.hero-art{right:2%;width:440px;height:440px}}
+
+/* Stat cards: balanced 3+2 grid, no orphan card */
+@media(min-width:720px){
+  .ss-in{grid-template-columns:repeat(2,1fr)}
+  .ss-item:last-child{border-right:none}
+}
+@media(min-width:1024px){
+  .ss-in{grid-template-columns:repeat(6,1fr);gap:16px}
+  .ss-item{grid-column:span 2}
+  .ss-item:nth-child(4){grid-column:2/span 2}
+  .ss-item:nth-child(5){grid-column:4/span 2}
+}
+/* Stat numerals: warm gold gradient for contrast + polish */
+.ss-num{
+  background:linear-gradient(160deg,#E9C66E 0%,#C9A227 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+
+/* Pricing: price note on its own line, no mid-phrase wraps; featured card edges */
+.pkg-price-row{flex-wrap:wrap}
+.pkg-price-note{flex-basis:100%;margin-top:4px}
+.pkg.featured{box-shadow:0 0 0 1px var(--gold),0 12px 36px rgba(11,31,51,.10)}
+
 /* ── NAV DROPDOWNS (Services / Industries) ── */
 .nav-dropdown{position:relative}
 .nav-drop-btn{display:inline-flex;align-items:center;gap:6px;padding:.5rem .8rem;font-size:.92rem;font-weight:600;color:var(--body);background:none;border:none;border-radius:8px;cursor:pointer;font-family:inherit}
