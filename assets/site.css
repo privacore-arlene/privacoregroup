@@ -432,6 +432,31 @@ footer{background:#071829;padding:40px 24px 32px}
 .pkg-price-note{flex-basis:100%;margin-top:4px}
 .pkg.featured{box-shadow:0 0 0 1px var(--gold),0 12px 36px rgba(11,31,51,.10)}
 
+/* ── VISUAL REFINEMENT PASS 2: line icons, section texture, micro-interactions ── */
+/* Line-icon colour inside icon tiles */
+.svc-icon{color:#9A7B1E}
+.ss-icon{color:#E3B64E}
+.spill-icon{color:#E3B64E}
+
+/* Subtle ambient glow on dark sections (same gold as hero motif) */
+.law-sec,.shield-sec,.contact-sec,.page-hero{position:relative;overflow:hidden}
+.law-sec::before,.shield-sec::before,.contact-sec::before,.page-hero::before{
+  content:'';position:absolute;top:-140px;right:-140px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,162,39,.10) 0%,transparent 65%);pointer-events:none;
+}
+.law-sec>*,.shield-sec>*,.contact-sec>*,.page-hero>*{position:relative;z-index:1}
+
+/* Button & card micro-interactions */
+.cta-big,.btn-solid-nav,.pkg-cta,.btn-teal{transition-property:background-color,color,transform,box-shadow,border-color;transition-duration:.18s;transition-timing-function:ease-out}
+.cta-big:hover,.btn-teal:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(201,162,39,.30)}
+.cta-big:active,.btn-teal:active,.btn-solid-nav:active,.pkg-cta:active{transform:translateY(0)}
+.btn-solid-nav:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(11,31,51,.22)}
+.pkg-cta:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(11,31,51,.18)}
+.pkg{transition:box-shadow .25s,transform .25s}
+.pkg:hover{transform:translateY(-3px)}
+.svc-card,.tcard,.scen-card,.step-card,.ind-card{transition:box-shadow .25s,transform .25s,border-color .25s}
+.svc-card:hover,.tcard:hover,.scen-card:hover,.step-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(11,31,51,.10)}
+
 /* ── NAV DROPDOWNS (Services / Industries) ── */
 .nav-dropdown{position:relative}
 .nav-drop-btn{display:inline-flex;align-items:center;gap:6px;padding:.5rem .8rem;font-size:.92rem;font-weight:600;color:var(--body);background:none;border:none;border-radius:8px;cursor:pointer;font-family:inherit}
