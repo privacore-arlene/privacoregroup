@@ -1,59 +1,47 @@
-PRIVACORE GROUP — NETLIFY DEPLOY PACKAGE
+PRIVACORE GROUP — ONE-PAGE WEBSITE (static, no build step)
 
-Positioning: Cybersecurity · Fraud · Privacy — "Protect the systems, payments and
-information your business depends on."
+Positioning: senior-led privacy, GRC, cybersecurity-governance and responsible-AI
+governance advisory, with change-management and adoption support, for Canadian
+organizations.
 
 Contents
-  index.html            Homepage (hero, core services, managed security, email &
-                        payment fraud (BEC), industries, how we work, Business Risk
-                        Check, audit packages, about, final CTA, website privacy notice)
-  contact.html          Contact page with Netlify form and ?interest=/?industry= preselection
-  exposure-check.html   Standalone Free Business Risk Check (non-graded, no scores)
-  resources.html        Practical guides, extended risk scenarios, and Canadian privacy-law
-                        (PIPEDA / Law 25 / BC & Alberta PIPA) reference content
-  thank-you.html        Form success landing page
-  industries/*.html     Construction (featured specialization), healthcare, property
-                        management, professional services, retail & hospitality
-  assets/site.css       Shared design system (navy / slate / warm white / muted gold palette)
-  assets/site.js        Shared behaviour (mobile menu, dropdowns, scroll reveal, form
-                        handling, BBB_PROFILE_URL constant for the BBB badge component)
-  assets/health-check.css / assets/health-check.js   Shared Business Risk Check component
-  _headers              Browser security headers for Netlify (CSP allows the official
-                        BBB seal image host, seal-mbc.bbb.org)
-  _redirects            Legacy route redirects to current sections
+  index.html        The whole site: header, hero, who we help, services, readiness &
+                    governance packages, how we work,
+                    why PrivaCore, about, contact, footer with website privacy notice.
+                    All editable copy lives here, one commented block per section.
+  assets/site.css   Styles. Colour, type and spacing tokens are at the top (:root).
+  assets/site.js    BUSINESS_EMAIL constant (single source of truth for the email) and
+                    the footer copyright year.
+  assets/logo.svg / logo-light.svg   Existing PrivaCore Group logo (header / footer).
+  _headers          Security headers. The CSP allows only this site's own files — no
+                    third-party scripts, fonts, analytics or embeds.
+  _redirects        Retired pages (/about, /contact, /industries/*, etc.) redirect to the
+                    matching section of the one-page site.
 
-Deploy to Netlify
-  1. Sign in to Netlify, choose Add new project, then Deploy manually (or connect the repo).
-  2. Drag this folder into Netlify, or connect the GitHub repository with no build command
-     and the repository root as the publish directory.
-  3. Open the temporary netlify.app address and test:
-       - the ten-question Business Risk Check on desktop and mobile (no scores or grades shown)
-       - all navigation links and the Services/Industries dropdowns, including from /contact
-         and /exposure-check
-       - the contact form and the resulting entry under Forms ("privacore-contact")
-       - ?interest= / ?industry= preselection, e.g. /contact?interest=business-shield
-       - the BBB Accredited Business link in the hero, About section and footer
-       - the privacy notice and consent checkbox
-  4. In Domain management, add privacoregroup.com and follow the exact DNS
-     instructions Netlify gives for the site.
+Changing the business email
+  1. Edit BUSINESS_EMAIL near the top of assets/site.js.
+  2. In index.html, find and replace the old address (no-JavaScript fallback and the
+     schema.org data in <head>).
 
-Configuration
-  BBB_PROFILE_URL is defined once, near the top of assets/site.js, and populates every
-  [data-bbb-badge] link on the site. Update it there if the official BBB profile URL changes.
+Name-free, team-first brand
+  The site shows no personal names, headshots or individual bios. Add role-based team
+  descriptions or credentials (e.g. CISA/CISM) only after status and availability are
+  confirmed, and never attribute a credential to the whole team unless every member holds it.
 
-Important DNS caution
-  Change only the website records Netlify identifies. Preserve all MX, TXT,
-  DKIM, SPF, DMARC, autodiscover, and other email-related records so moving the
-  website does not interrupt business email. Do not remove the old website
-  until the new netlify.app preview and form have been tested successfully.
+Readiness & governance packages
+  Scoped advisory/readiness work only. Never claim PrivaCore issues SOC reports or
+  certifications, guarantees an audit opinion, or makes an organization compliant.
+  Add a framework package (e.g. ISO/IEC 27001, SOC 1) only once delivery capability is
+  confirmed; say "partner-supported" only if a real partner has agreed to the arrangement.
 
-Contact-form note
-  The form uses Netlify Forms and includes a honeypot field. Netlify must process
-  the deployed HTML before submissions appear in the account. After the first
-  deployment, confirm that "privacore-contact" is listed under Forms and submit a
-  real test message.
+Contact method
+  Email only (mailto: links). There is no contact form, phone number, booking widget,
+  newsletter, social feed, analytics, advertising pixel or cookie banner. If any of these
+  are added later, update the footer privacy notice and _headers first.
 
-Privacy note
-  The site includes a short website privacy notice for the contact form. Review it
-  again if analytics, advertising pixels, chat tools, scheduling tools, or another
-  form/email provider is added later.
+Preview locally
+  Any static file server from the repository root, e.g.  python -m http.server 8080
+
+Deploy
+  Netlify, no build command, repository root as the publish directory. Preserve all
+  email-related DNS records (MX, TXT, SPF, DKIM, DMARC) when changing domain settings.

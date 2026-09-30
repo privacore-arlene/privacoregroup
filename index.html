@@ -3,552 +3,373 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cybersecurity, Fraud &amp; Privacy Risk Advisory for Canadian Businesses | PrivaCore Group</title>
-<meta name="description" content="PrivaCore Group helps Canadian businesses reduce cybersecurity, fraud, Microsoft 365, privacy and incident risk. Founder-led assessments and practical protection — without enterprise-sized complexity.">
-<meta name="theme-color" content="#0B1F33">
+<!--
+  EDITING NOTES
+  - All page copy lives in this file, section by section.
+  - The business email is set once in /assets/site.js (BUSINESS_EMAIL) and applied to every
+    element marked data-business-email. The same address is repeated below as a fallback for
+    visitors without JavaScript and for search engines — if the email changes, update site.js
+    AND search this file for "info@privacoregroup.com".
+-->
+<title>PrivaCore Group | Privacy, GRC &amp; Responsible-AI Governance Advisory in Canada</title>
+<meta name="description" content="Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory for Canadian organizations, with change-management and adoption support to help it take hold.">
+<meta name="theme-color" content="#0E1B2C">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://privacoregroup.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1F33'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='17' font-weight='700' fill='%23B58A45' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E1B2C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23A9D6D1' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cybersecurity, Fraud &amp; Privacy Risk Advisory for Canadian Businesses | PrivaCore Group">
-<meta property="og:description" content="PrivaCore Group helps Canadian businesses reduce cybersecurity, fraud, Microsoft 365, privacy and incident risk. Founder-led assessments and practical protection.">
+<meta property="og:site_name" content="PrivaCore Group">
+<meta property="og:title" content="PrivaCore Group | Privacy, AI and cyber governance people can put into practice">
+<meta property="og:description" content="Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory for Canadian organizations, with change and adoption support.">
 <meta property="og:url" content="https://privacoregroup.com/">
 <meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"PrivaCore Group","legalName":"C-Success Corp","url":"https://privacoregroup.com/","email":"info@privacoregroup.com","telephone":"+1-604-341-1651","areaServed":"Canada","address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"description":"Founder-led cybersecurity, fraud, privacy and governance risk advisory for Canadian businesses.","sameAs":["https://www.bbb.org/ca/bc/vancouver/profile/threat-and-fraud-assessment/the-fraud-doctor-0037-2438602/"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"PrivaCore Group","legalName":"C-Success Corp","url":"https://privacoregroup.com/","email":"info@privacoregroup.com","areaServed":"Canada","address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"description":"Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory, with change-management and adoption support, for Canadian organizations."}
 </script>
 <link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/health-check.css">
 </head>
-<body>
+<body id="top">
 
-<a class="skip-link" href="#main-content">Skip to main content</a>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- INCIDENT BANNER -->
-<div class="incident-banner" role="region" aria-label="Incident response">
-  <a href="/incident-response" data-testid="incident-banner-link">Already dealing with a fraud incident? Get help now →</a>
-</div>
-
-<!-- NAV -->
-<nav aria-label="Primary navigation">
-  <a href="/#main-content" class="logo" aria-label="PrivaCore Group home"><img src="/assets/logo.svg" alt="PrivaCore Group" class="logo-img" width="1370" height="327"></a>
-  <ul class="nav-links">
-    <li><a href="/" data-testid="nav-home-link">Home</a></li>
-    <li class="nav-dropdown">
-      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-services-toggle" aria-expanded="false" aria-controls="services-menu">Services <span class="caret" aria-hidden="true">▾</span></button>
-      <ul class="nav-drop-menu" id="services-menu" hidden>
-        <li><a href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
-        <li><a href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
-        <li><a href="/#svc-privacy">Privacy &amp; Governance</a></li>
-        <li><a href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-        <li><a href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#top"><img src="/assets/logo.svg" alt="PrivaCore Group — home" width="1370" height="327"></a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-we-work">How We Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </li>
-    <li><a href="/#how-it-works">How We Work</a></li>
-    <li class="nav-dropdown">
-      <button type="button" class="nav-drop-btn" data-dropdown-btn data-testid="nav-industries-toggle" aria-expanded="false" aria-controls="industries-menu">Industries <span class="caret" aria-hidden="true">▾</span></button>
-      <ul class="nav-drop-menu" id="industries-menu" hidden>
-        <li><a href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
-        <li><a href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
-        <li><a href="/industries/property-management">Property Management &amp; Strata</a></li>
-        <li><a href="/industries/professional-services">Professional Services</a></li>
-        <li><a href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-      </ul>
-    </li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-  <div class="nav-actions">
-    <a href="/#health-check" class="btn-solid-nav" data-testid="nav-risk-check-cta">Free Business Risk Check</a>
-    <button type="button" class="nav-toggle" data-nav-toggle data-testid="nav-menu-toggle" aria-expanded="false" aria-controls="nav-drawer"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu</button>
+    </nav>
   </div>
-</nav>
-<div class="nav-drawer" id="nav-drawer" hidden>
-  <ul>
-    <li><a href="/" data-testid="drawer-home-link">Home</a></li>
-    <li><span class="drawer-group-lbl">Services</span></li>
-    <li><a class="drawer-sub" href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
-    <li><a class="drawer-sub" href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
-    <li><a class="drawer-sub" href="/#svc-privacy">Privacy &amp; Governance</a></li>
-    <li><a class="drawer-sub" href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-    <li><a class="drawer-sub" href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
-    <li><a href="/#how-it-works" data-testid="drawer-how-it-works">How We Work</a></li>
-    <li><span class="drawer-group-lbl">Industries</span></li>
-    <li><a class="drawer-sub" href="/industries/construction">Construction, Developers &amp; Contractors</a></li>
-    <li><a class="drawer-sub" href="/industries/healthcare">Health, Wellness &amp; Clinics</a></li>
-    <li><a class="drawer-sub" href="/industries/property-management">Property Management &amp; Strata</a></li>
-    <li><a class="drawer-sub" href="/industries/professional-services">Professional Services</a></li>
-    <li><a class="drawer-sub" href="/industries/retail-hospitality">Retail, Hospitality &amp; Restaurants</a></li>
-    <li><a href="/about" data-testid="drawer-about">About</a></li>
-    <li><a href="/resources">Resources</a></li>
-    <li><a href="/contact" data-testid="drawer-contact">Contact</a></li>
-  </ul>
-</div>
+</header>
 
-<main id="main-content">
+<main id="main" tabindex="-1">
 
 <!-- HERO -->
-<section class="hero on-dark" aria-labelledby="hero-title">
-  <div class="hero-in">
-    <div class="hero-tag"><span class="dot"></span>Cybersecurity · Fraud · Privacy</div>
-    <h1 id="hero-title">Protect the systems, payments and information your business depends on.</h1>
-    <p class="hero-deck">PrivaCore helps Canadian businesses identify cybersecurity, fraud and privacy risks, fix practical gaps and put appropriate protection in place — without unnecessary complexity or enterprise-sized projects.</p>
-    <div class="hero-ctas">
-      <a href="/#health-check" class="cta-big" data-testid="hero-primary-cta">Take the Free Business Risk Check</a>
-      <a href="/#services" class="cta-outline" data-testid="hero-secondary-cta">Explore Our Services</a>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow-dark">Privacy • GRC • Cybersecurity • Responsible AI • Adoption</p>
+      <h1 id="hero-title">Privacy, AI and cyber governance people can put into practice.</h1>
+      <p class="hero-body">PrivaCore Group helps Canadian organizations turn requirements, control gaps, and responsible-AI goals into practical governance—and supports the people and processes needed to make it stick.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="mailto:info@privacoregroup.com" data-business-email="link">Email PrivaCore</a>
+        <p class="hero-meta">Senior-led advisory for Canadian organizations.</p>
+      </div>
     </div>
-    <div class="trust-line reveal">
-      <span>Founder-led</span><span class="sep" aria-hidden="true">·</span><span>Canadian context</span><span class="sep" aria-hidden="true">·</span><span>Practical recommendations</span><span class="sep" aria-hidden="true">·</span>
-      <a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-hero">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a>
+
+    <figure class="flow" aria-labelledby="flow-cap">
+      <figcaption id="flow-cap" class="flow-cap">From requirement to routine</figcaption>
+      <ol class="flow-list">
+        <li>
+          <span class="flow-k">Requirement</span>
+          <span class="flow-v">Privacy obligations, audit findings, policy commitments, responsible-AI goals</span>
+        </li>
+        <li>
+          <span class="flow-k">Governance</span>
+          <span class="flow-v">Clear owners, proportionate controls, workflows and evidence</span>
+        </li>
+        <li>
+          <span class="flow-k">Practice</span>
+          <span class="flow-v">People who know their role, using processes that fit the work</span>
+        </li>
+      </ol>
+      <p class="flow-foot">Change and adoption support runs through every step.</p>
+    </figure>
+  </div>
+</section>
+
+<!-- WHO WE HELP -->
+<section class="who" aria-labelledby="who-title">
+  <div class="wrap who-in">
+    <h2 id="who-title" class="who-title">Who we help</h2>
+    <div>
+      <p class="who-lead">Mid-sized and regulated Canadian organizations, across sectors, that:</p>
+      <ul class="who-list">
+        <li>handle personal information</li>
+        <li>depend on vendors and cloud services</li>
+        <li>are introducing AI into their work</li>
+        <li>need to close privacy, control or audit-remediation gaps</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- CORE SERVICES -->
-<section class="sec" id="services" aria-labelledby="services-title" style="background:#fff">
-  <div class="sec-in">
-    <div class="stag reveal">What we help with</div>
-    <h2 id="services-title" class="reveal">Four risks. One practical approach.</h2>
-    <p class="sec-lead reveal">PrivaCore serves businesses across industries, with construction, developers and contractors as a featured specialization. Every engagement starts with the same question: where does your business actually stand today?</p>
-    <div class="svc-grid">
-      <div class="svc-card reveal" id="svc-cyber" data-testid="svc-cybersecurity">
-        <div class="svc-icon" aria-hidden="true">🔐</div>
-        <div class="svc-title">Cybersecurity &amp; Microsoft 365</div>
-        <p class="svc-body">Assess account security, authentication, email configuration, devices, backups and the controls protecting everyday business systems.</p>
-        <a class="svc-cta" href="/#managed-security" data-testid="svc-cta-cybersecurity">Explore Cybersecurity →</a>
-      </div>
-      <div class="svc-card reveal" id="svc-fraud" data-testid="svc-fraud">
-        <div class="svc-icon" aria-hidden="true">💳</div>
-        <div class="svc-title">Email &amp; Payment Fraud</div>
-        <p class="svc-body">Reduce exposure to phishing, business email compromise, vendor impersonation, invoice redirection and fraudulent banking changes.</p>
-        <a class="svc-cta" href="/#bec" data-testid="svc-cta-fraud">Explore Fraud Protection →</a>
-      </div>
-      <div class="svc-card reveal" id="svc-privacy" data-testid="svc-privacy">
-        <div class="svc-icon" aria-hidden="true">📋</div>
-        <div class="svc-title">Privacy &amp; Governance</div>
-        <p class="svc-body">Understand how personal information moves through the organization and establish practical privacy, vendor and governance controls.</p>
-        <a class="svc-cta" href="/resources#privacy-law" data-testid="svc-cta-privacy">Explore Privacy →</a>
-      </div>
-      <div class="svc-card reveal" id="svc-incident" data-testid="svc-incident">
-        <div class="svc-icon" aria-hidden="true">🚨</div>
-        <div class="svc-title">Incident &amp; BEC Assessments</div>
-        <p class="svc-body">Assess available evidence following suspicious email or payment activity, identify indicators of compromise, determine immediate remediation needs and escalate to specialist digital-forensics resources where required.</p>
-        <a class="svc-cta" href="/contact?interest=incident-assessment" data-testid="svc-cta-incident">Get Incident Help →</a>
-      </div>
+<!-- SERVICES -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2 id="services-title">Governance advisory that turns obligations into working practice.</h2>
+      <p class="lead">Advisory, governance and change work. PrivaCore does not provide legal advice, penetration testing, security monitoring, incident forensics or technical implementation, and works alongside your legal counsel, IT and security teams, and providers.</p>
     </div>
-  </div>
-</section>
 
-<!-- MANAGED SECURITY -->
-<section class="shield-sec on-dark" id="managed-security" aria-labelledby="managed-title">
-  <div class="shield-in">
-    <div class="stag reveal">Managed cybersecurity &amp; ongoing protection</div>
-    <h2 id="managed-title" class="reveal">Turn findings into finished, maintained work.</h2>
-    <p class="shield-lead reveal">PrivaCore can help businesses implement and maintain appropriate cybersecurity protection following an assessment. Depending on the environment and risk profile, this may include Microsoft 365 security improvements, email protection, identity monitoring, endpoint protection, employee awareness and managed detection and response.</p>
-    <div class="shield-pillars reveal">
-      <div class="spill"><div class="spill-icon" aria-hidden="true">🛡️</div><div><div class="spill-title">Microsoft 365 security configuration and hardening</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">✉️</div><div><div class="spill-title">Email phishing and impersonation protection</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">🔑</div><div><div class="spill-title">Identity and account-compromise monitoring</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">💻</div><div><div class="spill-title">Endpoint security coordination</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">🎓</div><div><div class="spill-title">Security awareness and phishing education</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">🏦</div><div><div class="spill-title">Vendor and payment-change fraud controls</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">📡</div><div><div class="spill-title">Security alerts and incident escalation</div></div></div>
-      <div class="spill"><div class="spill-icon" aria-hidden="true">🧭</div><div><div class="spill-title">Managed detection and response through specialist security partners where required</div></div></div>
-    </div>
-    <div class="shield-statement reveal">We work with your existing technology wherever practical and recommend additional services only where they address an identified risk.</div>
-
-    <div class="shield-note reveal" data-testid="after-the-audit-note"><strong>After the audit:</strong> an audit tells you where you stand — remediation and managed protection are what close the gaps. Both are scoped and quoted separately, and can include Microsoft 365 hardening, email protection, awareness-training refreshers, and regular check-ins. The Full Protection Program already includes four quarterly review sessions in the year after your audit; the same ongoing-review relationship is available on its own for any business that wants a standing check-in rather than a one-time engagement.</div>
-
-    <div class="shield-note reveal" data-testid="it-provider-note"><strong>Working with your existing IT provider:</strong> PrivaCore does not replace your IT provider. We review business workflows and controls, and coordinate any technical work with the providers you already use — you don't need to switch anything to work with us.</div>
-
-    <div class="shield-note reveal"><strong>Scope and transparency:</strong> PrivaCore does not operate its own security operations centre and does not claim 24/7 monitoring unless a service is specifically contracted. Where SOC or managed detection and response capability is referenced, it is delivered through specialist security partners under the applicable client service agreement.</div>
-    <a href="/contact?interest=managed-protection" class="btn-teal reveal" data-testid="managed-security-cta">Discuss Managed Protection →</a>
-    <p class="reveal" style="margin-top:16px;font-size:.88rem;color:var(--on-dark-dim);text-align:center">Need vendor-payment verification on its own? <a href="/contact?interest=vendor-payment-toolkit" style="color:var(--gold)" data-testid="vendor-payment-toolkit-link">Get the Vendor Payment Verification Toolkit — $349 CAD →</a></p>
-  </div>
-</section>
-
-<!-- EMAIL & PAYMENT FRAUD (BEC) -->
-<section class="bec-sec on-dark" id="bec" aria-labelledby="bec-title">
-  <div class="bec-in">
-    <div class="stag reveal">Business email compromise</div>
-    <h2 id="bec-title" class="reveal">The email can be real. The payment request can still be fraud.</h2>
-    <p class="bec-lead reveal">Business email compromise can involve criminals impersonating a supplier, executive or employee — or gaining access to a legitimate email account and entering an existing conversation. PrivaCore helps businesses strengthen both sides of the problem: the technology protecting email and identities, and the business controls used before money moves.</p>
-    <div class="bec-cols reveal">
-      <div class="bec-col">
-        <div class="bec-col-title">Technology</div>
-        <ul>
-          <li>Microsoft 365 security</li>
-          <li>Multi-factor authentication</li>
-          <li>Email threat protection</li>
-          <li>Identity monitoring</li>
-          <li>Suspicious-email reporting</li>
-          <li>Account-compromise detection</li>
+    <div class="card-grid">
+      <article class="card" aria-labelledby="svc-privacy">
+        <p class="card-num" aria-hidden="true">01</p>
+        <h3 id="svc-privacy">Privacy governance &amp; operations</h3>
+        <p class="card-intro">Build a privacy program your teams can actually run, aligned to the privacy laws that apply to your organization.</p>
+        <ul class="card-regs" aria-label="Privacy laws we help organizations put into practice">
+          <li><abbr title="Personal Information Protection and Electronic Documents Act (Canada)">PIPEDA</abbr></li>
+          <li><abbr title="Quebec's Act to modernize legislative provisions as regards the protection of personal information">Québec Law 25</abbr></li>
+          <li><abbr title="General Data Protection Regulation (European Union)">GDPR</abbr></li>
+          <li><abbr title="California Privacy Rights Act">CPRA</abbr></li>
+          <li><abbr title="Health Insurance Portability and Accountability Act (United States)">HIPAA</abbr></li>
         </ul>
-      </div>
-      <div class="bec-col">
-        <div class="bec-col-title">Business controls</div>
-        <ul>
-          <li>Vendor verification</li>
-          <li>Banking-change verification</li>
-          <li>Independent callback procedures</li>
-          <li>Dual payment approval</li>
-          <li>Employee fraud awareness</li>
-          <li>Incident-response procedures</li>
+        <ul class="card-list">
+          <li>Privacy-program assessments</li>
+          <li>Policies and standards</li>
+          <li>Personal-information inventory and governance processes</li>
+          <li>Privacy impact assessment workflows</li>
+          <li>Retention practices</li>
+          <li>Vendor privacy risk</li>
+          <li>Privacy incident readiness</li>
         </ul>
-      </div>
+        <p class="card-scope">Governance and operational support—not legal advice. We work alongside your legal counsel on interpretation.</p>
+      </article>
+
+      <article class="card" aria-labelledby="svc-grc">
+        <p class="card-num" aria-hidden="true">02</p>
+        <h3 id="svc-grc">GRC, cybersecurity assurance readiness &amp; third-party risk</h3>
+        <p class="card-intro">Get controls, evidence and supplier oversight ready for scrutiny—and close the gaps in a practical order.</p>
+        <ul class="card-regs" aria-label="Frameworks we work with">
+          <li><abbr title="SOC 2 readiness (attestation is performed by an independent CPA firm)">SOC 2 readiness</abbr></li>
+          <li><abbr title="NIST Cybersecurity Framework 2.0">NIST CSF 2.0</abbr></li>
+          <li><abbr title="NIST Special Publication 800-63B, Digital Identity Guidelines: Authentication">NIST SP 800-63B</abbr></li>
+        </ul>
+        <ul class="card-list">
+          <li>Control-gap reviews</li>
+          <li>ITGC and audit readiness</li>
+          <li>Evidence expectations</li>
+          <li>Access-control governance</li>
+          <li>Supplier-risk processes</li>
+          <li>Risk and exception tracking</li>
+          <li>Remediation plans</li>
+          <li>Governance reporting</li>
+        </ul>
+        <p class="card-scope">Readiness and governance support. PrivaCore does not issue attestations or certifications, or perform penetration testing, monitoring or forensics.</p>
+      </article>
+
+      <article class="card" aria-labelledby="svc-ai">
+        <p class="card-num" aria-hidden="true">03</p>
+        <h3 id="svc-ai">Responsible AI governance</h3>
+        <p class="card-intro">Get ready to use AI with clear accountability and sensible guardrails.</p>
+        <ul class="card-regs" aria-label="AI laws and frameworks we work with">
+          <li><abbr title="Regulation (EU) 2024/1689, the European Union Artificial Intelligence Act">EU AI Act</abbr></li>
+          <li><abbr title="NIST Artificial Intelligence Risk Management Framework">NIST AI RMF</abbr></li>
+        </ul>
+        <ul class="card-list">
+          <li>AI use-case inventory</li>
+          <li>Governance roles and accountability</li>
+          <li>Privacy and risk screening for AI use</li>
+          <li>Policy and control workflows</li>
+          <li>Human-oversight practices</li>
+          <li>Responsible adoption</li>
+        </ul>
+        <p class="card-scope">Governance readiness and operationalization—not AI audit or technical model validation.</p>
+      </article>
+
+      <article class="card card-adopt" aria-labelledby="svc-adopt">
+        <p class="card-num" aria-hidden="true">04</p>
+        <h3 id="svc-adopt">Change management &amp; adoption</h3>
+        <p class="card-intro">What helps the rest take hold. Governance only works when people use it, so adoption is planned alongside privacy, cyber and AI work—not bolted on at the end.</p>
+        <ul class="card-list">
+          <li>Stakeholder and readiness planning</li>
+          <li>Communications</li>
+          <li>Role-based training</li>
+          <li>Workflow integration</li>
+          <li>Adoption follow-through</li>
+        </ul>
+        <p class="card-scope">Linked to the privacy, cyber and AI governance changes above—not general project management.</p>
+      </article>
     </div>
-    <a href="/contact?interest=fraud-protection" class="btn-teal reveal" data-testid="bec-cta" style="max-width:340px">Protect Your Payment Process →</a>
-    <p class="reveal" style="margin-top:16px;font-size:.88rem;color:var(--on-dark-dim);text-align:center">Want a written policy first? <a href="/tools/payment-verification-policy" style="color:var(--gold)" data-testid="bec-policy-generator-link">Generate a free Payment Verification Policy →</a></p>
   </div>
 </section>
 
-<!-- INDUSTRY SELECTOR -->
-<section class="sec" id="industries" aria-labelledby="ind-title" style="background:#fff">
-  <div class="sec-in">
-    <div class="stag reveal">Built around how your business works</div>
-    <h2 id="ind-title" class="reveal">Built around how your business actually works.</h2>
-    <p class="sec-lead reveal">PrivaCore serves businesses across industries. Construction, developers and contractors are a featured specialization — not the only businesses we work with.</p>
-    <div class="ind-grid">
-      <div class="ind-card featured reveal" data-testid="ind-card-construction"><span class="ind-card-flag">Featured specialization</span><div class="ind-card-kicker">Construction</div><div class="ind-card-title">Construction, Developers &amp; Contractors</div><p class="ind-card-body">Protect supplier-payment changes, project files, mobile teams, and the systems that keep work moving.</p><a class="ind-card-cta" href="/industries/construction" data-testid="ind-card-construction-link">See construction guidance →</a></div>
-      <div class="ind-card reveal" data-testid="ind-card-healthcare"><div class="ind-card-kicker">Healthcare</div><div class="ind-card-title">Health, Wellness &amp; Clinics</div><p class="ind-card-body">Protect patient information, booking and clinical systems, staff access, and the trust people place in your practice.</p><a class="ind-card-cta" href="/industries/healthcare" data-testid="ind-card-healthcare-link">See healthcare guidance →</a></div>
-      <div class="ind-card reveal" data-testid="ind-card-property"><div class="ind-card-kicker">Property</div><div class="ind-card-title">Property Management &amp; Strata</div><p class="ind-card-body">Protect tenant and owner information, rent and vendor payments, maintenance workflows, and property-management tools.</p><a class="ind-card-cta" href="/industries/property-management" data-testid="ind-card-property-link">See property-management guidance →</a></div>
-      <div class="ind-card reveal" data-testid="ind-card-professional"><div class="ind-card-kicker">Professional</div><div class="ind-card-title">Professional Services</div><p class="ind-card-body">Protect confidential client information, shared files, payment instructions, and the reputation your firm has built.</p><a class="ind-card-cta" href="/industries/professional-services" data-testid="ind-card-professional-link">See professional-services guidance →</a></div>
-      <div class="ind-card reveal" data-testid="ind-card-retail"><div class="ind-card-kicker">Customer payments</div><div class="ind-card-title">Retail, Hospitality &amp; Restaurants</div><p class="ind-card-body">Protect POS, e-commerce, booking, delivery, customer data, and the systems your team uses every day.</p><a class="ind-card-cta" href="/industries/retail-hospitality" data-testid="ind-card-retail-link">See retail and hospitality guidance →</a></div>
+<!-- READINESS & GOVERNANCE PACKAGES
+     Scoped advisory/readiness work — never a guarantee of certification, audit opinion or compliance.
+     Only list a framework package here once PrivaCore has confirmed it can deliver it.
+     Owner-confirmed delivery (Sept 2026): SOC 2 readiness, NIST CSF 2.0, NIST SP 800-63B, EU AI Act, NIST AI RMF.
+     ISO/IEC 27001 readiness is intentionally omitted until qualified delivery capability is confirmed. -->
+<section class="section section-tint" id="packages" aria-labelledby="packages-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Readiness &amp; Governance Packages</p>
+      <h2 id="packages-title">Scoped packages for common starting points.</h2>
+      <p class="lead">Advisory and readiness work, tailored to your organization. Packages help you prepare for audits, assessments and regulatory expectations; they do not guarantee certification, an audit opinion or compliance.</p>
     </div>
-    <p class="reveal" style="margin-top:22px;font-size:.95rem;color:var(--body)">Don't see your industry? Start with the <a href="/#health-check" style="color:var(--gold-text);font-weight:600">Free Business Risk Check</a> or <a href="/contact" style="color:var(--gold-text);font-weight:600">tell us how your business works</a>.</p>
+
+    <div class="pkg-grid">
+      <article class="pkg" aria-labelledby="pkg-privacy">
+        <p class="pkg-kicker">Privacy</p>
+        <h3 id="pkg-privacy">Privacy Program Readiness</h3>
+        <p>A review of privacy governance, policies, personal-information inventory, privacy impact assessment processes, retention, third-party privacy risk and incident readiness.</p>
+        <p class="pkg-out"><strong>You receive:</strong> a prioritized gap summary with owners and practical next steps.</p>
+        <p class="pkg-bound">PIPEDA, Québec Law 25, GDPR or other laws are referenced only where they apply to your scope. Not legal advice.</p>
+      </article>
+
+      <article class="pkg" aria-labelledby="pkg-soc2">
+        <p class="pkg-kicker">Assurance readiness</p>
+        <h3 id="pkg-soc2">SOC 2 Readiness &amp; Controls Remediation</h3>
+        <p>Preparation for a SOC 2 engagement: scope and control mapping, evidence expectations, gap tracking, control-owner coordination, remediation planning and adoption support.</p>
+        <p class="pkg-bound">PrivaCore does not issue the SOC 2 report. An independent CPA firm performs the attestation and issues the report.</p>
+      </article>
+
+      <article class="pkg" aria-labelledby="pkg-nist">
+        <p class="pkg-kicker">Cybersecurity</p>
+        <h3 id="pkg-nist">NIST CSF 2.0 Cybersecurity Profile</h3>
+        <p>Define your current and target profiles, identify priority gaps, and build an improvement roadmap with accountable owners. Where identity and authentication are in scope, controls are reviewed against NIST SP 800-63B.</p>
+        <p class="pkg-bound">NIST CSF 2.0 is a voluntary framework and NIST SP 800-63B is guidance; neither is a certification.</p>
+      </article>
+
+      <article class="pkg" aria-labelledby="pkg-ai">
+        <p class="pkg-kicker">Responsible AI</p>
+        <h3 id="pkg-ai">Responsible AI Governance Foundation</h3>
+        <p>Inventory AI use cases, clarify accountability, identify privacy and governance risks, develop proportionate policies and review workflows, and support responsible use through stakeholder communication and training—aligned to the NIST AI RMF and, where it applies to you, the EU AI Act.</p>
+        <p class="pkg-bound">Not an independent AI audit, legal opinion or technical model validation. The NIST AI RMF is voluntary; EU AI Act obligations should be confirmed with legal counsel.</p>
+      </article>
+
+      <article class="pkg pkg-adopt" aria-labelledby="pkg-adopt">
+        <div>
+          <p class="pkg-kicker">Adoption</p>
+          <h3 id="pkg-adopt">Change &amp; Adoption Support</h3>
+        </div>
+        <p>Stakeholder readiness, communications, role-based training, workflow changes and adoption follow-through, built into privacy, GRC, cybersecurity and AI-governance work. It is how controls become everyday practice—not project administration.</p>
+      </article>
+    </div>
+
+    <p class="pkg-note">Packages are tailored to the organization’s scope and delivery needs. Where specialized implementation, independent testing, audit, legal advice, or certification is required, roles are agreed with appropriately qualified external providers.</p>
   </div>
 </section>
 
 <!-- HOW WE WORK -->
-<section class="sec steps-sec" id="how-it-works" aria-labelledby="how-title">
-  <div class="sec-in">
-    <div class="stag reveal">How we work</div>
-    <h2 id="how-title" class="reveal">Clear scope. Clear findings. Clear next steps.</h2>
-    <div class="process-grid">
-      <div class="process-card reveal"><div class="step-num" aria-hidden="true">1</div><div><div class="step-title">Understand</div><div class="step-desc">Brief intake covering the business, systems, workflows and concern.</div></div></div>
-      <div class="process-card reveal"><div class="step-num" aria-hidden="true">2</div><div><div class="step-title">Assess</div><div class="step-desc">Review the relevant practices, configurations, documentation and available evidence.</div></div></div>
-      <div class="process-card reveal"><div class="step-num" aria-hidden="true">3</div><div><div class="step-title">Prioritize</div><div class="step-desc">Provide plain-language findings showing what matters, why it matters and what should happen first.</div></div></div>
-      <div class="process-card reveal"><div class="step-num" aria-hidden="true">4</div><div><div class="step-title">Protect</div><div class="step-desc">Implement improvements directly or coordinate appropriate specialist technology and security partners.</div></div></div>
+<section class="section" id="how-we-work" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How we work</p>
+      <h2 id="how-title">Four plain-language steps.</h2>
     </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <h3>Understand</h3>
+        <p>Your obligations, commitments and current workflows—how work actually gets done today.</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <h3>Assess</h3>
+        <p>Risks and gaps in practice, controls and evidence, and which ones matter most.</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <h3>Design</h3>
+        <p>Proportionate governance, controls and workflows—with a change plan for the people who will use them.</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <h3>Support</h3>
+        <p>Implementation, training and adoption, with follow-through until the new way of working is routine.</p>
+      </li>
+    </ol>
   </div>
 </section>
 
-<!-- BUSINESS RISK CHECK -->
-<section class="sec pc-health-check" id="health-check" aria-labelledby="hc-title" style="background:var(--surface)">
-  <div class="sec-in">
-    <p class="hc-eyebrow reveal">Free Business Risk Check</p>
-    <h2 id="hc-title" class="reveal">What does your business currently have in place?</h2>
-    <p class="sec-lead reveal">Answer 10 plain-language questions covering cybersecurity, Microsoft 365 and email, fraud, payments, privacy, backups and recovery, and vendors. There are no perfect answers, and <strong>"Not sure" is useful</strong>—it simply shows what to check next. You will see practical next steps immediately.</p>
-    <p class="reveal" style="font-size:.9rem;line-height:1.6;color:var(--body);margin:-16px 0 26px">This is an educational self-assessment, not a certification, legal opinion or insurance assessment.</p>
-    <div class="reveal" data-health-check data-testid="health-check"></div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section class="sec pkg-sec" id="packages" aria-labelledby="packages-title">
-  <div class="sec-in">
-    <div class="pkg-intro">
-      <div class="stag reveal">Audit packages</div>
-      <h2 id="packages-title" class="reveal">Know exactly where you stand.</h2>
-      <p class="sec-lead reveal">Every engagement is founder-led, with specialist technical support added when the scope requires it. You receive a plain-language report, a prioritized action list, and a follow-up call to walk through the findings. All three are <strong>one-time audit prices</strong>.</p>
+<!-- WHY PRIVACORE -->
+<section class="section section-tint" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Why PrivaCore</p>
+      <h2 id="why-title">Practical governance, grounded in regulated work.</h2>
     </div>
-    <div class="pkg-cards">
-
-      <div class="pkg reveal" data-testid="package-cyber-essentials">
-        <div class="pkg-head">
-          <div class="pkg-name">Cyber Essentials</div>
-          <div class="pkg-who">For 1–9 people with a simple technology setup or no recent review.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
-          <div class="pkg-delivery">5-business-day target after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">What's included</div>
-          <ul class="pkg-feats">
-            <li>Cybersecurity health review covering email, passwords, backups and devices</li>
-            <li>Credential-exposure scan through a vetted provider</li>
-            <li>Plain-language risk report with a prioritized order</li>
-          </ul>
-          <details class="pkg-more"><summary>See full inclusions</summary><div class="pkg-more-body pkg-feats" style="display:flex;flex-direction:column;gap:9px;padding-top:10px">
-            <div>Privacy-practice checklist for your business</div>
-            <div>30-minute founder-led follow-up call</div>
-          </div></details>
-          <a href="/contact?interest=cyber-essentials" class="pkg-cta" data-testid="choose-cyber-essentials">Choose Cyber Essentials — $497</a>
-        </div>
+    <div class="why-grid">
+      <div class="why">
+        <h3>Experience in regulated environments</h3>
+        <p>A background across privacy governance, cybersecurity controls, IT audit and data governance in financial services, aviation, telecommunications and other regulated settings.</p>
       </div>
-
-      <div class="pkg featured reveal" data-testid="package-business-shield">
-        <div class="pkg-head">
-          <div class="pkg-badge">Most popular</div>
-          <div class="pkg-name">Business Shield</div>
-          <div class="pkg-who">For 10–25 people, businesses that send or receive payments, or organizations holding client files.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>1,197</div><div class="pkg-price-note">CAD · one-time audit</div></div>
-          <div class="pkg-delivery">10-business-day target after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">Everything in Cyber Essentials, plus</div>
-          <ul class="pkg-feats">
-            <li>BEC Prevention Check</li>
-            <li>Custom incident response plan</li>
-            <li>Live virtual staff phishing/scam training for up to 15 people</li>
-          </ul>
-          <details class="pkg-more"><summary>See full inclusions</summary><div class="pkg-more-body pkg-feats" style="display:flex;flex-direction:column;gap:9px;padding-top:10px">
-            <div>Review of up to 3 vendors accessing client data</div>
-            <div>CyberSecure Canada readiness gap assessment</div>
-            <div>Website privacy review — notices, consent, collection practices, and required disclosures</div>
-            <div>Vendor Payment Verification Toolkit</div>
-          </div></details>
-          <a href="/contact?interest=business-shield" class="pkg-cta" data-testid="choose-business-shield">Choose Business Shield — $1,197</a>
-        </div>
+      <div class="why">
+        <h3>Governance and adoption together</h3>
+        <p>Privacy, controls, responsible AI governance and change and adoption, brought together so the result accounts for the people who have to use it.</p>
       </div>
-
-      <div class="pkg reveal" data-testid="package-full-protection">
-        <div class="pkg-head">
-          <div class="pkg-name">Full Protection Program</div>
-          <div class="pkg-who">For 25–100 people, multiple locations, leadership reporting needs, or a more mature vendor environment.</div>
-          <div class="pkg-price-row"><div class="pkg-price"><sup>$</sup>2,497</div><div class="pkg-price-note">CAD · one-time audit</div></div>
-          <div class="pkg-delivery">15-business-day target after intake</div>
-        </div>
-        <div class="pkg-divider"></div>
-        <div class="pkg-body">
-          <div class="pkg-sec-lbl">Everything in Business Shield, plus</div>
-          <ul class="pkg-feats">
-            <li>Domain exposure scan for staff email addresses</li>
-            <li>Staff training for up to 40 employees</li>
-            <li>Vendor-risk review for up to 8 vendors</li>
-          </ul>
-          <details class="pkg-more"><summary>See full inclusions</summary><div class="pkg-more-body pkg-feats" style="display:flex;flex-direction:column;gap:9px;padding-top:10px">
-            <div>CyberSecure Canada readiness roadmap</div>
-            <div>Executive risk briefing deck for your leadership team or board</div>
-            <div>Four quarterly review sessions during the following 12 months</div>
-            <div>Vendor Payment Verification Toolkit</div>
-          </div></details>
-          <a href="/contact?interest=full-protection" class="pkg-cta" data-testid="choose-full-protection">Choose Full Protection Program — $2,497</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="scope-note reveal" data-testid="scope-note"><strong>Scope note:</strong> The audit price covers the listed deliverables. Any specialist technical work, remediation, or ongoing service is optional, separately scoped, and approved in writing before work begins.</div>
-    <div class="incident-note reveal" data-testid="incident-note">
-      <p>Need help with a suspected incident instead?</p>
-      <a href="/incident-response" data-testid="incident-assessment-cta">Get Incident Response Help →</a>
-    </div>
-  </div>
-</section>
-
-<!-- CLIENT FEEDBACK (placeholder structure — real quotes to be added as engagements complete) -->
-<section class="sec" id="feedback" aria-labelledby="feedback-title" style="background:#fff">
-  <div class="sec-in">
-    <div class="stag reveal">Client feedback</div>
-    <h2 id="feedback-title" class="reveal">What clients say — as engagements complete.</h2>
-    <p class="sec-lead reveal">PrivaCore is a founder-led practice, and this section will fill in with real client feedback as engagements wrap up. We don't publish quotes we haven't received.</p>
-    <div class="feedback-grid reveal" data-testid="feedback-placeholder">
-      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
-      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
-      <div class="feedback-card feedback-placeholder"><div class="feedback-mark" aria-hidden="true">"</div><p>Client feedback will appear here as engagements are completed.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- QUICK CHECKS (subordinate to the audit packages above — a narrow diagnostic, not a cheaper tier) -->
-<section class="sec quickcheck-sec" id="quick-checks" aria-labelledby="qc-title">
-  <div class="sec-in">
-    <div class="stag reveal">Quick checks</div>
-    <h2 id="qc-title" class="reveal">A narrow, focused diagnostic — not a smaller audit.</h2>
-    <p class="sec-lead reveal">Quick Checks look closely at one system, on a fixed short timeline. They're not a lighter-weight version of the packages above — if you want the full picture of your business, see the <a href="#packages" style="color:var(--gold-text);font-weight:600">audit packages</a>.</p>
-
-    <div class="qc-card reveal" data-testid="quickcheck-m365">
-      <div class="qc-head">
-        <div class="qc-name">Microsoft 365 Fraud &amp; Security Check</div>
-        <p class="qc-desc">A focused review of your Microsoft 365 setup — the specific settings most often behind a fraud loss.</p>
-        <div class="qc-price-row"><div class="qc-price"><sup>$</sup>349</div><div class="qc-price-note">CAD · one-time</div></div>
-        <div class="qc-delivery">Most reports back within 3 business days</div>
-      </div>
-      <div class="pkg-divider"></div>
-      <div class="qc-body">
-        <div class="pkg-sec-lbl">What's included</div>
-        <ul class="pkg-feats">
-          <li>MFA and admin-account review</li>
-          <li>Mailbox forwarding and inbox-rule check</li>
-          <li>SPF, DKIM and DMARC check</li>
-          <li>Anti-phishing and impersonation policy review</li>
-          <li>Payment-change process review</li>
-          <li>One-page Red / Amber / Green report</li>
-        </ul>
-
-        <div class="qc-intake-form" data-quick-check data-testid="quickcheck-intake">
-          <div class="fgrp">
-            <label class="flbl" for="qc-size">Approximate company size</label>
-            <select class="finp" id="qc-size" data-testid="qc-size-select">
-              <option value="">Select…</option>
-              <option value="1–9">1–9</option>
-              <option value="10–25">10–25</option>
-              <option value="26–50">26–50</option>
-              <option value="51–100">51–100</option>
-              <option value="100+">100+</option>
-            </select>
-          </div>
-          <div class="fgrp">
-            <p class="flbl" style="margin-bottom:8px">Is this a routine check, or are you concerned about something specific?</p>
-            <div class="chk-list">
-              <label class="chk-item"><input type="radio" name="qc-reason" value="routine" data-testid="qc-reason-routine"><span>Routine check — nothing specific has happened</span></label>
-              <label class="chk-item"><input type="radio" name="qc-reason" value="concerned" data-testid="qc-reason-concerned"><span>I'm concerned about something specific</span></label>
-            </div>
-          </div>
-          <div class="fgrp">
-            <p class="flbl" style="margin-bottom:8px">Has money already been sent to an account you now believe is fraudulent?</p>
-            <div class="chk-list">
-              <label class="chk-item"><input type="radio" name="qc-money-sent" value="no" data-testid="qc-money-no"><span>No</span></label>
-              <label class="chk-item"><input type="radio" name="qc-money-sent" value="yes" data-testid="qc-money-yes"><span>Yes</span></label>
-            </div>
-          </div>
-
-          <div data-qc-normal>
-            <a href="/contact?interest=m365-check" class="pkg-cta" data-testid="quickcheck-cta">Order the Microsoft 365 Fraud &amp; Security Check — $349</a>
-          </div>
-          <div class="qc-redirect" data-qc-redirect hidden tabindex="-1" data-testid="quickcheck-redirect">
-            <p>This sounds like it's already happened — you want our Incident Response service, not this check.</p>
-            <a href="/incident-response" class="pkg-cta" data-testid="quickcheck-redirect-link">Go to Incident Response →</a>
-            <a href="tel:+16043411651" class="qc-call-link" data-testid="quickcheck-call-link">Or call us directly at 604-341-1651</a>
-          </div>
-        </div>
+      <div class="why">
+        <h3>Built to be used</h3>
+        <p>Clear, usable deliverables—policies, workflows, registers and plans written for the people who will run them, with a focus on implementation rather than shelf documents.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="sec about-sec" id="about" aria-labelledby="about-title">
-  <div class="sec-in">
-    <div class="stag reveal">About</div>
-    <h2 id="about-title" class="reveal">Experienced risk leadership. Practical business delivery.</h2>
-    <div class="about-grid">
-      <figure class="about-photo reveal">
-        <div class="about-photo-frame"><img src="/assets/arlene.jpg" alt="Arlene Chamulak, founder of PrivaCore Group" width="800" height="1067" loading="lazy" data-testid="about-photo"></div>
-        <figcaption class="about-photo-cap">Arlene Chamulak · PrivaCore Group</figcaption>
-      </figure>
-      <div>
-        <p class="sec-lead reveal">Arlene Chamulak has spent 15+ years leading privacy, cybersecurity governance and regulatory remediation programs inside regulated Canadian organizations — before founding PrivaCore Group to make those same practices practical and accessible for smaller businesses.</p>
-        <p class="reveal" style="font-size:.95rem;color:var(--body);margin:0 0 10px">Prior experience includes:</p>
-        <div class="cred-strip reveal" data-testid="about-cred-strip">
-          <div class="cred-card"><span class="cred-sector">Banking</span><span class="cred-scope">Major Canadian Banks</span><span class="cred-names">RBC · BNP Paribas</span></div>
-          <div class="cred-card"><span class="cred-sector">Travel</span><span class="cred-scope">National Airlines</span><span class="cred-names">WestJet</span></div>
-          <div class="cred-card"><span class="cred-sector">Gaming</span><span class="cred-scope">Provincial Gaming Orgs</span><span class="cred-names">BC Lotteries</span></div>
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap about-in">
+    <div class="about-copy">
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">A Canadian advisory practice, led at a senior level.</h2>
+      <p class="lead">PrivaCore Group's engagements are senior-led, drawing on close to two decades of experience across multiple disciplines in regulated environments.</p>
+      <p>Your engagement is led at a senior level from scoping through adoption. The aim is governance that is proportionate to your organization, documented clearly, and used by the teams who rely on it.</p>
+      <p class="about-note">PrivaCore Group is not a law firm and does not provide legal advice, penetration testing, security monitoring, incident forensics, attestation or certification.</p>
+    </div>
+    <!-- Name-free by design: no personal names, photos or individual bios on this site. -->
+    <div class="about-panel" aria-labelledby="exp-title">
+      <h3 id="exp-title">Experience across</h3>
+      <div class="about-cols">
+        <div>
+          <p class="about-lbl">Disciplines</p>
+          <ul class="about-list">
+            <li>Privacy governance</li>
+            <li>Cybersecurity controls</li>
+            <li>IT audit</li>
+            <li>Data governance</li>
+            <li>Change and adoption</li>
+          </ul>
         </div>
-        <div class="sig reveal">
-          <div class="sig-name">Arlene Chamulak</div>
-          <div class="sig-role">Founder, PrivaCore Group</div>
-          <div class="sig-creds">PMP · PROSCI · CSPO · CDPSE · CIPP/C</div>
-          <p style="font-size:.88rem;color:var(--muted);margin-top:6px">Member, Canadian Association of Certified Fraud Examiners</p>
-          <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
-            <a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-about">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a>
-            <a href="/about" style="font-size:.9rem;font-weight:700;color:var(--gold-text)" data-testid="about-full-bio-link">Read the full bio →</a>
-          </div>
+        <div>
+          <p class="about-lbl">Environments</p>
+          <ul class="about-list">
+            <li>Financial services</li>
+            <li>Aviation</li>
+            <li>Telecommunications</li>
+            <li>Other regulated sectors</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="contact-sec on-dark" id="contact" aria-labelledby="contact-title">
-  <div class="contact-in">
-    <div class="stag reveal">Not sure what you need? Start with the problem.</div>
-    <h2 id="contact-title" class="reveal">Tell us what's happening.</h2>
-    <div class="contact-panel reveal">
-      <p>Tell us what's happening — whether you're concerned about email security, a suspicious payment, Microsoft 365, privacy requirements or simply want to understand where your business is exposed. We'll help determine the appropriate next step. The first conversation is free.</p>
-      <a href="/contact" class="cta-big" data-testid="contact-page-cta">Talk to PrivaCore →</a>
-      <a href="/#health-check" class="cta-outline" data-testid="contact-secondary-cta">Take the Free Business Risk Check</a>
-      <div class="contact-details">
-        <a href="mailto:info@privacoregroup.com" class="contact-detail" data-testid="contact-email-link"><span class="cd-icon" aria-hidden="true">✉</span><span class="cd-text">info@privacoregroup.com</span></a>
-        <a href="tel:+16043411651" class="contact-detail" data-testid="contact-phone-link"><span class="cd-icon" aria-hidden="true">📞</span><span class="cd-text">604-341-1651</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WEBSITE PRIVACY NOTICE -->
-<section class="sec privacy-sec" id="privacy" aria-labelledby="privacy-title">
-  <div class="sec-in">
-    <div class="stag reveal">Website privacy notice</div>
-    <h2 id="privacy-title" class="reveal">How we handle your contact information.</h2>
-    <p class="sec-lead reveal">C-Success Corp, operating as PrivaCore Group, uses the information you submit through this website only for the purposes described below. Please do not send passwords, financial information, health information, or other sensitive personal information through the form.</p>
-    <div class="privacy-grid">
-      <div class="privacy-card reveal"><h3>What we collect</h3><p>Your name, email address, business information, service interest, message, and your consent record when you use the contact form.</p></div>
-      <div class="privacy-card reveal"><h3>Why we collect it</h3><p>To respond to your inquiry, discuss requested services, manage a prospective or existing business relationship, protect the site, and meet applicable legal obligations.</p></div>
-      <div class="privacy-card reveal"><h3>Service providers and disclosure</h3><p>Netlify hosts this website and processes form submissions. Email and other service providers may process information when we respond. We do not sell contact-form information or use it for third-party advertising.</p></div>
-      <div class="privacy-card reveal"><h3>Retention and your choices</h3><p>We retain inquiry information only as long as reasonably needed for the purposes above, security, and applicable legal requirements, then delete or anonymize it. To ask about, correct, or request deletion of your information, email <a href="mailto:info@privacoregroup.com">info@privacoregroup.com</a>.</p></div>
-    </div>
-    <p class="privacy-updated">Last updated: August 2026. This notice may be updated when the website, service providers, or legal requirements change. Read the full <a href="/privacy" style="color:var(--gold-text);font-weight:600">Privacy Policy</a> and <a href="/terms" style="color:var(--gold-text);font-weight:600">Terms of Service</a>, or see our <a href="/resources#privacy-law" style="color:var(--gold-text);font-weight:600">Resources page</a> for a detailed overview of Canadian privacy-law obligations.</p>
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact-in">
+    <p class="eyebrow eyebrow-dark">Contact</p>
+    <h2 id="contact-title">Start with a short email.</h2>
+    <p class="contact-body">Tell us what you're working on—a privacy program, an audit finding, a vendor-risk process, or a plan to use AI responsibly—and we'll reply to arrange a conversation. Please don't include sensitive personal information in your first message.</p>
+    <a class="btn btn-light" href="mailto:info@privacoregroup.com" data-business-email="link">Email PrivaCore</a>
+    <p class="contact-address"><a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a></p>
   </div>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer>
-  <div class="foot-in">
-    <div class="foot-top">
-      <div class="foot-brand">
-        <a href="/#main-content" class="foot-logo"><img src="/assets/logo-light.svg" alt="PrivaCore Group" class="foot-logo-img" width="1370" height="327"></a>
-        <div class="foot-copy">© 2026 PrivaCore Group (C-Success Corp) · Vancouver, BC<br><a href="mailto:info@privacoregroup.com" style="color:rgba(255,255,255,.72)">info@privacoregroup.com</a> · <a href="tel:+16043411651" style="color:rgba(255,255,255,.72)">604-341-1651</a></div>
-      </div>
-      <div class="foot-cols">
-        <div class="foot-col">
-          <div class="foot-col-title">Services</div>
-          <ul>
-            <li><a href="/#svc-cyber">Cybersecurity &amp; Microsoft 365</a></li>
-            <li><a href="/#svc-fraud">Email &amp; Payment Fraud Protection</a></li>
-            <li><a href="/#svc-privacy">Privacy &amp; Governance</a></li>
-            <li><a href="/#svc-incident">Incident &amp; BEC Assessments</a></li>
-            <li><a href="/#managed-security">Managed Security &amp; Ongoing Protection</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <div class="foot-col-title">Industries</div>
-          <ul>
-            <li><a href="/industries/construction">Construction</a></li>
-            <li><a href="/industries/healthcare">Health &amp; Wellness</a></li>
-            <li><a href="/industries/property-management">Property Management</a></li>
-            <li><a href="/industries/professional-services">Professional Services</a></li>
-            <li><a href="/industries/retail-hospitality">Retail &amp; Hospitality</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <div class="foot-col-title">Company</div>
-          <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/#how-it-works">How We Work</a></li>
-            <li><a href="/#packages">Audit Packages</a></li>
-            <li><a href="/#health-check">Business Risk Check</a></li>
-            <li><a href="/incident-response">Incident Response</a></li>
-          </ul>
-        </div>
-        <div class="foot-col">
-          <div class="foot-col-title">Resources</div>
-          <ul>
-            <li><a href="/resources">Resources</a></li>
-            <li><a href="/tools/payment-verification-policy">Payment Verification Policy</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Service</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a class="bbb-badge-text" data-bbb-badge href="#" target="_blank" rel="noopener noreferrer" aria-label="BBB Accredited Business — view PrivaCore Group's verified BBB profile (opens in new tab)" data-testid="bbb-badge-footer">BBB Accredited Business <span class="ext-ic" aria-hidden="true">↗</span></a></li>
-          </ul>
-        </div>
-      </div>
+<footer class="site-footer">
+  <div class="wrap footer-in">
+    <div class="footer-brand">
+      <img src="/assets/logo-light.svg" alt="PrivaCore Group" width="1370" height="327" loading="lazy">
+      <p><a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a></p>
+      <p class="footer-legal">© <span data-year>2026</span> C-Success Corp, operating as PrivaCore Group. Vancouver, BC.</p>
     </div>
-    <div class="foot-bottom">
-      <p class="foot-dualbrand">Arlene is also the founder of <a href="https://thefrauddoctor.ca/" target="_blank" rel="noopener noreferrer">The Fraud Doctor</a> — practical fraud protection for Canadian households and older adults.</p>
-      <div class="foot-sources">Statistics sourced from: <a href="https://cyber.gc.ca" target="_blank" rel="noopener noreferrer">Canadian Centre for Cyber Security</a> · <a href="https://antifraudcentre-centreantifraude.ca" target="_blank" rel="noopener noreferrer">Canadian Anti-Fraud Centre</a> · <a href="https://www150.statcan.gc.ca" target="_blank" rel="noopener noreferrer">Statistics Canada CSCSC</a> · <a href="https://www.bdc.ca" target="_blank" rel="noopener noreferrer">BDC Cybersecurity Survey</a> · <a href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener noreferrer">Verizon DBIR</a> · <a href="https://priv.gc.ca" target="_blank" rel="noopener noreferrer">Office of the Privacy Commissioner of Canada</a></div>
+    <div class="footer-privacy" id="privacy">
+      <h2>Website privacy</h2>
+      <p>This website does not set cookies or load analytics, advertising or other third-party scripts. Our hosting provider may keep standard server logs. If you email us, we use what you send to reply and, if we work together, to manage that relationship. Questions about your information: <a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a>.</p>
     </div>
   </div>
 </footer>
 
 <script src="/assets/site.js" defer></script>
-<script src="/assets/health-check.js" defer></script>
-<script src="/assets/quick-check.js" defer></script>
 </body>
 </html>
