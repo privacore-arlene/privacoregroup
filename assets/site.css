@@ -246,10 +246,8 @@ h3 { font-size: 1.12rem; line-height: 1.35; font-weight: 700; }
 .pkg-adopt h3 { color: #fff; }
 .pkg-adopt .pkg-kicker { color: var(--accent-light); }
 .pkg-note { margin-top: 24px; max-width: 46rem; font-size: .9rem; color: var(--muted); }
-@media (min-width: 760px) {
-  .pkg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-  .pkg-adopt { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 2fr; gap: 24px; align-items: center; }
-}
+@media (min-width: 760px) { .pkg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; } }
+@media (min-width: 1040px) { .pkg-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 /* ── How we work ── */
 .steps { list-style: none; padding: 0; display: grid; gap: 28px; counter-reset: none; }
@@ -301,6 +299,9 @@ h3 { font-size: 1.12rem; line-height: 1.35; font-weight: 700; }
   color: var(--accent); padding-bottom: 8px; margin-bottom: 10px; border-bottom: 2px solid var(--accent);
 }
 .about-list { list-style: none; padding: 0; display: grid; gap: 6px; font-size: .97rem; }
+.about-list abbr { text-decoration: none; font-weight: 700; color: var(--ink); }
+.about-creds { margin-top: 24px; }
+.about-fine { margin-top: 10px; font-size: .82rem; color: var(--muted); }
 @media (min-width: 960px) {
   .about-in { grid-template-columns: 1.3fr 1fr; gap: 64px; }
   .about-panel { padding: 28px; }
