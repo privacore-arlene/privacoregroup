@@ -36,72 +36,22 @@
       if (event.target.closest('a')) setDrawer(false);
     });
     window.addEventListener('resize', function () {
-      if (window.innerWidth >= 1024) setDrawer(false);
+      if (window.innerWidth >= 1080) setDrawer(false);
     });
   }
 
-  // Desktop "Industries" dropdown
-  document.querySelectorAll('[data-dropdown-btn]').forEach(function (btn) {
-    var menu = document.getElementById(btn.getAttribute('aria-controls'));
-    if (!menu) return;
-    var setMenu = function (open) {
-      btn.setAttribute('aria-expanded', String(open));
-      menu.hidden = !open;
-    };
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      setMenu(btn.getAttribute('aria-expanded') !== 'true');
-    });
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.nav-dropdown')) setMenu(false);
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
-        setMenu(false);
-        btn.focus();
-      }
-    });
-  });
-
-  // Contact form: preselect interest from ?interest= query parameter
-  var interestSelect = document.getElementById('contact-interest');
-  if (interestSelect) {
-    var INTEREST_MAP = {
-      'risk-check-results': 'Business Fraud Check results / not sure yet',
-      'health-check-results': 'Business Fraud Check results / not sure yet',
-      'fraud-cyber-risk-assessment': 'Fraud & Cyber Risk Assessment — $750 one-time',
-      'business-protection': 'PrivaCore Business Protection — Starting at $299/month',
-      'managed-protection': 'Managed Protection — Custom quote',
-      'incident-assessment': 'Incident Assessment (suspected BEC / fraud / compromise)',
-      'incident-response': 'BEC Incident Response & Payment Fraud Assessment — starting at $1,250',
-      'm365-check': 'Microsoft 365 Fraud & Security Check — $349',
-      'vendor-payment-toolkit': 'Vendor Payment Verification Toolkit — $349',
-      'm365-continuous-monitoring': 'Continuous M365 Fraud & Identity Monitoring',
-      'fraud-protection': 'Email & Payment Fraud Protection',
-      'implementation': 'Managed Protection — Custom quote',
-      'managed-security': 'Managed Protection — Custom quote'
+  // Contact form: preselect service from ?service= query parameter
+  var serviceSelect = document.getElementById('contact-service');
+  if (serviceSelect) {
+    var SERVICE_MAP = {
+      'checkup': 'The PrivaCore Digital Safety Checkup — from $649 CAD',
+      'question': 'General question / not sure yet',
+      'other': 'Something else'
     };
     var params = new URLSearchParams(window.location.search);
-    var requested = params.get('interest');
-    if (requested && INTEREST_MAP[requested]) {
-      interestSelect.value = INTEREST_MAP[requested];
-    }
-  }
-
-  // Contact form: preselect industry from ?industry= query parameter
-  var industrySelect = document.getElementById('contact-industry');
-  if (industrySelect) {
-    var INDUSTRY_MAP = {
-      'construction': 'Construction / Developers / Contractors',
-      'healthcare': 'Health / Wellness / Clinic',
-      'property-management': 'Property Management / Strata',
-      'professional-services': 'Professional Services (law, accounting, consulting)',
-      'retail-hospitality': 'Retail / Hospitality / Restaurant',
-      'other': 'Other'
-    };
-    var requestedIndustry = new URLSearchParams(window.location.search).get('industry');
-    if (requestedIndustry && INDUSTRY_MAP[requestedIndustry]) {
-      industrySelect.value = INDUSTRY_MAP[requestedIndustry];
+    var requested = params.get('service');
+    if (requested && SERVICE_MAP[requested]) {
+      serviceSelect.value = SERVICE_MAP[requested];
     }
   }
 
@@ -124,7 +74,7 @@
         success.style.display = 'block';
         success.focus();
       }).catch(function () {
-        btn.textContent = 'Send Message →';
+        btn.textContent = 'Send My Request →';
         btn.disabled = false;
         alert('Something went wrong — please email info@privacoregroup.com or call 604-341-1651.');
       });

@@ -1,4 +1,9 @@
-/readiness-review /packages 301
-/builder-system /packages 301
-/builders /packages 301
-/services /packages 301
+/packages /digital-safety-checkup 301
+/services /digital-safety-checkup 301
+/readiness-review /digital-safety-checkup 301
+/exposure-check / 301
+/incident-response /contact 301
+/builder-system / 301
+/builders / 301
+/industries/* / 301
+/tools/* /resources 301
