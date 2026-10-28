@@ -1,6 +1,7 @@
 // PrivaCore Group — shared site behaviour
 (function () {
   'use strict';
+  document.documentElement.classList.add('js');
 
   // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');

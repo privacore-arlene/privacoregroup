@@ -74,8 +74,8 @@ h3{font-size:clamp(1.2rem,2.5vw,1.5rem);line-height:1.3;color:var(--navy)}
 .on-dark .stag{color:var(--champagne)}.on-dark .stag::before{background:var(--champagne)}
 .sec-lead{font-size:1.125rem;line-height:1.8;color:var(--body-txt);max-width:720px}
 .on-dark .sec-lead{color:var(--on-dark)}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.reveal.vis{opacity:1;transform:translateY(0)}
+.reveal{transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .reveal:not(.vis){opacity:0;transform:translateY(20px)}
 
 /* ── LAYOUT ── */
 .sec{padding:84px 24px}
