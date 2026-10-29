@@ -48,6 +48,9 @@
       'solo': 'Digital Safety Checkup — Solo · $429 CAD',
       'family': 'Digital Safety Checkup — Family · $599 CAD',
       'premium': 'Digital Safety Checkup — Premium · $849 CAD',
+      'gift-solo': 'A gift for someone I love — Solo · $429 CAD',
+      'gift-family': 'A gift for someone I love — Family · $599 CAD',
+      'refresh': 'Annual Refresh — returning household',
       'checkup': 'Not sure yet — help me choose',
       'question': 'General question',
       'other': 'Something else'
