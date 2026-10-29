@@ -45,8 +45,11 @@
   var serviceSelect = document.getElementById('contact-service');
   if (serviceSelect) {
     var SERVICE_MAP = {
-      'checkup': 'The PrivaCore Digital Safety Checkup — from $649 CAD',
-      'question': 'General question / not sure yet',
+      'solo': 'Digital Safety Checkup — Solo · $429 CAD',
+      'family': 'Digital Safety Checkup — Family · $599 CAD',
+      'premium': 'Digital Safety Checkup — Premium · $849 CAD',
+      'checkup': 'Not sure yet — help me choose',
+      'question': 'General question',
       'other': 'Something else'
     };
     var params = new URLSearchParams(window.location.search);
