@@ -3,390 +3,425 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--
-  EDITING NOTES
-  - All page copy lives in this file, section by section.
-  - The business email is set once in /assets/site.js (BUSINESS_EMAIL) and applied to every
-    element marked data-business-email. The same address is repeated below as a fallback for
-    visitors without JavaScript and for search engines — if the email changes, update site.js
-    AND search this file for "info@privacoregroup.com".
--->
-<title>PrivaCore Group | Privacy, GRC &amp; Responsible-AI Governance Advisory in Canada</title>
-<meta name="description" content="Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory for Canadian organizations, with change-management and adoption support to help it take hold.">
-<meta name="theme-color" content="#0E1B2C">
+<title>Personal Cybersecurity &amp; Digital Privacy for Canadian Households | PrivaCore Group — Vancouver, BC</title>
+<meta name="description" content="Personal digital protection for Canadian households. PrivaCore's expert-led Digital Safety Checkup strengthens your home cybersecurity, accounts, devices and privacy — in person across Metro Vancouver, remote across Canada. Three tiers, from $429 CAD.">
+<meta name="theme-color" content="#142638">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://privacoregroup.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E1B2C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23A9D6D1' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23142638'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23CBB68A' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="PrivaCore Group">
-<meta property="og:title" content="PrivaCore Group | Privacy, AI and cyber governance people can put into practice">
-<meta property="og:description" content="Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory for Canadian organizations, with change and adoption support.">
+<meta property="og:title" content="PrivaCore Group — Personal Digital Protection for Canadian Households">
+<meta property="og:description" content="Expert-led digital safety assessments and practical protection for your home, devices, accounts, privacy and family. Vancouver, BC.">
 <meta property="og:url" content="https://privacoregroup.com/">
 <meta property="og:locale" content="en_CA">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"PrivaCore Group","legalName":"C-Success Corp","url":"https://privacoregroup.com/","email":"info@privacoregroup.com","areaServed":"Canada","address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"description":"Senior-led privacy, GRC, cybersecurity-governance and responsible-AI governance advisory, with change-management and adoption support, for Canadian organizations."}
-</script>
+<meta property="og:image" content="https://privacoregroup.com/assets/img/hero-home.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "PrivaCore Group",
+  "description": "Personal digital protection for Canadian households — home cybersecurity assessments, digital privacy guidance and personal digital safety services.",
+  "url": "https://privacoregroup.com/",
+  "telephone": "+1-604-341-1651",
+  "email": "info@privacoregroup.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "BC", "addressCountry": "CA" },
+  "areaServed": [ { "@type": "City", "name": "Metro Vancouver" }, { "@type": "Country", "name": "Canada" } ],
+  "priceRange": "From $429 CAD",
+  "parentOrganization": { "@type": "Organization", "name": "C-Success Corp." }
+}
+</script>
 </head>
-<body id="top">
+<body>
 
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- HEADER -->
 <header class="site-header">
-  <div class="wrap header-in">
-    <a class="brand" href="#top"><img src="/assets/logo.svg" alt="PrivaCore Group — home" width="1370" height="327"></a>
-    <nav aria-label="Primary">
-      <ul class="nav-list">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#how-we-work">How We Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <a href="/" class="logo" aria-label="PrivaCore Group home" data-testid="nav-logo"><img src="/assets/logo-light.svg" alt="PrivaCore Group" class="logo-img" width="1370" height="327"></a>
+  <ul class="nav-links">
+    <li><a href="/personal-protection" data-testid="nav-protection-link">Personal Protection</a></li>
+    <li><a href="/digital-safety-checkup" data-testid="nav-checkup-link">Digital Safety Checkup</a></li>
+    <li><a href="/pricing" data-testid="nav-pricing-link">Pricing</a></li>
+    <li><a href="/how-it-works" data-testid="nav-how-link">How It Works</a></li>
+    <li><a href="/about" data-testid="nav-about-link">About</a></li>
+    <li><a href="/resources" data-testid="nav-resources-link">Resources</a></li>
+    <li><a href="/contact" data-testid="nav-contact-link">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="/contact?service=checkup" class="btn-book" data-testid="nav-book-checkup-cta">Book a Checkup</a>
+    <button type="button" class="nav-toggle" data-nav-toggle data-testid="nav-menu-toggle" aria-expanded="false" aria-controls="nav-drawer"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu</button>
   </div>
 </header>
+<div class="nav-drawer" id="nav-drawer" hidden>
+  <ul>
+    <li><a href="/" data-testid="drawer-home-link">Home</a></li>
+    <li><a href="/personal-protection">Personal Protection</a></li>
+    <li><a href="/digital-safety-checkup">Digital Safety Checkup</a></li>
+    <li><a href="/pricing">Pricing</a></li>
+    <li><a href="/how-it-works">How It Works</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/resources">Resources</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</div>
 
-<main id="main" tabindex="-1">
+<main id="main-content">
 
-<!-- HERO -->
+<!-- SECTION 1: HERO -->
 <section class="hero" aria-labelledby="hero-title">
-  <div class="wrap hero-in">
-    <div class="hero-copy">
-      <p class="eyebrow eyebrow-dark">Privacy • GRC • Cybersecurity • Responsible AI • Adoption</p>
-      <h1 id="hero-title">Privacy, AI and cyber governance people can put into practice.</h1>
-      <p class="hero-body">PrivaCore Group helps Canadian organizations turn requirements, control gaps, and responsible-AI goals into practical governance—and supports the people and processes needed to make it stick.</p>
-      <div class="hero-cta">
-        <a class="btn btn-light" href="mailto:info@privacoregroup.com" data-business-email="link">Email PrivaCore</a>
-        <p class="hero-meta">An experienced advisory team for Canadian organizations.</p>
+  <div class="hero-grid">
+    <div>
+      <span class="hero-eyebrow"><span class="dot" aria-hidden="true"></span>Personal Cybersecurity &amp; Digital Privacy</span>
+      <h1 id="hero-title">A Safer Digital Life <em>Starts at Home.</em></h1>
+      <p class="hero-deck">Personal digital protection for the people, devices and accounts that matter most. PrivaCore helps Canadian households understand their risks, strengthen their security and feel more confident online.</p>
+      <div class="hero-ctas">
+        <a href="/contact?service=checkup" class="cta-big" data-testid="hero-book-checkup-cta">Book a Digital Safety Checkup</a>
+        <a href="/personal-protection" class="cta-outline" data-testid="hero-explore-cta">Explore Our Services</a>
       </div>
+      <p class="hero-trust" data-testid="hero-trust-line">Independent Canadian practice <span class="sep" aria-hidden="true">·</span> Vancouver, BC <span class="sep" aria-hidden="true">·</span> Expert-led, privacy-first approach</p>
     </div>
-
-    <figure class="flow" aria-labelledby="flow-cap">
-      <figcaption id="flow-cap" class="flow-cap">From requirement to routine</figcaption>
-      <ol class="flow-list">
-        <li>
-          <span class="flow-k">Requirement</span>
-          <span class="flow-v">Privacy obligations, audit findings, policy commitments, responsible-AI goals</span>
-        </li>
-        <li>
-          <span class="flow-k">Governance</span>
-          <span class="flow-v">Clear owners, proportionate controls, workflows and evidence</span>
-        </li>
-        <li>
-          <span class="flow-k">Practice</span>
-          <span class="flow-v">People who know their role, using processes that fit the work</span>
-        </li>
-      </ol>
-      <p class="flow-foot">Change and adoption support runs through every step.</p>
+    <figure class="hero-fig reveal">
+      <img src="/assets/img/hero-home.jpg" alt="A warm, modern Canadian home interior with soft natural light — the kind of home PrivaCore helps protect" width="1600" height="2400" fetchpriority="high">
     </figure>
   </div>
 </section>
 
-<!-- WHO WE HELP -->
-<section class="who" aria-labelledby="who-title">
-  <div class="wrap who-in">
-    <h2 id="who-title" class="who-title">Who we help</h2>
-    <div>
-      <p class="who-lead">Mid-sized and regulated Canadian organizations, across sectors, that:</p>
-      <ul class="who-list">
-        <li>handle personal information</li>
-        <li>depend on vendors and cloud services</li>
-        <li>are introducing AI into their work</li>
-        <li>need to close privacy, control or audit-remediation gaps</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services" aria-labelledby="services-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Services</p>
-      <h2 id="services-title">Governance advisory that turns obligations into working practice.</h2>
-      <p class="lead">Advisory, governance and change work. PrivaCore does not provide legal advice, penetration testing, security monitoring, incident forensics or technical implementation, and works alongside your legal counsel, IT and security teams, and providers.</p>
-    </div>
-
-    <div class="card-grid">
-      <article class="card" aria-labelledby="svc-privacy">
-        <p class="card-num" aria-hidden="true">01</p>
-        <h3 id="svc-privacy">Privacy governance &amp; operations</h3>
-        <p class="card-intro">Build a privacy program your teams can actually run, aligned to the privacy laws that apply to your organization.</p>
-        <ul class="card-regs" aria-label="Privacy laws we help organizations put into practice">
-          <li><abbr title="Personal Information Protection and Electronic Documents Act (Canada)">PIPEDA</abbr></li>
-          <li><abbr title="Quebec's Act to modernize legislative provisions as regards the protection of personal information">Québec Law 25</abbr></li>
-          <li><abbr title="General Data Protection Regulation (European Union)">GDPR</abbr></li>
-          <li><abbr title="California Privacy Rights Act">CPRA</abbr></li>
-          <li><abbr title="Health Insurance Portability and Accountability Act (United States)">HIPAA</abbr></li>
-        </ul>
-        <ul class="card-list">
-          <li>Privacy-program assessments</li>
-          <li>Policies and standards</li>
-          <li>Personal-information inventory and governance processes</li>
-          <li>Privacy impact assessment workflows</li>
-          <li>Retention practices</li>
-          <li>Vendor privacy risk</li>
-          <li>Privacy incident readiness</li>
-        </ul>
-        <p class="card-scope">Governance and operational support—not legal advice. We work alongside your legal counsel on interpretation.</p>
-      </article>
-
-      <article class="card" aria-labelledby="svc-grc">
-        <p class="card-num" aria-hidden="true">02</p>
-        <h3 id="svc-grc">GRC, cybersecurity assurance readiness &amp; third-party risk</h3>
-        <p class="card-intro">Get controls, evidence and supplier oversight ready for scrutiny—and close the gaps in a practical order.</p>
-        <ul class="card-regs" aria-label="Frameworks we work with">
-          <li><abbr title="SOC 2 readiness (attestation is performed by an independent CPA firm)">SOC 2 readiness</abbr></li>
-          <li><abbr title="ISO/IEC 27001 information security management system (ISMS) readiness; certification is decided by an external certification body">ISO/IEC 27001 readiness</abbr></li>
-          <li><abbr title="NIST Cybersecurity Framework 2.0">NIST CSF 2.0</abbr></li>
-          <li><abbr title="NIST Special Publication 800-63B, Digital Identity Guidelines: Authentication">NIST SP 800-63B</abbr></li>
-        </ul>
-        <ul class="card-list">
-          <li>Control-gap reviews</li>
-          <li>ITGC and audit readiness</li>
-          <li>Evidence expectations</li>
-          <li>Access-control governance</li>
-          <li>Supplier-risk processes</li>
-          <li>Risk and exception tracking</li>
-          <li>Remediation plans</li>
-          <li>Governance reporting</li>
-        </ul>
-        <p class="card-scope">Readiness and governance support. PrivaCore does not issue attestations or certifications, or perform penetration testing, monitoring or forensics.</p>
-      </article>
-
-      <article class="card" aria-labelledby="svc-ai">
-        <p class="card-num" aria-hidden="true">03</p>
-        <h3 id="svc-ai">Responsible AI governance</h3>
-        <p class="card-intro">Get ready to use AI with clear accountability and sensible guardrails.</p>
-        <ul class="card-regs" aria-label="AI laws and frameworks we work with">
-          <li><abbr title="Regulation (EU) 2024/1689, the European Union Artificial Intelligence Act">EU AI Act</abbr></li>
-          <li><abbr title="NIST Artificial Intelligence Risk Management Framework">NIST AI RMF</abbr></li>
-        </ul>
-        <ul class="card-list">
-          <li>AI use-case inventory</li>
-          <li>Governance roles and accountability</li>
-          <li>Privacy and risk screening for AI use</li>
-          <li>Policy and control workflows</li>
-          <li>Human-oversight practices</li>
-          <li>Responsible adoption</li>
-        </ul>
-        <p class="card-scope">Governance readiness and operationalization—not AI audit or technical model validation.</p>
-      </article>
-
-      <article class="card card-adopt" aria-labelledby="svc-adopt">
-        <p class="card-num" aria-hidden="true">04</p>
-        <h3 id="svc-adopt">Change management &amp; adoption</h3>
-        <p class="card-intro">What helps the rest take hold. Governance only works when people use it, so adoption is planned alongside privacy, cyber and AI work—not bolted on at the end.</p>
-        <ul class="card-list">
-          <li>Stakeholder and readiness planning</li>
-          <li>Communications</li>
-          <li>Role-based training</li>
-          <li>Workflow integration</li>
-          <li>Adoption follow-through</li>
-        </ul>
-        <p class="card-scope">Linked to the privacy, cyber and AI governance changes above—not general project management.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- READINESS & GOVERNANCE PACKAGES
-     Scoped advisory/readiness work — never a guarantee of certification, audit opinion or compliance.
-     Only list a framework package here once PrivaCore has confirmed it can deliver it.
-     Owner-confirmed delivery (Sept 2026): SOC 1/SOC 2 readiness, ISO/IEC 27001 readiness, NIST CSF 2.0,
-     NIST SP 800-63B, EU AI Act, NIST AI RMF. -->
-<section class="section section-tint" id="packages" aria-labelledby="packages-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Readiness &amp; Governance Packages</p>
-      <h2 id="packages-title">Scoped packages for common starting points.</h2>
-      <p class="lead">Advisory and readiness work, tailored to your organization. Packages help you prepare for audits, assessments and regulatory expectations; they do not guarantee certification, an audit opinion or compliance.</p>
-    </div>
-
-    <div class="pkg-grid">
-      <article class="pkg" aria-labelledby="pkg-privacy">
-        <p class="pkg-kicker">Privacy</p>
-        <h3 id="pkg-privacy">Privacy Program Readiness</h3>
-        <p>A review of privacy governance, policies, personal-information inventory, privacy impact assessment processes, retention, third-party privacy risk and incident readiness.</p>
-        <p class="pkg-out"><strong>You receive:</strong> a prioritized gap summary with owners and practical next steps.</p>
-        <p class="pkg-bound">PIPEDA, Québec Law 25, GDPR or other laws are referenced only where they apply to your scope. Not legal advice.</p>
-      </article>
-
-      <article class="pkg" aria-labelledby="pkg-soc2">
-        <p class="pkg-kicker">Assurance readiness</p>
-        <h3 id="pkg-soc2">SOC 2 Readiness &amp; Controls Remediation</h3>
-        <p>Preparation for a SOC 2 engagement: scope and control mapping, evidence expectations, gap tracking, control-owner coordination, remediation planning and adoption support.</p>
-        <p>Where your services could affect customers’ financial reporting, SOC 1 readiness is available for those controls.</p>
-        <p class="pkg-bound">PrivaCore does not issue SOC reports. An independent CPA firm performs the attestation and issues the report.</p>
-      </article>
-
-      <article class="pkg" aria-labelledby="pkg-iso">
-        <p class="pkg-kicker">Assurance readiness</p>
-        <h3 id="pkg-iso">ISO/IEC 27001 Readiness</h3>
-        <p>Information security management system (ISMS) gap assessment, control and evidence planning, remediation coordination and implementation support.</p>
-        <p class="pkg-bound">PrivaCore does not issue ISO certification. An external certification body makes the certification decision.</p>
-      </article>
-
-      <article class="pkg" aria-labelledby="pkg-nist">
-        <p class="pkg-kicker">Cybersecurity</p>
-        <h3 id="pkg-nist">NIST CSF 2.0 Cybersecurity Profile</h3>
-        <p>Define your current and target profiles, identify priority gaps, and build an improvement roadmap with accountable owners. Where identity and authentication are in scope, controls are reviewed against NIST SP 800-63B.</p>
-        <p class="pkg-bound">NIST CSF 2.0 is a voluntary framework and NIST SP 800-63B is guidance; neither is a certification.</p>
-      </article>
-
-      <article class="pkg" aria-labelledby="pkg-ai">
-        <p class="pkg-kicker">Responsible AI</p>
-        <h3 id="pkg-ai">Responsible AI Governance Foundation</h3>
-        <p>Inventory AI use cases, clarify accountability, identify privacy and governance risks, develop proportionate policies and review workflows, and support responsible use through stakeholder communication and training—aligned to the NIST AI RMF and, where it applies to you, the EU AI Act.</p>
-        <p class="pkg-bound">Not an independent AI audit, legal opinion or technical model validation. The NIST AI RMF is voluntary; EU AI Act obligations should be confirmed with legal counsel.</p>
-      </article>
-
-      <article class="pkg pkg-adopt" aria-labelledby="pkg-adopt">
-        <p class="pkg-kicker">Adoption</p>
-        <h3 id="pkg-adopt">Change &amp; Adoption Support</h3>
-        <p>Stakeholder readiness, communications, role-based training, workflow changes and adoption follow-through, built into privacy, GRC, cybersecurity and AI-governance work. It is how controls become everyday practice—not project administration.</p>
-      </article>
-    </div>
-
-    <p class="pkg-note">Packages are tailored to the organization’s scope and delivery needs. Where specialized implementation, independent testing, audit, legal advice, or certification is required, roles are agreed with appropriately qualified external providers.</p>
-  </div>
-</section>
-
-<!-- HOW WE WORK -->
-<section class="section" id="how-we-work" aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">How we work</p>
-      <h2 id="how-title">Four plain-language steps.</h2>
-    </div>
-    <ol class="steps">
-      <li class="step">
-        <span class="step-num" aria-hidden="true">1</span>
-        <h3>Understand</h3>
-        <p>Your obligations, commitments and current workflows—how work actually gets done today.</p>
-      </li>
-      <li class="step">
-        <span class="step-num" aria-hidden="true">2</span>
-        <h3>Assess</h3>
-        <p>Risks and gaps in practice, controls and evidence, and which ones matter most.</p>
-      </li>
-      <li class="step">
-        <span class="step-num" aria-hidden="true">3</span>
-        <h3>Design</h3>
-        <p>Proportionate governance, controls and workflows—with a change plan for the people who will use them.</p>
-      </li>
-      <li class="step">
-        <span class="step-num" aria-hidden="true">4</span>
-        <h3>Support</h3>
-        <p>Implementation, training and adoption, with follow-through until the new way of working is routine.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- WHY PRIVACORE -->
-<section class="section section-tint" id="why" aria-labelledby="why-title">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Why PrivaCore</p>
-      <h2 id="why-title">Practical governance, grounded in regulated work.</h2>
-    </div>
-    <div class="why-grid">
-      <div class="why">
-        <h3>Experience in regulated environments</h3>
-        <p>Our team’s background spans privacy governance, cybersecurity controls, IT audit and data governance in financial services, aviation, telecommunications and other regulated settings.</p>
+<!-- SECTION 2: YOUR DIGITAL LIFE IS CONNECTED -->
+<section class="sec" aria-labelledby="connected-title" style="background:var(--ivory)">
+  <div class="sec-in">
+    <div class="stag reveal">Your digital life is connected</div>
+    <h2 id="connected-title" class="reveal">Household safety is about more than antivirus software.</h2>
+    <p class="sec-lead reveal">Your phones, computers, home Wi-Fi, accounts, privacy settings and family habits all connect — and a weakness in one can expose the rest. Personal digital safety means looking at the whole picture, calmly and practically.</p>
+    <div class="areas-grid">
+      <div class="area-card reveal" data-testid="area-devices">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="10" y1="18.5" x2="14" y2="18.5"/></svg></div>
+        <div class="area-title">Devices</div>
+        <div class="area-desc">Phones, tablets and computers — updated, configured and protected so everyday use stays safe.</div>
       </div>
-      <div class="why">
-        <h3>Governance and adoption together</h3>
-        <p>Privacy, controls, responsible AI governance and change and adoption, brought together so the result accounts for the people who have to use it.</p>
+      <div class="area-card reveal" data-testid="area-wifi">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="19.5" r="1.2"/></svg></div>
+        <div class="area-title">Home Wi-Fi &amp; smart technology</div>
+        <div class="area-desc">Your router, smart speakers, cameras and connected devices — checked and sensibly configured.</div>
       </div>
-      <div class="why">
-        <h3>Built to be used</h3>
-        <p>Clear, usable deliverables—policies, workflows, registers and plans written for the people who will run them, with a focus on implementation rather than shelf documents.</p>
+      <div class="area-card reveal" data-testid="area-passwords">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3m-3.5 3.5 2.5 2.5m-5.5.5 2 2"/></svg></div>
+        <div class="area-title">Passwords &amp; online accounts</div>
+        <div class="area-desc">Email, banking, Apple ID and Google accounts secured with strong passwords and multi-factor sign-in.</div>
+      </div>
+      <div class="area-card reveal" data-testid="area-privacy">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12s3.5-6 9-6c2.4 0 4.4 1 6 2.5M21 12s-3.5 6-9 6c-2.4 0-4.4-1-6-2.5"/><line x1="4" y1="4" x2="20" y2="20"/></svg></div>
+        <div class="area-title">Personal privacy</div>
+        <div class="area-desc">What the internet knows about your household — and practical steps to reduce your exposure.</div>
+      </div>
+      <div class="area-card reveal" data-testid="area-identity">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 5.5v5c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11v-5L12 2z"/><path d="M9 12l2 2 4-4.5"/></svg></div>
+        <div class="area-title">Identity &amp; fraud exposure</div>
+        <div class="area-desc">Scam readiness, impersonation warning signs, and knowing exactly what to do if something feels wrong.</div>
+      </div>
+      <div class="area-card reveal" data-testid="area-family">
+        <div class="area-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8.5" cy="7.5" r="3"/><circle cx="17" cy="9.5" r="2.4"/><path d="M3.5 20c0-3.3 2.2-5.5 5-5.5s5 2.2 5 5.5"/><path d="M15 20c.2-2.6 1.6-4.3 4-4.5 1.7.1 3 1.6 3 4.5"/></svg></div>
+        <div class="area-title">Family digital safety</div>
+        <div class="area-desc">Practical protection for children, teens and aging parents — including help arranged by adult children.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section" id="about" aria-labelledby="about-title">
-  <div class="wrap about-in">
-    <div class="about-copy">
-      <p class="eyebrow">About</p>
-      <h2 id="about-title">An experienced team, built for regulated work.</h2>
-      <p class="lead">PrivaCore Group is a Canadian advisory team that brings privacy, security governance, audit and change expertise to the same table. Our experience spans close to two decades in financial services, aviation, telecommunications and other regulated environments.</p>
-      <p>The team has hands-on delivery experience across SOC 1 and SOC 2 readiness, ISO/IEC 27001, the NIST frameworks and AI regulation—paired with the change-management discipline that gets new controls adopted, not just documented.</p>
-      <p>Every engagement is led by senior practitioners from scoping through adoption. You get experienced people doing the work, and governance that is proportionate, clearly documented and used by the teams who rely on it.</p>
-      <p class="about-note">PrivaCore Group is not a law firm and does not provide legal advice, penetration testing, security monitoring, incident forensics, attestation or certification.</p>
-    </div>
-    <!-- Name-free by design: no personal names, photos or individual bios on this site. -->
-    <div class="about-panel" aria-labelledby="exp-title">
-      <h3 id="exp-title">What the team brings</h3>
-      <div class="about-cols">
-        <div>
-          <p class="about-lbl">Disciplines</p>
-          <ul class="about-list">
-            <li>Privacy governance</li>
-            <li>Cybersecurity controls</li>
-            <li>IT audit</li>
-            <li>Data governance</li>
-            <li>Change and adoption</li>
-          </ul>
-        </div>
-        <div>
-          <p class="about-lbl">Environments</p>
-          <ul class="about-list">
-            <li>Financial services</li>
-            <li>Aviation</li>
-            <li>Telecommunications</li>
-            <li>Other regulated sectors</li>
-          </ul>
-        </div>
+<!-- SECTION 3: WHAT WE HELP PROTECT -->
+<section class="sec on-dark" aria-labelledby="protect-title" style="background:var(--navy)">
+  <div class="sec-in">
+    <div class="stag reveal">What we help protect</div>
+    <h2 id="protect-title" class="reveal">Hands-on home cybersecurity, explained in plain language.</h2>
+    <p class="sec-lead reveal">Every PrivaCore service is delivered personally, explained clearly, and documented in writing. No jargon, no scare tactics — just practical digital privacy and security work you can understand.</p>
+    <div class="svc-grid">
+      <div class="svc-card reveal" data-testid="svc-devices">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="svc-title">Everyday devices</div>
+        <div class="svc-body">We review the phones, tablets and computers your household relies on — updates, screen locks, built-in protections and safe settings — and fix what's practical on the spot.</div>
       </div>
-      <div class="about-creds">
-        <p class="about-lbl">Relevant credentials held by our delivery team</p>
-        <ul class="about-list">
-          <li><abbr title="Certified Information Privacy Professional/Canada (IAPP)">CIPP/C</abbr> — Certified Information Privacy Professional/Canada</li>
-          <li><abbr title="Certified Information Systems Auditor (ISACA)">CISA</abbr> — Certified Information Systems Auditor</li>
-          <li><abbr title="Certified Information Security Manager (ISACA)">CISM</abbr> — Certified Information Security Manager</li>
-          <li>Prosci Certified Change Practitioner</li>
+      <div class="svc-card reveal" data-testid="svc-network">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="13" width="18" height="7" rx="2"/><circle cx="7.5" cy="16.5" r="1"/><circle cx="11.5" cy="16.5" r="1"/><path d="M12 13V9m-4-2.5a6 6 0 0 1 8 0M5.5 3.8a10 10 0 0 1 13 0"/></svg></div>
+        <div class="svc-title">Your home network</div>
+        <div class="svc-body">Your Wi-Fi router is the front door of your digital home. We check its settings, passwords and connected devices — and set up a guest network where it helps.</div>
+      </div>
+      <div class="svc-card reveal" data-testid="svc-accounts">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4"/></svg></div>
+        <div class="svc-title">The accounts that matter</div>
+        <div class="svc-body">Email, banking and primary logins get extra attention: strong unique passwords, multi-factor sign-in, and recovery options that actually work when you need them.</div>
+      </div>
+      <div class="svc-card reveal" data-testid="svc-privacy">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.6-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r=".9" fill="currentColor" stroke="none"/></svg></div>
+        <div class="svc-title">Your digital privacy</div>
+        <div class="svc-body">We review app permissions, sharing settings and where your personal information appears — then help you quietly reduce what strangers and data brokers can find.</div>
+      </div>
+      <div class="svc-card reveal" data-testid="svc-scams">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 5.5v5c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11v-5L12 2z"/><line x1="12" y1="8.5" x2="12" y2="13"/><circle cx="12" cy="16.3" r=".9" fill="currentColor" stroke="none"/></svg></div>
+        <div class="svc-title">Scam &amp; fraud readiness</div>
+        <div class="svc-body">Most household losses start with a convincing message. We walk through the scams circulating now and agree on simple family rules for money requests and urgent messages.</div>
+      </div>
+      <div class="svc-card reveal" data-testid="svc-family">
+        <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-9.5-9C1 8.5 3 5 6.5 5c2 0 3.5 1 4.5 2.5C12 6 13.5 5 15.5 5 19 5 21 8.5 20.5 12c-2 4.3-8.5 9-8.5 9z"/></svg></div>
+        <div class="svc-title">The people you love</div>
+        <div class="svc-body">Protection arranged for aging parents, guidance for kids' devices, and household habits everyone can follow — delivered with patience, never judgement.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: HOW PRIVACORE WORKS -->
+<section class="sec" id="how-it-works" aria-labelledby="how-title" style="background:var(--white)">
+  <div class="sec-in">
+    <div class="stag reveal">How PrivaCore works</div>
+    <h2 id="how-title" class="reveal">A calm, four-step process — nothing happens without your consent.</h2>
+    <div class="process-grid">
+      <div class="step-card reveal" data-testid="step-understand">
+        <div class="step-num" aria-hidden="true">01</div>
+        <div class="step-title">Understand</div>
+        <div class="step-desc">A confidential discussion about the household and concerns.</div>
+      </div>
+      <div class="step-card reveal" data-testid="step-assess">
+        <div class="step-num" aria-hidden="true">02</div>
+        <div class="step-title">Assess</div>
+        <div class="step-desc">Review agreed devices, accounts, network settings and digital safety habits.</div>
+      </div>
+      <div class="step-card reveal" data-testid="step-strengthen">
+        <div class="step-num" aria-hidden="true">03</div>
+        <div class="step-title">Strengthen</div>
+        <div class="step-desc">Prioritize and implement appropriate safeguards within the purchased service scope.</div>
+      </div>
+      <div class="step-card reveal" data-testid="step-support">
+        <div class="step-num" aria-hidden="true">04</div>
+        <div class="step-title">Support</div>
+        <div class="step-desc">Provide a written plan, practical education and optional scheduled follow-up.</div>
+      </div>
+    </div>
+    <p class="note-line reveal">Every step is explained before it happens. We never ask for your passwords, banking details or recovery codes — and we never make changes without your authorization. <a href="/how-it-works" class="src-link" data-testid="how-link-inline">See the full process →</a></p>
+  </div>
+</section>
+
+<!-- SECTION 5: DIGITAL SAFETY CHECKUP -->
+<section class="sec checkup-sec" aria-labelledby="checkup-title">
+  <div class="sec-in">
+    <div class="stag reveal">Our flagship service</div>
+    <h2 id="checkup-title" class="reveal">The Digital Safety Checkup</h2>
+    <div class="checkup-card reveal" data-testid="checkup-card">
+      <div class="checkup-media">
+        <img src="/assets/img/checkup-home.jpg" alt="A bright, connected modern kitchen in a Canadian home" loading="lazy" width="1200" height="800">
+      </div>
+      <div class="checkup-body">
+        <span class="checkup-badge">Introductory launch pricing</span>
+        <div class="checkup-name">The PrivaCore Digital Safety Checkup</div>
+        <div class="checkup-price">from $429 CAD <span>· one-time · Solo $429 · Family $599 · Premium $849</span></div>
+        <p class="checkup-desc">A complete, expert-led review of your household's digital safety — home Wi-Fi, devices, accounts, privacy settings and scam readiness — finished with a plain-language summary and a prioritized action plan you'll actually understand.</p>
+        <ul class="checkup-list">
+          <li>Up to two hours of scheduled, personal assessment time</li>
+          <li>One household, up to four devices</li>
+          <li>Home Wi-Fi and router configuration review</li>
+          <li>Key online account security and multi-factor sign-in guidance</li>
+          <li>Connected-device and privacy-setting checks</li>
+          <li>Fraud exposure and scam-readiness discussion</li>
+          <li>Written findings summary and prioritized household action plan</li>
+        </ul>
+        <a href="/contact?service=checkup" class="cta-big" data-testid="checkup-book-cta">Book Your Checkup →</a>
+        <p class="checkup-note">This is an assessment and guidance service. Substantial remediation, software licences, additional devices beyond your tier, and specialist services are outside scope unless explicitly quoted. Every tier is fixed-price and confirmed in writing before any work begins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: PRICING TIERS -->
+<section class="sec" aria-labelledby="pricing-title" style="background:var(--white)">
+  <div class="sec-in">
+    <div style="text-align:center;max-width:720px;margin:0 auto">
+      <div class="stag reveal" style="justify-content:center">Clear, honest pricing</div>
+      <h2 id="pricing-title" class="reveal">One service. <em>Three sizes.</em></h2>
+      <p class="sec-lead reveal" style="margin-left:auto;margin-right:auto">Every tier is fixed-price, confirmed in writing before work begins. No subscriptions required, no surprise add-ons.</p>
+    </div>
+    <div class="tier-grid" style="margin-top:44px">
+      <div class="tier-card reveal" data-testid="home-tier-solo">
+        <div class="tier-name">Solo</div>
+        <div class="tier-for">For one person's digital life</div>
+        <div class="tier-price">$429 <small>CAD · one-time</small></div>
+        <ul class="tier-list">
+          <li>One person, up to two devices</li>
+          <li>Devices, key accounts and Wi-Fi essentials</li>
+          <li>Written findings and personal action plan</li>
+        </ul>
+        <a href="/contact?service=solo" class="cta-dark" data-testid="home-tier-solo-cta">Book Solo →</a>
+      </div>
+      <div class="tier-card featured reveal" data-testid="home-tier-family">
+        <span class="tier-badge">Most Popular</span>
+        <div class="tier-name">Family</div>
+        <div class="tier-for">The complete household checkup</div>
+        <div class="tier-price">$599 <small>CAD · one-time</small></div>
+        <ul class="tier-list">
+          <li>One household, up to four devices</li>
+          <li>Full router, smart-home and privacy review</li>
+          <li>Family safety guidance and household plan</li>
+        </ul>
+        <a href="/contact?service=family" class="cta-big" data-testid="home-tier-family-cta">Book Family →</a>
+      </div>
+      <div class="tier-card reveal" data-testid="home-tier-premium">
+        <div class="tier-name">Premium</div>
+        <div class="tier-for">Larger or multi-generational households</div>
+        <div class="tier-price">$849 <small>CAD · one-time</small></div>
+        <ul class="tier-list">
+          <li>Up to eight devices, three hours</li>
+          <li>Includes an aging parent's devices</li>
+          <li>Follow-up call within 14 days</li>
+        </ul>
+        <a href="/contact?service=premium" class="cta-dark" data-testid="home-tier-premium-cta">Book Premium →</a>
+      </div>
+    </div>
+    <p class="tier-note reveal"><a href="/pricing" class="src-link" data-testid="pricing-details-cta">Compare the tiers in full →</a></p>
+  </div>
+</section>
+
+<!-- SECTION 7: WHY PRIVACORE -->
+<section class="sec on-dark" aria-labelledby="why-title" style="background:var(--navy)">
+  <div class="sec-in">
+    <div class="stag reveal">Why PrivaCore</div>
+    <h2 id="why-title" class="reveal">Software protects devices. <em>We protect households.</em></h2>
+    <p class="sec-lead reveal">You can buy antivirus in a store. What you can't buy is a knowledgeable person who sits down with you, looks at your actual digital life, and makes it safer — then explains everything in words you understand.</p>
+    <div class="cmp-grid">
+      <div class="cmp-card dim reveal" data-testid="cmp-software">
+        <div class="cmp-label">Buying software alone</div>
+        <h3>A tool, left to you</h3>
+        <ul>
+          <li>Generic protection, not shaped to your household</li>
+          <li>Settings you're left to figure out yourself</li>
+          <li>Alerts you may not understand or act on</li>
+          <li>No one to call when something feels off</li>
+        </ul>
+      </div>
+      <div class="cmp-card bright reveal" data-testid="cmp-privacore">
+        <div class="cmp-label">Working with PrivaCore</div>
+        <h3>A person, on your side</h3>
+        <ul>
+          <li>A real review of your actual devices, accounts and Wi-Fi</li>
+          <li>Practical safeguards set up with you, not just recommended</li>
+          <li>Independent advice — we don't sell software or take commissions</li>
+          <li>A written plan and a follow-up, so improvements stick</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact" aria-labelledby="contact-title">
-  <div class="wrap contact-in">
-    <p class="eyebrow eyebrow-dark">Contact</p>
-    <h2 id="contact-title">Start with a short email.</h2>
-    <p class="contact-body">Tell us what you're working on—a privacy program, an audit finding, a vendor-risk process, or a plan to use AI responsibly—and we'll reply to arrange a conversation. Please don't include sensitive personal information in your first message.</p>
-    <a class="btn btn-light" href="mailto:info@privacoregroup.com" data-business-email="link">Email PrivaCore</a>
-    <p class="contact-address"><a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a></p>
+<!-- SECTION 8: LEADERSHIP -->
+<section class="sec" aria-labelledby="leadership-title" style="background:var(--ivory)">
+  <div class="sec-in">
+    <div class="stag reveal">Meet the leadership</div>
+    <h2 id="leadership-title" class="reveal">Experienced Leadership. Personal Attention.</h2>
+    <div class="lead-grid">
+      <div>
+        <p class="sec-lead reveal">PrivaCore Group is a founder-led Canadian practice built on more than fifteen years of professional experience protecting information in environments where mistakes carry real consequences — now focused on what matters most: your home and family.</p>
+        <ul class="lead-points reveal">
+          <li><strong>Privacy and cybersecurity governance</strong> — senior experience designing the policies and controls organizations rely on</li>
+          <li><strong>Technology risk assessment</strong> — evaluating systems, vendors and practices against real-world threats</li>
+          <li><strong>Financial services and regulated industries</strong> — backgrounds shaped by banking, insurance and regulatory environments</li>
+          <li><strong>Data protection</strong> — practical, lawful handling of personal information under Canadian privacy law</li>
+          <li><strong>Operational change and client education</strong> — turning complex security into habits people actually keep</li>
+        </ul>
+        <blockquote class="lead-quote reveal">"Senior-led digital protection. Personal service. Practical results."</blockquote>
+      </div>
+      <figure class="lead-fig img-frame reveal">
+        <img src="/assets/img/family-tablet.jpg" alt="A grandfather and grandson comfortably using a tablet together at home" loading="lazy" width="1200" height="675">
+      </figure>
+    </div>
+    <p class="note-line reveal">PrivaCore is a professional practice, not a call centre. When specialist expertise is needed, we work with independent professionals under confirmed arrangements — and we'll always tell you exactly who is doing what. <a href="/about" class="src-link" data-testid="leadership-about-link">More about the practice →</a></p>
+  </div>
+</section>
+
+<!-- SECTION 9: FAQ -->
+<section class="sec" id="faq" aria-labelledby="faq-title" style="background:var(--white)">
+  <div class="sec-in narrow">
+    <div class="stag reveal">Common questions</div>
+    <h2 id="faq-title" class="reveal">Everything households usually ask us.</h2>
+    <div style="margin-top:36px">
+      <details class="faq reveal"><summary>Do I need to be technical to work with PrivaCore?</summary><div class="faq-body">Not at all. Our service is built for people who don't want to manage cybersecurity themselves. We explain everything in plain language, do the hands-on work with you, and leave you with a written plan you'll actually understand.</div></details>
+      <details class="faq reveal"><summary>Will you ask for my passwords or banking details?</summary><div class="faq-body">Never. We don't ask for passwords, banking credentials, recovery codes or identity documents — at intake or during a checkup. When a password needs changing, you type it yourself. That's a permanent rule, not a preference.</div></details>
+      <details class="faq reveal"><summary>Is this just antivirus software installation?</summary><div class="faq-body">No. Software is only one small layer. A Digital Safety Checkup reviews your home Wi-Fi, devices, key accounts, privacy settings, backup habits and scam readiness — the whole picture of your household's digital safety.</div></details>
+      <details class="faq reveal"><summary>Can you help protect my aging parents?</summary><div class="faq-body">Yes — this is one of the most common reasons families contact us. Adult children can arrange and attend a checkup for a parent, with the parent's consent. We work patiently, respect their independence, and put practical anti-scam safeguards in place.</div></details>
+      <details class="faq reveal"><summary>Do you offer 24/7 monitoring or emergency response?</summary><div class="faq-body">No, and we won't pretend to. PrivaCore provides scheduled, expert-led assessments and guidance — not round-the-clock monitoring, emergency incident response or insurance products. If you ever face an urgent fraud situation, we'll point you to your bank and the Canadian Anti-Fraud Centre (1-888-495-8501) first.</div></details>
+      <details class="faq reveal"><summary>Where do you provide services?</summary><div class="faq-body">In-person appointments are available across Metro Vancouver. Remote checkups by secure video call are available across Canada where we can genuinely support your situation — we'll tell you honestly at intake if remote is a good fit.</div></details>
+      <details class="faq reveal"><summary>What does the Digital Safety Checkup cost?</summary><div class="faq-body">Three fixed tiers, as introductory launch pricing: Solo $429 (one person, two devices), Family $599 (a typical household, up to four devices), and Premium $849 (up to eight devices, plus a follow-up call). Anything beyond a tier's scope is quoted in writing first — no obligation, no surprises.</div></details>
+      <details class="faq reveal"><summary>Do you sell or recommend specific products?</summary><div class="faq-body">We recommend tools where they're genuinely useful — like a password manager — but we don't sell software, take commissions, or earn referral fees. Our advice stays independent.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10: FINAL CTA -->
+<section class="final-cta" aria-labelledby="final-title">
+  <div class="final-cta-in">
+    <div class="stag reveal" style="justify-content:center">Ready when you are</div>
+    <h2 id="final-title" class="reveal">Let's Make Your Digital Life Safer.</h2>
+    <p class="reveal">A confidential conversation is the first step. Tell us a little about your household, and we'll respond within one business day with next steps and a proposed time.</p>
+    <a href="/contact?service=checkup" class="cta-big reveal" data-testid="final-book-cta">Book Your Checkup</a>
   </div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="wrap footer-in">
-    <div class="footer-brand">
-      <img src="/assets/logo-light.svg" alt="PrivaCore Group" width="1370" height="327" loading="lazy">
-      <p><a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a></p>
-      <p class="footer-legal">© <span data-year>2026</span> C-Success Corp, operating as PrivaCore Group. Vancouver, BC.</p>
+<footer>
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="/" class="foot-logo" aria-label="PrivaCore Group home"><img src="/assets/logo-light.svg" alt="PrivaCore Group" class="foot-logo-img" width="1370" height="327"></a>
+        <div class="foot-copy">Personal digital protection for Canadian households.<br>© 2026 C-Success Corp., operating as PrivaCore Group · Vancouver, BC<br><a href="mailto:info@privacoregroup.com">info@privacoregroup.com</a> · <a href="tel:+16043411651">604-341-1651</a></div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <div class="foot-col-title">Services</div>
+          <ul>
+            <li><a href="/digital-safety-checkup">Digital Safety Checkup</a></li>
+            <li><a href="/personal-protection">Personal Protection</a></li>
+            <li><a href="/how-it-works">How It Works</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-col-title">Company</div>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-col-title">Legal</div>
+          <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="footer-privacy" id="privacy">
-      <h2>Website privacy</h2>
-      <p>This website does not set cookies or load analytics, advertising or other third-party scripts. Our hosting provider may keep standard server logs. If you email us, we use what you send to reply and, if we work together, to manage that relationship. Questions about your information: <a href="mailto:info@privacoregroup.com" data-business-email="text">info@privacoregroup.com</a>.</p>
+    <div class="foot-bottom">
+      Service area: in-person appointments across Metro Vancouver · remote guidance available across Canada where genuinely supportable.<br>
+      Related fraud prevention education is available through <a href="https://thefrauddoctor.ca" target="_blank" rel="noopener noreferrer">The Fraud Doctor</a>.<br>
+      PrivaCore Group provides expert-led assessments and practical guidance — not 24/7 monitoring, emergency incident response, or insurance products.
     </div>
   </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Do I need to be technical to work with PrivaCore?", "acceptedAnswer": { "@type": "Answer", "text": "Not at all. Our service is built for people who don't want to manage cybersecurity themselves. We explain everything in plain language, do the hands-on work with you, and leave you with a written plan you'll actually understand." } },
+    { "@type": "Question", "name": "Will you ask for my passwords or banking details?", "acceptedAnswer": { "@type": "Answer", "text": "Never. We don't ask for passwords, banking credentials, recovery codes or identity documents — at intake or during a checkup. When a password needs changing, you type it yourself." } },
+    { "@type": "Question", "name": "Can you help protect my aging parents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Adult children can arrange and attend a checkup for a parent, with the parent's consent. We work patiently and put practical anti-scam safeguards in place." } },
+    { "@type": "Question", "name": "Where do you provide services?", "acceptedAnswer": { "@type": "Answer", "text": "In-person appointments are available across Metro Vancouver. Remote checkups by secure video call are available across Canada where we can genuinely support your situation." } },
+    { "@type": "Question", "name": "What does the Digital Safety Checkup cost?", "acceptedAnswer": { "@type": "Answer", "text": "Three fixed tiers, as introductory launch pricing: Solo $429 (one person, two devices), Family $599 (a typical household, up to four devices), and Premium $849 (up to eight devices, plus a follow-up call). Anything beyond a tier's scope is quoted in writing first." } }
+  ]
+}
+</script>
 <script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -1,20 +1,90 @@
-// PrivaCore Group — site behaviour
+// PrivaCore Group — shared site behaviour
 (function () {
   'use strict';
+  document.documentElement.classList.add('js');
 
-  // Single source of truth for the public business email.
-  // Every [data-business-email] element is populated from this constant:
-  //   data-business-email="link" → sets the mailto: href only
-  //   data-business-email="text" → sets the mailto: href and the visible text
-  // index.html repeats the same address as a no-JavaScript fallback; keep them in sync.
-  var BUSINESS_EMAIL = 'info@privacoregroup.com';
+  // Scroll reveal
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('vis'); revealObserver.unobserve(e.target); }
+      });
+    }, { threshold: 0.07 });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('vis'); });
+  }
 
-  document.querySelectorAll('[data-business-email]').forEach(function (el) {
-    el.setAttribute('href', 'mailto:' + BUSINESS_EMAIL);
-    if (el.getAttribute('data-business-email') === 'text') el.textContent = BUSINESS_EMAIL;
-  });
+  // Mobile navigation drawer
+  var toggle = document.querySelector('[data-nav-toggle]');
+  var drawer = document.getElementById('nav-drawer');
+  if (toggle && drawer) {
+    var setDrawer = function (open) {
+      toggle.setAttribute('aria-expanded', String(open));
+      drawer.hidden = !open;
+    };
+    toggle.addEventListener('click', function () {
+      setDrawer(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setDrawer(false);
+        toggle.focus();
+      }
+    });
+    drawer.addEventListener('click', function (event) {
+      if (event.target.closest('a')) setDrawer(false);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth >= 1080) setDrawer(false);
+    });
+  }
 
-  document.querySelectorAll('[data-year]').forEach(function (el) {
-    el.textContent = String(new Date().getFullYear());
-  });
+  // Contact form: preselect service from ?service= query parameter
+  var serviceSelect = document.getElementById('contact-service');
+  if (serviceSelect) {
+    var SERVICE_MAP = {
+      'solo': 'Digital Safety Checkup — Solo · $429 CAD',
+      'family': 'Digital Safety Checkup — Family · $599 CAD',
+      'premium': 'Digital Safety Checkup — Premium · $849 CAD',
+      'gift-solo': 'A gift for someone I love — Solo · $429 CAD',
+      'gift-family': 'A gift for someone I love — Family · $599 CAD',
+      'refresh': 'Annual Refresh — returning household',
+      'checkup': 'Not sure yet — help me choose',
+      'question': 'General question',
+      'other': 'Something else'
+    };
+    var params = new URLSearchParams(window.location.search);
+    var requested = params.get('service');
+    if (requested && SERVICE_MAP[requested]) {
+      serviceSelect.value = SERVICE_MAP[requested];
+    }
+  }
+
+  // Contact form: AJAX submit with inline success (Netlify Forms mechanics preserved)
+  var cf = document.getElementById('cform');
+  if (cf) {
+    cf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = cf.querySelector('button[type=submit]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      fetch(cf.getAttribute('action') || '/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(cf)).toString()
+      }).then(function (response) {
+        if (!response.ok) throw new Error('Form submission failed');
+        cf.style.display = 'none';
+        var success = document.getElementById('fsuc');
+        success.style.display = 'block';
+        success.focus();
+      }).catch(function () {
+        btn.textContent = 'Send My Request →';
+        btn.disabled = false;
+        alert('Something went wrong — please email info@privacoregroup.com or call 604-341-1651.');
+      });
+    });
+  }
 })();
